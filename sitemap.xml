@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://norc-heal.github.io/heal-docs-template/</loc>
-         <lastmod>2023-07-06</lastmod>
+         <lastmod>2023-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://norc-heal.github.io/heal-docs-template/section1/</loc>
-         <lastmod>2023-07-06</lastmod>
+         <lastmod>2023-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://norc-heal.github.io/heal-docs-template/section2/</loc>
-         <lastmod>2023-07-06</lastmod>
+         <lastmod>2023-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://norc-heal.github.io/heal-docs-template/section2/page1/</loc>
-         <lastmod>2023-07-06</lastmod>
+         <lastmod>2023-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

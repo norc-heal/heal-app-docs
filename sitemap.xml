@@ -6,12 +6,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://norc-heal.github.io/heal-app-docs/section2/</loc>
+         <loc>https://norc-heal.github.io/heal-app-docs/exptrack/</loc>
          <lastmod>2023-09-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://norc-heal.github.io/heal-app-docs/section2/page1/</loc>
+         <loc>https://norc-heal.github.io/heal-app-docs/exptrack/addexp/</loc>
+         <lastmod>2023-09-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://norc-heal.github.io/heal-app-docs/exptrack/editexp/</loc>
+         <lastmod>2023-09-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://norc-heal.github.io/heal-app-docs/exptrack/exptotrack/</loc>
+         <lastmod>2023-09-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://norc-heal.github.io/heal-app-docs/section2/</loc>
          <lastmod>2023-09-06</lastmod>
          <changefreq>daily</changefreq>
     </url>

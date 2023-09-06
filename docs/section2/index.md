@@ -1,5 +1,4 @@
-# Home page for Section 2
+# Navigating the Tool
 
-## Overview
-
-Home page for section 2
+When you open the tool, it will look like this.
+![](docs/app-screenshots/first-look.PNG)

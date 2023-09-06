@@ -4,10 +4,13 @@ site_url: https://norc-heal.github.io/heal-app-docs
 repo_url: https://github.com/norc-heal/heal-app-docs
 nav:
   - About the HEAL Data Packaging Tool: index.md
-  - Navigating the Tool:
-    - section2/index.md
-    - section2/page1.md
-
+  - Navigating the Tool: section2/index.md
+  - The Experiment Tracker: 
+      - exptrack/index.md
+      - Add a New Experiment: exptrack/addexp.md
+      - Add an Experiment to the Experiment Tracker: exptrack/exptotrack.md
+      - Edit the Experiment Tracker: exptrack/editexp.md
+ 
 theme:
   name: material
   palette:
@@ -40,6 +43,8 @@ markdown_extensions:
       permalink: True
       baselevel: 1
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.details
 plugins:
   - search

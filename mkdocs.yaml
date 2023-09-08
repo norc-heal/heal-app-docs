@@ -3,14 +3,22 @@ site_name: HEAL Data Packaging Tool How-To
 site_url: https://norc-heal.github.io/heal-app-docs
 repo_url: https://github.com/norc-heal/heal-app-docs
 nav:
-  - About the HEAL Data Packaging Tool: index.md
-  - Downloading the Tool: start.md
-  - Navigating the Tool: section2/index.md
+  - About the HEAL Data Packaging Tool: 
+      - about/index.md
+      - Purpose: about/purpose.md
+      - The Trackers: about/trackers.md
+      - Downloading the Tool: about/start.md
+      - Navigating the Tool: about/nav.md
   - Creating a New Data Package: pkgdir.md
   - The Experiment Tracker: 
       - exptrack/index.md
       - Add a New Experiment: exptrack/addexp.md
       - Add an Experiment to the Experiment Tracker: exptrack/exptotrack.md
+  - Schemas:
+      - schemas/index.md
+      - Experiment Tracker: schemas/md_experiment_tracker.md
+      - Resource Tracker: schemas/md_resource_tracker.md
+      - Results Tracker: schemas/md_results_tracker.md
  
 theme:
   name: material

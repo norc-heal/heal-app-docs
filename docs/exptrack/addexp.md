@@ -13,6 +13,10 @@
 
     ![](../app-screenshots/annotate-new-2.PNG)
 
+3. Start filling out the experiment information.
+
+    * For additional information on what should be included in each field, plese refer to the [Experiment Tracker schema](../schemas/md_experiment_tracker.md).
+
 3. You can add multiple experimental questions and hypotheses for the same experiment.
     * To add an experiment question/hypothesis, click on the paper icon. 
     * To add another, click on the paper icon again.

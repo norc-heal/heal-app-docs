@@ -10,5 +10,5 @@ Find out more about the HEAL Data Packaging Tool and how using it can help ease 
 
 
 ### Downloading and Navigating the Tool
-* [Downloading the Tool](start.md)
+* Downloading the Tool for [Windows](download/start-win.md) and [Mac](download/start-mac.md)
 * [Navigating the Tool](nav.md)

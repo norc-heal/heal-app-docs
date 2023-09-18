@@ -1,6 +1,11 @@
 # Using the Tool
 
-When you open the tool, it will look like this:
+!!! note 
+    When you open the tool, the window below will pop up first and start running. **Do not close it.** Once it executes, the tool will open. You will need to leave this window open when you are using the tool.
+
+    ![](../app-screenshots/exe-window.PNG)
+
+When the tool loads, it will look like this:
 
 ![](../app-screenshots/first-look.PNG)
 

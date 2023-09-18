@@ -18,6 +18,10 @@ nav:
       - Add a New Experiment: exptrack/addexp.md
       - Add an Experiment to the Experiment Tracker: exptrack/exptotrack.md
       - View the Experiment Tracker: exptrack/editexp.md
+  - The Results Tracker:
+      - resulttrack/index.md
+      - Add a New Result: resulttrack/addresult.md
+      - Adding a Result to the Result Tracker(s): resulttrack/resulttotrack.md
   - Schemas:
       - schemas/index.md
       - Experiment Tracker: schemas/md_experiment_tracker.md

@@ -2,7 +2,9 @@
 
 The first step in creating your data package will be creating your Data Package directory. The Data Package directory is where you will save all of your data packaging documentation. The "Data Package" tab includes directions on how to create a Data Package directory.
 
-To create a Data Package directory:
+![](app-screenshots/data-pkg-tab.PNG)
+
+### To create a Data Package directory:
 
 1. Click on the "Data Package" tab. 
 2. Within the "Create" tab, select "Create New Data Package".

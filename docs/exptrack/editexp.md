@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+full-width: true
+---
+
 # Viewing the Experiment Tracker
 
 If you need to view anything that you have already input into the Experiment Tracker, you can use the View Tracker feature. It may be useful to view your Experiment Tracker within the application to:

@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+full-width: true
+---
+
 # About the Experiment Tracker
 
 ![](../app-screenshots/exp-track-first.PNG)

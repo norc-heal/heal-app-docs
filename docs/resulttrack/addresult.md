@@ -73,7 +73,7 @@ Your first step to creating a new Results Tracker is to start annotating results
 
     ![](../app-screenshots/results-support.PNG)
 
-### Saving Your Results Tracker
+### Saving Your Result
 
 1. When you are done filling out the form, select "Save result."
 2. The User Status Message Box should display this message to indicate your result saved successfully:

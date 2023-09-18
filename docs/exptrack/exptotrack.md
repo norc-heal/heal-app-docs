@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+full-width: true
+---
+
 # Adding an Experiment to the Experiment Tracker
 
 1. After adding a new experiment, you will need to add it to your study's Experiment Tracker. Close the "Annotate a new experiment" window and select "Add experiment to tracker" in the "Add Experiment" tab.

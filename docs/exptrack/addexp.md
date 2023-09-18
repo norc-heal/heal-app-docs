@@ -1,21 +1,19 @@
 # Adding a New Experiment
 
+### Getting Started Annotating
+
 1. Navigate to the "Add Experiment" tab and select "Annotate a new experiment".
 
     ![](../app-screenshots/annotate-new.PNG)
-    
-    !!! note  
-
-        You may want to open the [HEAL experiment tracker schema] to guide you through how to fill out each of these fields.
-
 
 2. The experiment ID will generate automatically and sequentially.
 
     ![](../app-screenshots/annotate-new-2.PNG)
 
-3. Start filling out the experiment information.
+### Filling out the Form
 
-    * For additional information on what should be included in each field, plese refer to the [Experiment Tracker schema](../schemas/md_experiment_tracker.md).
+!!! Tip
+    For additional information on what should be included in each field, plese refer to the [Experiment Tracker schema](../schemas/md_experiment_tracker.md).
 
 3. You can add multiple experimental questions and hypotheses for the same experiment.
     * To add an experiment question/hypothesis, click on the paper icon. 
@@ -24,6 +22,8 @@
     When you have multiple questions/hypotheses entered, you can also change the order using the highlighted arrows. You can also use the 'X' to remove questions/hypotheses entered.
 
     ![](../app-screenshots/exp-arrows.PNG)
+
+### Saving Your Experiment
 
 4. Once you have finished entering the experiment information, select "Save experiment". 
     * Navigate to your dsc-pkg folder, and save this file in the main folder. 

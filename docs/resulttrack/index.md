@@ -1,6 +1,12 @@
+---
+hide:
+  - toc
+full-width: true
+---
+
 # About the Results Tracker
 
-![](../app-screenshots/results-track-first.PNG)
+![](../app-screenshots/results-track-first.PNG){: loading=lazy width="600" }
 
 This tab creates the results tracker, which provides an annotated inventory of all results included in a multi-result file. The depth and extent of information included in a result tracker will be determined by the approach you have chosen for annotation of your data. This documentation will include information on how you should fill out each form based on your chosen annotation approach.
 

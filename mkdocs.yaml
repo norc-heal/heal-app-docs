@@ -1,7 +1,7 @@
 #https://www.mkdocs.org/user-guide/configuration/#
 site_name: HEAL Data Packaging Tool How-To
-site_url: https://norc-heal.github.io/heal-app-docs
-repo_url: https://github.com/norc-heal/heal-app-docs
+site_url: https://norc-heal.github.io/heal-data-pkg-tool-docs
+repo_url: https://github.com/norc-heal/heal-data-pkg-tool-docs
 nav:
   - "": index.md
   - About the HEAL Data Packaging Tool: 
@@ -21,7 +21,9 @@ nav:
   - The Results Tracker:
       - resulttrack/index.md
       - Add a New Result: resulttrack/addresult.md
-      - Adding a Result to the Result Tracker(s): resulttrack/resulttotrack.md
+      - Edit a Result: resulttrack/editresult.md
+      - Add a Result to the Result Tracker(s): resulttrack/resulttotrack.md
+      - View the Results Tracker: resulttrack/viewresult.md
   - Schemas:
       - schemas/index.md
       - Experiment Tracker: schemas/md_experiment_tracker.md

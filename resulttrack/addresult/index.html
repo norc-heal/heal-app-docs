@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://norc-heal.github.io/heal-app-docs/exptrack/exptotrack/">
+        <link rel="canonical" href="https://norc-heal.github.io/heal-app-docs/resulttrack/addresult/">
       
       <link rel="icon" href="../../assets/heal_logo.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
     
     
       
-        <title>Add an Experiment to the Experiment Tracker - HEAL Data Packaging Tool How-To</title>
+        <title>Add a New Result - HEAL Data Packaging Tool How-To</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adding-an-experiment-to-the-experiment-tracker" class="md-skip">
+        <a href="#adding-a-new-result" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Add an Experiment to the Experiment Tracker
+              Add a New Result
             
           </span>
         </div>
@@ -400,14 +400,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -427,7 +425,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">The Experiment Tracker</a>
+          <a href="../../exptrack/">The Experiment Tracker</a>
           
             <label for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
@@ -450,7 +448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../addexp/" class="md-nav__link">
+      <a href="../../exptrack/addexp/" class="md-nav__link">
         Add a New Experiment
       </a>
     </li>
@@ -462,21 +460,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../exptrack/exptotrack/" class="md-nav__link">
         Add an Experiment to the Experiment Tracker
       </a>
-      
     </li>
   
 
@@ -488,7 +476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../editexp/" class="md-nav__link">
+      <a href="../../exptrack/editexp/" class="md-nav__link">
         View the Experiment Tracker
       </a>
     </li>
@@ -508,12 +496,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -531,7 +521,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../resulttrack/">The Results Tracker</a>
+          <a href="../">The Results Tracker</a>
           
             <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
@@ -552,11 +542,113 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../resulttrack/addresult/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Add a New Result
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Add a New Result
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-annotating" class="md-nav__link">
+    Getting Started Annotating
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filling-out-the-form" class="md-nav__link">
+    Filling Out the Form
+  </a>
+  
+    <nav class="md-nav" aria-label="Filling Out the Form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#result-category" class="md-nav__link">
+    Result Category
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associated-filesdependencies" class="md-nav__link">
+    Associated Files/Dependencies
+  </a>
+  
+    <nav class="md-nav" aria-label="Associated Files/Dependencies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manually-adding-associated-filesdependencies" class="md-nav__link">
+    Manually adding Associated Files/Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-adding-associated-filesdependencies" class="md-nav__link">
+    Batch adding Associated Files/Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#results-support" class="md-nav__link">
+    Results Support
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-your-results-tracker" class="md-nav__link">
+    Saving Your Results Tracker
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -568,7 +660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../resulttrack/resulttotrack/" class="md-nav__link">
+      <a href="../resulttotrack/" class="md-nav__link">
         Adding a Result to the Result Tracker(s)
       </a>
     </li>
@@ -698,6 +790,82 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-annotating" class="md-nav__link">
+    Getting Started Annotating
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filling-out-the-form" class="md-nav__link">
+    Filling Out the Form
+  </a>
+  
+    <nav class="md-nav" aria-label="Filling Out the Form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#result-category" class="md-nav__link">
+    Result Category
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associated-filesdependencies" class="md-nav__link">
+    Associated Files/Dependencies
+  </a>
+  
+    <nav class="md-nav" aria-label="Associated Files/Dependencies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manually-adding-associated-filesdependencies" class="md-nav__link">
+    Manually adding Associated Files/Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-adding-associated-filesdependencies" class="md-nav__link">
+    Batch adding Associated Files/Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#results-support" class="md-nav__link">
+    Results Support
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-your-results-tracker" class="md-nav__link">
+    Saving Your Results Tracker
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -710,46 +878,113 @@
                 
                   
 
-  <a href="https://github.com/norc-heal/heal-app-docs/edit/master/docs/exptrack/exptotrack.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/norc-heal/heal-app-docs/edit/master/docs/resulttrack/addresult.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="adding-an-experiment-to-the-experiment-tracker">Adding an Experiment to the Experiment Tracker<a class="headerlink" href="#adding-an-experiment-to-the-experiment-tracker" title="Permanent link">&para;</a></h1>
+<h1 id="adding-a-new-result">Adding a New Result<a class="headerlink" href="#adding-a-new-result" title="Permanent link">&para;</a></h1>
+<p>Your first step to creating a new Results Tracker is to start annotating results. <strong>You do not need to create a Results Tracker first.</strong> The tool has the ability to auto-generate Results Trackers. However, if you would prefer to create a Results Tracker manually first, information on how to manually create a Results Tracker are <a href="ADD LINK">here</a>.</p>
+<h3 id="getting-started-annotating">Getting Started Annotating<a class="headerlink" href="#getting-started-annotating" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
-<p>After adding a new experiment, you will need to add it to your study's Experiment Tracker. Close the "Annotate a new experiment" window and select "Add experiment to tracker" in the "Add Experiment" tab.</p>
-<p><img alt="" src="../../app-screenshots/add-exp.PNG" /></p>
+<p>Navigate to the "Add Results" tab and select "Annotate a New Result".</p>
+<p><img alt="" src="../../app-screenshots/annotate-result.PNG" /></p>
 </li>
 <li>
-<p>When the File Explorer window pops up, navigate to the dsc-pkg folder and select the text file you want to add to the tracker. </p>
-<ul>
-<li>For the first experiment added, the file name will be "exp-trk-exp-1".</li>
-</ul>
-<p><img alt="" src="../../app-screenshots/select-exp.PNG" /></p>
-</li>
-<li>
-<p>A second File Explorer window will pop up prompting you to select the data package directory where the experiment tracker is saved. </p>
-<ul>
-<li>This will be your dsc-pkg folder, which is the same location where your experiment text file was saved. </li>
-<li>Select the dsc-pkg folder.</li>
-<li>Once selected, the User Status Message Box should display a confirmation message:</li>
-</ul>
-<p><img alt="" src="../../app-screenshots/exp-track-confirm.PNG" /></p>
-</li>
-<li>
-<p>Navigate to your dsc-pkg folder in your File Explorer and open your Experiment Tracker file. Confirm your experiment appears in the tracker.</p>
-<ul>
-<li>This step is not required, but it is recommended you check the tracker output after adding your first experiment to ensure the output looks correct.</li>
-</ul>
-<p><img alt="" src="../../app-screenshots/exp-track-fill.PNG" /></p>
+<p>Select "Add your DSC Package Directory". Navigate to your dsc-pkg folder and click "Select Folder". This will set your results to be saved to the dsc-pkg folder.</p>
+<ol>
+<li>This also detects whether there are existing results saved in the folder and automatically generates the next sequential Result ID (e.g., result-1, result-2, etc.).</li>
+<li>If successful, the User Status Message Box will deliver this message (Note: You may need to scroll within the box to locate the message):</li>
+</ol>
+<p><img alt="" src="../../app-screenshots/usmb-results-track-1.PNG" /></p>
 </li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Editing the Tracker</p>
-<p>If you review your Experiment Tracker at any point and find there is something you would like to add to an entry or an error that you would like to correct, you can <a href="../editexp/">view and edit the tracker in the tool</a>.</p>
+<h3 id="filling-out-the-form">Filling Out the Form<a class="headerlink" href="#filling-out-the-form" title="Permanent link">&para;</a></h3>
+<ol>
+<li>The Result ID should be automatically generated.</li>
+<li>Fill out a short Result Description.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Hovering over each field in the form will provide additional information about what should be contained within the field.</p>
 </div>
+<h4 id="result-category">Result Category<a class="headerlink" href="#result-category" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Select a Result Category. Based on the Result Category selected, additional questions will appear within the form.</li>
+<li>
+<p>For results in any Result Category, you will need to provide the path for the Associated Multi-Result File (e.g., manuscript, poster, etc.), in which the individual result appears. To add, select the arrow below the field:</p>
+<p><img alt="" src="../../app-screenshots/assoc-multi-result-file-2.PNG" /></p>
+<p>If the result is associated with multiple multi-result files, click the box again and enter the paths to each of the multi-result files here. This will allow the app to create a results tracker for each of those multi-result files in future steps (or add the individual result to the righ results trackers), all of which will be associated with this result.</p>
+<p><img alt="" src="../../app-screenshots/assoc-multi-result-file-multi.PNG" /></p>
+</li>
+<li>
+<p>If you selected "Figure" within "Result Category", the "Figure Number" field will pop up under "Associated Multi-Result File".</p>
+<ol>
+<li>
+<p>For each "Associated Multi-Result File", you will need to provide a corresponding figure number. Click on the arrow to insert each figure number. </p>
+<ol>
+<li>Ensure that the figure numbers are in the same order as the multi-result files. You can adjust the order using the green up and down arrows.</li>
+</ol>
+<p><img alt="" src="../../app-screenshots/figure-num.PNG" /></p>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="associated-filesdependencies">Associated Files/Dependencies<a class="headerlink" href="#associated-filesdependencies" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>There are two ways to add "Associated Files/Dependencies", manually or via batch add. See below for descriptions of each.</p>
+<h5 id="manually-adding-associated-filesdependencies">Manually adding Associated Files/Dependencies<a class="headerlink" href="#manually-adding-associated-filesdependencies" title="Permanent link">&para;</a></h5>
+<ol>
+<li>If you are adding only a few associated files/dependencies, you can add each row individually using the arrow button:</li>
+</ol>
+<p><img alt="" src="../../app-screenshots/results-assoc-single.PNG" /></p>
+<h5 id="batch-adding-associated-filesdependencies">Batch adding Associated Files/Dependencies<a class="headerlink" href="#batch-adding-associated-filesdependencies" title="Permanent link">&para;</a></h5>
+<ol>
+<li>
+<p>If you would like to add many associated files at once, you can use the "Add Multiple Results Dependencies" option, which can be found at the top of the "Add Results" window:</p>
+<p><img alt="" src="../../app-screenshots/multi-depend-add.PNG" /></p>
+<ol>
+<li>Fill in this field with associated files/dependencies using drag-and-drop from your file explorer.</li>
+</ol>
+<p><img alt="" src="../../app-screenshots/results-multi-depend.PNG" /></p>
+<ol>
+<li>The files you drag and drop will automatically appear in the "Associated Files/Dependencies" section in the form.</li>
+</ol>
+<p><img alt="" src="../../app-screenshots/results-multi-auto.PNG" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>You should only utilize one of the above methods for entering dependencies when adding a specific result.</strong> If you add some files as associated files/dependencies manually and then utilize the "Add Multiple Results Dependencies" option, those files will overwrite the files you entered manually.</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="results-support">Results Support<a class="headerlink" href="#results-support" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p>"Results Supports" describes the larger claim that the result is used to support in the multi-result file. This is not required but can be very useful for data reuse and interpretation for future researchers.</p>
+<p><img alt="" src="../../app-screenshots/results-support.PNG" /></p>
+</li>
+</ol>
+<h3 id="saving-your-results-tracker">Saving Your Results Tracker<a class="headerlink" href="#saving-your-results-tracker" title="Permanent link">&para;</a></h3>
+<ol>
+<li>When you are done filling out the form, select "Save result."</li>
+<li>
+<p>The User Status Message Box should display this message to indicate your result saved successfully:</p>
+<p><img alt="" src="../app-screenshots/usmb-results-save.PNG" /></p>
+<ol>
+<li>Your result tracker annotation will be saved as a .txt file within the dsc-pkg folder.</li>
+</ol>
+<p><img alt="" src="../../app-screenshots/result-track-output.PNG" /></p>
+</li>
+<li>
+<p>Clear the form.</p>
+</li>
+<li>You can now start annotating the next result by selecting the DSC Package Directory.</li>
+</ol>
 
 
 
@@ -770,7 +1005,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../addexp/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Add a New Experiment" rel="prev">
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: About the Results Tracker" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -779,20 +1014,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Add a New Experiment
+              About the Results Tracker
             </div>
           </div>
         </a>
       
       
         
-        <a href="../editexp/" class="md-footer__link md-footer__link--next" aria-label="Next: View the Experiment Tracker" rel="next">
+        <a href="../resulttotrack/" class="md-footer__link md-footer__link--next" aria-label="Next: Adding a Result to the Result Tracker(s)" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              View the Experiment Tracker
+              Adding a Result to the Result Tracker(s)
             </div>
           </div>
           <div class="md-footer__button md-icon">

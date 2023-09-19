@@ -42,4 +42,4 @@ If you want to edit a result after you have created it, you can do so in the too
         </figure>
         
 
-4. Make any necessary edits to your result file, and then select "Save result".
+4. Make any necessary edits to your result file, and then select "Save result."

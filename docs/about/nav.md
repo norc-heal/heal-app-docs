@@ -26,7 +26,7 @@ Within each of these tabs, there are multiple additional tabs. Each has an "Info
 Within each tab, there is a User Status Message Box:
 ![](../app-screenshots/usmb-intro.PNG)
 
-The User Status Message Box will print out messages when you make certain selections (e.g., select the data package directory) or save changes to files (e.g., adding a result to a results tracker). The box will provide information on the status of changes and any errors that may occur. It will also provide helpful tips on next steps. This message box is another tool meant to help you through the process, so we advise you to review the messages produced whenever you make a change.
+The User Status Message Box will print out messages when you make certain selections (e.g., select the Data Package directory) or save changes to files (e.g., adding a result to a Results Tracker). The box will provide information on the status of changes and any errors that may occur. It will also provide helpful tips on next steps. This message box is another tool meant to help you through the process, so we advise you to review the messages produced whenever you make a change.
 
 ### Guide to Text Colors
 

@@ -917,12 +917,15 @@
 
 
 <h1 id="adding-a-new-result">Adding a New Result<a class="headerlink" href="#adding-a-new-result" title="Permanent link">&para;</a></h1>
-<p>Your first step to creating a new Results Tracker is to start annotating results. <strong>You do not need to create a Results Tracker first.</strong> The tool has the ability to auto-generate Results Trackers. However, if you would prefer to create a Results Tracker manually first, information on how to manually create a Results Tracker are <a href="ADD LINK">here</a>.</p>
+<p>Your first step to creating a new Results Tracker is to start annotating results. <strong>You do not need to create a Results Tracker first.</strong> The tool will auto-generate the appropriate Results Trackers based on annotated results.</p>
 <h3 id="getting-started-annotating">Getting Started Annotating<a class="headerlink" href="#getting-started-annotating" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Navigate to the "Add Results" tab and select "Annotate a New Result".</p>
-<p><img alt="" src="../../app-screenshots/annotate-result.PNG" /></p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/add-result-new.PNG" />
+    <figcaption></figcaption>
+</figure></p>
 </li>
 <li>
 <p>Select "Add your DSC Package Directory". Navigate to your dsc-pkg folder and click "Select Folder". This will set your results to be saved to the dsc-pkg folder.</p>
@@ -930,26 +933,39 @@
 <li>This also detects whether there are existing results saved in the folder and automatically generates the next sequential Result ID (e.g., result-1, result-2, etc.).</li>
 <li>If successful, the User Status Message Box will deliver this message (Note: You may need to scroll within the box to locate the message):</li>
 </ol>
-<p><img alt="" src="../../app-screenshots/usmb-results-track-1.PNG" /></p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/usmb-results-track-1.PNG" />
+    <figcaption></figcaption>
+</figure></p>
 </li>
 </ol>
 <h3 id="filling-out-the-form">Filling Out the Form<a class="headerlink" href="#filling-out-the-form" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>For additional information about each form field, please refer to the <a href="../../schemas/md_results_tracker/">Results Tracker schema</a>.</li>
+<li>Hovering over each field in the form will provide additional information about what should be contained within the field. For example, for the Result Category field:
+    <img alt="" src="../../app-screenshots/tooltip-ex.PNG" /></li>
+</ul>
+</div>
 <ol>
 <li>The Result ID should be automatically generated.</li>
 <li>Fill out a short Result Description.</li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Hovering over each field in the form will provide additional information about what should be contained within the field.</p>
-</div>
 <h4 id="result-category">Result Category<a class="headerlink" href="#result-category" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Select a Result Category. Based on the Result Category selected, additional questions will appear within the form.</li>
 <li>
 <p>For results in any Result Category, you will need to provide the path for the Associated Multi-Result File (e.g., manuscript, poster, etc.), in which the individual result appears. To add, select the arrow below the field:</p>
-<p><img alt="" src="../../app-screenshots/assoc-multi-result-file-2.PNG" /></p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/assoc-multi-result-file-2.PNG" />
+    <figcaption></figcaption>
+</figure></p>
 <p>If the result is associated with multiple multi-result files, click the box again and enter the paths to each of the multi-result files here. This will allow the app to create a results tracker for each of those multi-result files in future steps (or add the individual result to the righ results trackers), all of which will be associated with this result.</p>
-<p><img alt="" src="../../app-screenshots/assoc-multi-result-file-multi.PNG" /></p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/assoc-multi-result-file-multi.PNG" />
+    <figcaption></figcaption>
+</figure></p>
 </li>
 <li>
 <p>If you selected "Figure" within "Result Category", the "Figure Number" field will pop up under "Associated Multi-Result File".</p>
@@ -959,7 +975,10 @@
 <ol>
 <li>Ensure that the figure numbers are in the same order as the multi-result files. You can adjust the order using the green up and down arrows.</li>
 </ol>
-<p><img alt="" src="../../app-screenshots/figure-num.PNG" /></p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/figure-num.PNG" />
+    <figcaption></figcaption>
+</figure></p>
 </li>
 </ol>
 </li>
@@ -1006,11 +1025,17 @@
 <li>When you are done filling out the form, select "Save result."</li>
 <li>
 <p>The User Status Message Box should display this message to indicate your result saved successfully:</p>
-<p><img alt="" src="../app-screenshots/usmb-results-save.PNG" /></p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/usmb-results-save.png" />
+    <figcaption></figcaption>
+</figure></p>
 <ol>
 <li>Your result tracker annotation will be saved as a .txt file within the dsc-pkg folder.</li>
 </ol>
-<p><img alt="" src="../../app-screenshots/result-track-output.PNG" /></p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/result-track-output.PNG" />
+    <figcaption></figcaption>
+</figure></p>
 </li>
 <li>
 <p>Clear the form.</p>

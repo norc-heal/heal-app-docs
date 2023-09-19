@@ -6,8 +6,11 @@
     ![](../app-screenshots/exe-window.PNG)
 
 When the tool loads, it will look like this:
+    <figure markdown>
+        ![](../app-screenshots/first-look.PNG)
+        <figcaption></figcaption>
+    </figure>
 
-![](../app-screenshots/first-look.PNG)
 
 ## Tabs
 

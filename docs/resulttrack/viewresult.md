@@ -15,11 +15,17 @@ If you need to view anything that you have already input into the Results Tracke
 
 1. Navigate to "View Tracker" on the Results Tracker tab. Select "View CSV".
 
-    ![](../app-screenshots/view-result.PNG)
-
+    <figure markdown>
+        ![](../app-screenshots/view-result.PNG)
+        <figcaption></figcaption>
+    </figure>
+    
 2. The window below will pop up. Select "Load CSV"
 
     1. Find and select the results tracker.
     2. Your results tracker will populate in the window.
 
-    ![](../app-screenshots/view-result-2.PNG)
+    <figure markdown>
+      ![](../app-screenshots/view-result-2.PNG)
+      <figcaption></figcaption>
+    </figure>

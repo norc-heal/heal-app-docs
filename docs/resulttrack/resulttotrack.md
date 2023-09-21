@@ -8,7 +8,7 @@ full-width: true
 
 Once you have annotated your results files, close the "Annotate Result" window and return to the "Add Result" tab.
 
-1. Click on "Add result to tracker".
+1. Click on "Add result to tracker."
 
     <figure markdown>
         ![](../app-screenshots/add-result-a.PNG)
@@ -31,7 +31,7 @@ Once you have annotated your results files, close the "Annotate Result" window a
 
 4. Once you select the folder, you will receive information in the User Status Message Box notifying you that the Results Tracker(s) have been created based on your results file(s). 
     
-    *In the example below, each result was associated with two different multi-result files, so two results trackers were created and saved in the dsc-pkg folder. And the individual results were entered into each tracker, as appropriate.*
+    *In the example below, results added were associated with two different multi-result files, so two results trackers were created and saved in the dsc-pkg folder. And the individual results were automatically entered into each tracker, as appropriate.*
 
     <figure markdown>
         ![](../app-screenshots/usmb-results-auto.png)

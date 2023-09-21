@@ -34,7 +34,7 @@
 
 ### Saving Your Experiment
 
-4. Once you have finished entering the experiment information, select "Save experiment". 
+4. Once you have finished entering the experiment information, select "Save experiment." 
     1. Navigate to your dsc-pkg folder, and save this file in the main folder. 
 
         If the experiment is saved successfully, this message will appear in the User Status Message Box:

@@ -20,7 +20,7 @@ If you need to view anything that you have already input into the Results Tracke
         <figcaption></figcaption>
     </figure>
     
-2. The window below will pop up. Select "Load CSV"
+2. The window below will pop up. Select "Load CSV."
 
     1. Find and select the results tracker.
     2. Your results tracker will populate in the window.

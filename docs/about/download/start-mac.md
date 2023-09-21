@@ -5,7 +5,7 @@ For Mac users, there are currently two options for running the tool. You can:
 1. Run the application locally (from source code)
 2. Run the application locally (from an application file)
 
-*Both require that you first follow the instructions in the 'Initial set up' section below.*
+*Both require that you first follow the instructions in the 'Initial Set-Up' section below.*
 
 ### Running the application locally from source code vs. from application file:
     
@@ -26,7 +26,8 @@ If you choose to run the app locally (from source code), set-up is a bit easier 
 1. Initial Set-Up
     1. Check if you have python 3 installed; if not, install it (if installing from scratch, make sure you select the option to install pip at the same time).
     2. Check if you have pip installed; if not, install it.
-    3. Download DSC Desktop Application Tool zipped source code directory from [here](https://github.com/norc-heal/heal-dsc-gui-dev/archive/refs/tags/v0.0.9-b.zip).
+    3. Download DSC Desktop Application Tool zipped source code directory from [here](https://github.com/norc-heal/heal-data-pkg-tool/releases/latest/).
+        1. Expand "Assets" and click to download "Source code (zip)". *Note: Disregard the dsc-pkg-tool-mac.zip for now, as that is still in development.*
         1. Extract from zipped archive to a drive location that makes sense for you.
     4. Open terminal.
         1. Navigate to the extracted DSC Desktop Application Tool directory

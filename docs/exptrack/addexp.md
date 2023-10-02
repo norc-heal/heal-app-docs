@@ -44,10 +44,10 @@
             <figcaption></figcaption>
         </figure>
 
-    2. Your result tracker annotation will be saved as a .txt file within the dsc-pkg folder.
+    2. Your experiment annotation will be saved as a .txt file within the dsc-pkg folder.
     <figure markdown>
         ![](../app-screenshots/exp-txt-file.PNG)
         <figcaption></figcaption>
     </figure>
 
-5. After you have added a new experiment, you will need to add it to the Experiment Tracker. Click here for guidance on [how to add an experiment to the experiment tracker](exptotrack.md).
+5. After you have added a new experiment, you can annotate a new experiment or add annotated experiment(s) to the Experiment Tracker. Click here for guidance on [how to add an experiment to the Experiment Tracker](exptotrack.md).

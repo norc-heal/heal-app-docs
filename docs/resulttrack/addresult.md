@@ -111,7 +111,7 @@ Your first step to creating a new Results Tracker is to start annotating results
         <figcaption></figcaption>
     </figure>
 
-    1. Your result tracker annotation will be saved as a .txt file within the dsc-pkg folder.
+    1. Your result annotation will be saved as a .txt file within the dsc-pkg folder.
 
     <figure markdown>
         ![](../app-screenshots/result-track-output.PNG)
@@ -119,7 +119,7 @@ Your first step to creating a new Results Tracker is to start annotating results
     </figure>
 
 3. Clear the form.
-4. You can now start annotating the next result by selecting the DSC Package Directory.
+4. You can now start annotating the next result by selecting the DSC Package Directory. After you annotate results, you will need to add them to the Results Tracker. Click here for guidance on [how to add a result to the Results Tracker](resulttotrack.md).
 
 
             

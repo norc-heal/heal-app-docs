@@ -36,6 +36,11 @@
     2.	Make sure the following files exist in this directory
         1.	Requirements.txt
         2.	Dsc_pkg_tool.py
+
+        !!! Warning
+
+            **Do not move the dsc_pkg_tool.py file from its location within the 'heal-data-pkg-tool-' folder** - the executable requires the other contents contained within the folder to function.
+
     3. Create and activate a new python virtual environment. Make sure to name it something unique, memorable and relevant – e.g. dsc-pkg-env.
 
         !!! note "Virtual environments in python"

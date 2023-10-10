@@ -6,9 +6,9 @@ Find out more about the HEAL Data Packaging Tool and how using it can help ease 
 
 ### About the Tool and the Trackers
 * [Purpose of the HEAL Data Packaging Tool](about/purpose.md)
-* [Standard Data Package Metadata Schemas](about/ptrackers.md)
+* [Standard Data Package Metadata Schemas](about/trackers.md)
 
 
 ### Downloading and Navigating the Tool
-* Downloading the Tool for [Windows](about/pdownload/start-win.md) and [Mac](about/pdownload/start-mac.md)
-* [Navigating the Tool](about/pnav.md)
+* Downloading the Tool for [Windows](about/download/start-win.md) and [Mac](about/download/start-mac.md)
+* [Navigating the Tool](about/nav.md)

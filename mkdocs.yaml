@@ -24,6 +24,9 @@ nav:
       - Edit a Result: resulttrack/editresult.md
       - Add a Result to the Result Tracker(s): resulttrack/resulttotrack.md
       - View the Results Tracker: resulttrack/viewresult.md
+  - The Resource Tracker:
+      - resotrack/index.md
+      - Add a New Resource: resotrack/addresource.md
   - Schemas:
       - schemas/index.md
       - Experiment Tracker: schemas/md_experiment_tracker.md

@@ -2,7 +2,15 @@
 
 Your first step to creating a new Results Tracker is to start annotating results. **You do not need to create a Results Tracker first.** The tool will auto-generate the appropriate Results Trackers based on annotated results.
 
-### Getting Started Annotating
+### Getting Started
+
+!!! info "Reminder"
+    **Your first step each time you open the tool should be to set your working data package directory.** 
+    
+    * If you have not yet set your working data package directory this session, do so before attempting to annotate.
+    * If you have not set your working package directory before attempting to annotate a result, the tool cannot automatically generate your result-ID or connect your result to your data package folder. You will receive the error message below.
+
+        ![](../app-screenshots/set-work-dir-result-error.PNG)
 
 1. Navigate to the "Add Results" tab and select "Annotate a New Result,"
     
@@ -11,14 +19,14 @@ Your first step to creating a new Results Tracker is to start annotating results
         <figcaption></figcaption>
     </figure>
 
-2. Select "Add your DSC Package Directory." Navigate to your dsc-pkg folder and click "Select Folder". This will set your results to be saved to the dsc-pkg folder.
-    1. This also detects whether there are existing results saved in the folder and automatically generates the next sequential Result ID (e.g., result-1, result-2, etc.).
-    2. If successful, the User Status Message Box will deliver this message (Note: You may need to scroll within the box to locate the message):
+2. The tool will look through your set working data package directory to determine whether there are existing annotated results files saved in the folder and will automatically generate the next sequential Result ID (e.g., result-1, result-2, etc.).
+    1. The User Status Message Box will display a message to acknowledge this:
 
     <figure markdown>
         ![](../app-screenshots/usmb-results-track-1.PNG)
         <figcaption></figcaption>
     </figure>
+
     
 ### Filling Out the Form
 

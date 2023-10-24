@@ -16,8 +16,9 @@ nav:
   - The Experiment Tracker: 
       - exptrack/index.md
       - Add a New Experiment: exptrack/addexp.md
+      - Edit an Experiment: exptrack/editexp.md
       - Add an Experiment to the Experiment Tracker: exptrack/exptotrack.md
-      - View the Experiment Tracker: exptrack/editexp.md
+      - View the Experiment Tracker: exptrack/viewexp.md
   - The Results Tracker:
       - resulttrack/index.md
       - Add a New Result: resulttrack/addresult.md
@@ -70,6 +71,7 @@ plugins:
   - search
   - mkdocs-video:
       is_video: True
+  - external-markdown
 
 # TODO: add footer (this may be included in the custom jinja template?)
 #    [![](img/gen3.png)](https://ctds.uchicago.edu/gen3)[![](img/createdby.png)](https://ctds.uchicago.edu/)

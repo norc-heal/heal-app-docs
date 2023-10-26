@@ -13,19 +13,18 @@ If you need to view anything that you have already input into the Experiment Tra
 
 ***
 
-1. Navigate to "View Tracker" on the Experiment Tracker tab. Select "View CSV."
+1. Navigate to "View Tracker" on the Experiment Tracker tab. Select "View Experiment Tracker."
 
     <figure markdown>
       ![](../app-screenshots/view-exp-1.PNG)
       <figcaption></figcaption>
     </figure>
 
-2. The window below will pop up. Select "Load CSV."
+2. The window below will pop up. Select "Load Experiment Tracker."
 
-    1. Find and select the experiment tracker.
-    2. Your experiment tracker will populate in the window.
+    1. Your experiment tracker will populate in the window.
 
     <figure markdown>
-      ![](../app-screenshots/view-exp-2.PNG)
+      ![](../app-screenshots/view-exp-3.PNG)
       <figcaption></figcaption>
     </figure>

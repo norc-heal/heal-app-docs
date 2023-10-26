@@ -13,14 +13,14 @@ If you need to view anything that you have already input into the Results Tracke
 
 ***
 
-1. Navigate to "View Tracker" on the Results Tracker tab. Select "View CSV."
+1. Navigate to "View Tracker" on the Results Tracker tab. Select "View Results Tracker."
 
     <figure markdown>
         ![](../app-screenshots/view-result.PNG)
         <figcaption></figcaption>
     </figure>
     
-2. The window below will pop up. Select "Load CSV."
+2. The window below will pop up. Select "Load Results Tracker."
 
     1. Find and select the results tracker.
     2. Your results tracker will populate in the window.

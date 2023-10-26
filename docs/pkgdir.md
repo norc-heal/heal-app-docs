@@ -1,12 +1,6 @@
----
-hide:
-  - toc
-full-width: true
----
+# Creating or Continuing Your Data Package
 
-# Creating a New Data Package
-
-![](app-screenshots/data-pkg-tab.PNG){: loading=lazy width="550" align=right } The Data Package tab will always be the first place you visit when you open the data packaging tool. The Data Package directory is where all of your data packaging documentation will live, including your study’s experiment tracker, resource tracker, results trackers, and data dictionaries.   
+![](app-screenshots/data-pkg-tab.PNG){: loading=lazy width="500" align=right } The Data Package tab will always be the first place you visit when you open the data packaging tool. The Data Package directory is where all of your data packaging documentation will live, including your study’s experiment tracker, resource tracker, results trackers, and data dictionaries.   
 
 
 The first time you open the data packaging tool, you will need to create a Data Package directory. After you have created your Data Package directory, you will not need to do so again. However, each time you open the data packaging tool, you will first need to set your working data package directory (e.g., provide the path to your existing data package directory). This will enable the tool to interface with the data package folder during your session. 

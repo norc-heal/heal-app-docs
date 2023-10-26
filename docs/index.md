@@ -1,6 +1,6 @@
 # HEAL Data Packaging Tool
 
-This document walks through the process for creating and completing a a HEAL-compliant "data package" using the HEAL Data Packaging Tool.
+This document walks through the process for creating and completing a HEAL-compliant "data package" using the HEAL Data Packaging Tool.
 
 Find out more about the HEAL Data Packaging Tool and how using it can help ease the process of creating a HEAL-compliant data package that will make your data understandable and usable for future researchers:
 

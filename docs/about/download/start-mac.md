@@ -25,7 +25,3 @@
 4. The tool should open:
 
     ![](../../app-screenshots/mac-gui.png)
-
-!!! note
-
-    If you are unable to open the tool on Mac after following this set of directions, please contact us.

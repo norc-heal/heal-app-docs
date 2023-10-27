@@ -169,6 +169,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -386,10 +388,75 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../datadir/">Data Package</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Data Package" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Data Package
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../pkgdir/" class="md-nav__link">
+      <a href="../../datadir/pkgdir/" class="md-nav__link">
         Creating a New Data Package
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadir/setdir/" class="md-nav__link">
+        Setting Your Working Data Package Directory
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -414,6 +481,8 @@
         
           
             
+          
+        
           
         
           
@@ -484,8 +553,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started-annotating" class="md-nav__link">
-    Getting Started Annotating
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
   </a>
   
 </li>
@@ -519,8 +588,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../exptotrack/" class="md-nav__link">
-        Add an Experiment to the Experiment Tracker
+      <a href="../editexp/" class="md-nav__link">
+        Edit an Existing Experiment
       </a>
     </li>
   
@@ -533,8 +602,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../editexp/" class="md-nav__link">
+      <a href="../viewexp/" class="md-nav__link">
         View the Experiment Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../batchexp/" class="md-nav__link">
+        Advanced - Batch Add Experiments to the Tracker
       </a>
     </li>
   
@@ -618,21 +701,7 @@
   
     <li class="md-nav__item">
       <a href="../../resulttrack/editresult/" class="md-nav__link">
-        Edit a Result
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../resulttrack/resulttotrack/" class="md-nav__link">
-        Add a Result to the Result Tracker(s)
+        Edit an Existing Result
       </a>
     </li>
   
@@ -647,6 +716,20 @@
     <li class="md-nav__item">
       <a href="../../resulttrack/viewresult/" class="md-nav__link">
         View the Results Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resulttrack/batchresult/" class="md-nav__link">
+        Advanced - Batch Add Results to the Tracker
       </a>
     </li>
   
@@ -763,7 +846,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -782,8 +867,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started-annotating" class="md-nav__link">
-    Getting Started Annotating
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
   </a>
   
 </li>
@@ -823,17 +908,28 @@
 
 
 <h1 id="adding-a-new-experiment">Adding a New Experiment<a class="headerlink" href="#adding-a-new-experiment" title="Permanent link">&para;</a></h1>
-<h3 id="getting-started-annotating">Getting Started Annotating<a class="headerlink" href="#getting-started-annotating" title="Permanent link">&para;</a></h3>
+<h3 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Reminder</p>
+<p><strong>Your first step each time you open the tool should be to set your working data package directory.</strong> </p>
+<ul>
+<li>If you have not yet set your working data package directory this session, do so before attempting to annotate.</li>
+<li>
+<p>If you have not set your working package directory before attempting to annotate an experiment, the tool cannot automatically generate your experiment-ID or connect your experiment to your data package folder. You will receive the error message below.</p>
+<p><img alt="" src="../../app-screenshots/set-work-dir-exp-error.PNG" /></p>
+</li>
+</ul>
+</div>
 <ol>
 <li>
-<p>Navigate to the "Add Experiment" tab and select "Annotate a new experiment".</p>
+<p>Navigate to the "Add Experiment" tab and select "Add a new experiment".</p>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/annotate-new.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
 <li>
-<p>The experiment ID will generate automatically and sequentially.</p>
+<p>The tool will generate your experiment ID automatically and sequentially, based on what is already in your working data package directory.</p>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/annotate-new-2.PNG" />
     <figcaption></figcaption>
@@ -847,11 +943,38 @@
 </div>
 <ol>
 <li>
-<p>You can add multiple experimental questions and hypotheses for the same experiment.</p>
-<ul>
+<p><strong>Experiment name</strong>: This field can act as a more descriptive shorthand name for the experiment in addition to the experiment ID.</p>
+<ol>
+<li>The experiment name should follow the format of default-experiment-name, with words separated by a "-". <ol>
+<li>Although not required, filling in the experiment name may help your internal team, as well as external investigators, to quickly understand the purpose and content of the experiment without having to read through the description, questions, and hypotheses.</li>
+</ol>
+</li>
+<li>
+<p>If you do not follow the required format, you will receive an error:</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/exp-name-format.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p>Your experiment name must also be unique. </p>
+<ol>
+<li>When you enter an experiment name, the tool will review your other annotated experiments to confirm that the experiment name you have assigned is unique. </li>
+<li>If your experiment name is unique, the User Status Message Box will print a confirmation:</li>
+</ol>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/unique-exp-name.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Experiment Question(s) and Experiment Hypothesis(es)</strong></p>
+<ol>
 <li>To add an experiment question/hypothesis, click on the paper icon. </li>
-<li>To add another, click on the paper icon again.</li>
-</ul>
+<li>You can add multiple experimental questions and hypotheses for the same experiment. To add another, click on the paper icon again.</li>
+</ol>
 <p>When you have multiple questions/hypotheses entered, you can also change the order using the highlighted arrows. You can also use the 'X' to remove questions/hypotheses entered.</p>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/exp-arrows.PNG" />
@@ -860,33 +983,62 @@
 </li>
 </ol>
 <h3 id="saving-your-experiment">Saving Your Experiment<a class="headerlink" href="#saving-your-experiment" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
 <p>Once you have finished entering the experiment information, select "Save experiment." </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Make sure that you do not have your Experiment Tracker open before trying to save.</strong></p>
+<p>If you attempt to save a result but have the Experiment Tracker open, the annotated experiment file <em>will</em> save to your dsc-pkg folder, but the tool <em>will not</em> be able to automatically save the information to the Results Tracker. You will receive this error:
+    <figure markdown>
+        <img alt="" src="../../app-screenshots/exp-tracker-open-error.PNG" />
+        <figcaption></figcaption>
+    </figure></p>
+<p>As the printed message explains, in this case, you will have to use the <a href="../batchexp/">"Batch add existing experiment(s) to tracker" option</a> to add this annotated result file to the Experiment Tracker.</p>
+</div>
 <ol>
 <li>
-<p>Navigate to your dsc-pkg folder, and save this file in the main folder. </p>
-<p>If the experiment is saved successfully, this message will appear in the User Status Message Box:</p>
+<p>If the experiment is saved successfully, the User Status Message Box will display this message to indicate your experiment saved successfully and that the experiment has been written to the Experiment Tracker file:</p>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/save-exp.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
 <li>
-<p>Your experiment annotation will be saved as a .txt file within the dsc-pkg folder.
-<figure markdown>
-    <img alt="" src="../../app-screenshots/exp-txt-file.PNG" />
+<p>Although the tool will automatically add your experiment to the Experiment Tracker as part of the "save" process, your individual experiment annotation file will also be saved as a .txt file within the dsc-pkg folder.
+    <figure markdown>
+        <img alt="" src="../../app-screenshots/exp-txt-file.PNG" />
+        <figcaption></figcaption>
+    </figure></p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Once you have created them, you will not generally need to interact with the annotation files (.txt files) unless:</p>
+<ol>
+<li>You need to <a href="../editexp/">edit an existing annotated experiment</a></li>
+<li>There is an error in automatically adding the experiment to the Experiment Tracker, which would necessitate manually <a href="../batchexp/">batch adding experiments to the tracker</a></li>
+</ol>
+</div>
+<ol>
+<li>
+<p>After you have added a new experiment, you can annotate a new experiment.</p>
+<ol>
+<li>
+<p>If you would like to annotate a new experiment, you can select "Clear form" at the top of the Annotate Experiment window. This will reset your form and generate the next sequential experiment ID, so you can start annotating.</p>
+<ol>
+<li>The User Status Message Box will print a message confirming your form was successfully cleared and that the new sequential ID has been generated.</li>
+</ol>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/exp-clear-form.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
 </ol>
 </li>
-<li>
-<p>After you have added a new experiment, you can annotate a new experiment or add annotated experiment(s) to the Experiment Tracker. Click here for guidance on <a href="../exptotrack/">how to add an experiment to the Experiment Tracker</a>.</p>
-</li>
 </ol>
 
 
+
+  
 
 
 
@@ -901,6 +1053,8 @@
       
         <footer class="md-footer">
   
+    
+      
     
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
@@ -921,13 +1075,13 @@
       
       
         
-        <a href="../exptotrack/" class="md-footer__link md-footer__link--next" aria-label="Next: Add an Experiment to the Experiment Tracker" rel="next">
+        <a href="../editexp/" class="md-footer__link md-footer__link--next" aria-label="Next: Edit an Existing Experiment" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Add an Experiment to the Experiment Tracker
+              Edit an Existing Experiment
             </div>
           </div>
           <div class="md-footer__button md-icon">

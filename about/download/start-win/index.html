@@ -400,10 +400,75 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../datadir/">Data Package</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Data Package" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Data Package
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../../pkgdir/" class="md-nav__link">
+      <a href="../../../datadir/pkgdir/" class="md-nav__link">
         Creating a New Data Package
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datadir/setdir/" class="md-nav__link">
+        Setting Your Working Data Package Directory
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -426,6 +491,8 @@
         
           
             
+          
+        
           
         
           
@@ -476,8 +543,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exptrack/exptotrack/" class="md-nav__link">
-        Add an Experiment to the Experiment Tracker
+      <a href="../../../exptrack/editexp/" class="md-nav__link">
+        Edit an Existing Experiment
       </a>
     </li>
   
@@ -490,8 +557,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../exptrack/editexp/" class="md-nav__link">
+      <a href="../../../exptrack/viewexp/" class="md-nav__link">
         View the Experiment Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exptrack/batchexp/" class="md-nav__link">
+        Advanced - Batch Add Experiments to the Tracker
       </a>
     </li>
   
@@ -575,21 +656,7 @@
   
     <li class="md-nav__item">
       <a href="../../../resulttrack/editresult/" class="md-nav__link">
-        Edit a Result
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../resulttrack/resulttotrack/" class="md-nav__link">
-        Add a Result to the Result Tracker(s)
+        Edit an Existing Result
       </a>
     </li>
   
@@ -604,6 +671,20 @@
     <li class="md-nav__item">
       <a href="../../../resulttrack/viewresult/" class="md-nav__link">
         View the Results Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../resulttrack/batchresult/" class="md-nav__link">
+        Advanced - Batch Add Results to the Tracker
       </a>
     </li>
   
@@ -754,36 +835,44 @@
 <div class="admonition info">
 <p class="admonition-title">What to Do First</p>
 <ul>
-<li><strong>Delete previous version(s) of the tool:</strong> If you have downloaded a previous version of the tool, delete the previous version of the tool (dsc-pkg-tool-windows\dsc_pkg_tool\ folder) prior to downloading and unzipping the current version of the tool, as having more than one version of the tool in the same file location may lead to problems with duplicate file names.</li>
+<li><strong>Delete previous version(s) of the tool:</strong> If you have downloaded a previous version of the tool, delete the previous version of the tool (dsc-pkg-tool) prior to downloading and unzipping the current version of the tool, as you will be unable to save two files with the same name within the same folder.</li>
 <li><strong>DO NOT delete your dsc-pkg folder or contents:</strong> If you have already used the tool to create/initialize your data package (i.e. created your dsc-pkg folder within your study folder), <strong>DO NOT</strong> delete your dsc-pkg folder or any of its contents (i.e. standard data package metadata files such as experiment, resource, and results trackers and data dictionaries)</li>
 </ul>
 </div>
 <ol>
-<li>Navigate to the <a href="https://github.com/norc-heal/heal-data-pkg-tool/releases/latest/">latest release for the tool</a>. </li>
+<li>Navigate to the <a href="https://github.com/norc-heal/heal-data-pkg-tool/releases/latest/" target="_blank">latest release for the tool</a>. </li>
 <li>Expand "Assets" and select "dsc-pkg-tool-windows.zip" to download the tool.</li>
 <li>
 <p>Unzip the files.</p>
 <ul>
-<li>You can unzip the files to your downloads folder or to another folder that you prefer, but you must unzip the files in order to be able to run and open the tool successfully.</li>
+<li>You can unzip the files to your downloads folder or to another folder that you prefer.</li>
 </ul>
 <p><figure markdown>
     <img alt="" src="../../../app-screenshots/unzip.PNG" />
     <figcaption></figcaption>
 </figure></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you did not delete your previous version of the dsc_pkg_tool before unzipping to the same folder, you can overwrite the old version of the tool with this new version by selecting "Replace the file in the destination folder" in the pop-up window.</p>
+<p><figure markdown>
+    <img alt="" loading="lazy" src="../../../app-screenshots/overwrite-app.PNG" width="400" /> 
+    <figcaption></figcaption>
+</figure>  </p>
+</div>
 </li>
 <li>
-<p>Once you have unzipped the files, open the newly created dsc-pkg-tool folder.</p>
-<ul>
-<li>Within this folder, there will be many files and folders, but you want to locate the "dsc_pkg_tool" executable file. Double click the file to open the tool.</li>
-</ul>
+<p>Once you have unzipped the files, the dsc_pkg_tool file will appear.</p>
 <p><figure markdown>
-    <img alt="" src="../../../app-screenshots/run-exe.PNG" />
+    <img alt="" src="../../../app-screenshots/tool-exe.PNG" />
     <figcaption></figcaption>
 </figure></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>Do not move the dsc_pkg_tool.exe file from its location within the dsc-pkg-tool-windows\dsc_pkg_tool\ folder</strong> - the executable requires the other contents contained within the folder to function.</p>
-</div>
+</li>
+<li>
+<p>Double-click the file to open the tool.</p>
+<p><figure markdown>
+    <img alt="" src="../../../app-screenshots/windows-gui.PNG" />
+    <figcaption></figcaption>
+</figure></p>
 </li>
 </ol>
 

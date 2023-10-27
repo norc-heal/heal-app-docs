@@ -388,10 +388,75 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../datadir/">Data Package</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Data Package" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Data Package
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../pkgdir/" class="md-nav__link">
+      <a href="../datadir/pkgdir/" class="md-nav__link">
         Creating a New Data Package
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datadir/setdir/" class="md-nav__link">
+        Setting Your Working Data Package Directory
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -416,6 +481,8 @@
         
           
             
+          
+        
           
         
           
@@ -466,8 +533,8 @@
   
   
     <li class="md-nav__item">
-      <a href="exptotrack/" class="md-nav__link">
-        Add an Experiment to the Experiment Tracker
+      <a href="editexp/" class="md-nav__link">
+        Edit an Existing Experiment
       </a>
     </li>
   
@@ -480,8 +547,22 @@
   
   
     <li class="md-nav__item">
-      <a href="editexp/" class="md-nav__link">
+      <a href="viewexp/" class="md-nav__link">
         View the Experiment Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="batchexp/" class="md-nav__link">
+        Advanced - Batch Add Experiments to the Tracker
       </a>
     </li>
   
@@ -565,21 +646,7 @@
   
     <li class="md-nav__item">
       <a href="../resulttrack/editresult/" class="md-nav__link">
-        Edit a Result
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../resulttrack/resulttotrack/" class="md-nav__link">
-        Add a Result to the Result Tracker(s)
+        Edit an Existing Result
       </a>
     </li>
   
@@ -594,6 +661,20 @@
     <li class="md-nav__item">
       <a href="../resulttrack/viewresult/" class="md-nav__link">
         View the Results Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resulttrack/batchresult/" class="md-nav__link">
+        Advanced - Batch Add Results to the Tracker
       </a>
     </li>
   
@@ -743,8 +824,8 @@
 
 
 <h1 id="about-the-experiment-tracker">About the Experiment Tracker<a class="headerlink" href="#about-the-experiment-tracker" title="Permanent link">&para;</a></h1>
-<p><img align="right" alt="" loading="lazy" src="../app-screenshots/exp-track-first.PNG" width="550" /> This tab creates the experiment tracker, which provides context on the experiments involved in the project including research questions, hypotheses, and approach. You may only have one experiment, in which case you only need to go through the process of annotating and adding your experiment to the tracker once. However, if you have multiple experiments in your study, you will need to annotate and add each experiment to the tracker separately.</p>
-<p>You will only have one experiment tracker for your study, with one entry per experiment. The experiment tracker shell that you will fill in was created and saved when you created your dsc-pkg folder.</p>
+<p><img align="right" alt="" loading="lazy" src="../app-screenshots/exp-track-first.PNG" width="550" /> This tab fills out the Experiment Tracker, which provides context on the experiments involved in the project including research questions, hypotheses, and approach. You may only have one experiment, in which case you only need to go through the process of annotating and saving your experiment to the Experiment Tracker once. However, if you have multiple experiments in your study, you will need to annotate and save each experiment to the tracker separately.</p>
+<p>You will only have <em>one</em> Experiment Tracker for your study, with one entry per experiment. The Experiment Tracker shell that you will fill in was created and saved when you created your dsc-pkg folder.</p>
 <p><br></p>
 <p><em>Example of an Experiment Tracker with one experiment entered:</em>
 <img alt="" src="../app-screenshots/exp-track-preview.PNG" /></p>
@@ -772,7 +853,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../pkgdir/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Creating a New Data Package" rel="prev">
+        <a href="../datadir/setdir/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setting Your Working Data Package Directory" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -781,7 +862,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Creating a New Data Package
+              Setting Your Working Data Package Directory
             </div>
           </div>
         </a>

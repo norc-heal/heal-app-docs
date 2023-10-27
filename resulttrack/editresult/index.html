@@ -15,7 +15,7 @@
     
     
       
-        <title>Edit a Result - HEAL Data Packaging Tool How-To</title>
+        <title>Edit an Existing Result - HEAL Data Packaging Tool How-To</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#editing-a-result" class="md-skip">
+        <a href="#editing-an-existing-result" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Edit a Result
+              Edit an Existing Result
             
           </span>
         </div>
@@ -388,10 +388,75 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../datadir/">Data Package</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Data Package" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Data Package
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../pkgdir/" class="md-nav__link">
+      <a href="../../datadir/pkgdir/" class="md-nav__link">
         Creating a New Data Package
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadir/setdir/" class="md-nav__link">
+        Setting Your Working Data Package Directory
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -414,6 +479,8 @@
         
           
             
+          
+        
           
         
           
@@ -464,8 +531,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exptrack/exptotrack/" class="md-nav__link">
-        Add an Experiment to the Experiment Tracker
+      <a href="../../exptrack/editexp/" class="md-nav__link">
+        Edit an Existing Experiment
       </a>
     </li>
   
@@ -478,8 +545,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exptrack/editexp/" class="md-nav__link">
+      <a href="../../exptrack/viewexp/" class="md-nav__link">
         View the Experiment Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exptrack/batchexp/" class="md-nav__link">
+        Advanced - Batch Add Experiments to the Tracker
       </a>
     </li>
   
@@ -574,7 +655,7 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Edit a Result
+        Edit an Existing Result
       </a>
       
     </li>
@@ -588,8 +669,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../resulttotrack/" class="md-nav__link">
-        Add a Result to the Result Tracker(s)
+      <a href="../viewresult/" class="md-nav__link">
+        View the Results Tracker
       </a>
     </li>
   
@@ -602,8 +683,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../viewresult/" class="md-nav__link">
-        View the Results Tracker
+      <a href="../batchresult/" class="md-nav__link">
+        Advanced - Batch Add Results to the Tracker
       </a>
     </li>
   
@@ -752,8 +833,8 @@
   </a>
 
 
-<h1 id="editing-a-result">Editing a Result<a class="headerlink" href="#editing-a-result" title="Permanent link">&para;</a></h1>
-<p>If you want to edit a result after you have created it, you can do so in the tool using the "Edit existing result" feature. </p>
+<h1 id="editing-an-existing-result">Editing an Existing Result<a class="headerlink" href="#editing-an-existing-result" title="Permanent link">&para;</a></h1>
+<p>If you want to edit a result after you have created it, you can do so in the tool using the "Edit an existing result" feature. </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>We encourage you to use the form to edit your results rather than entering/editing information manually into the Results Tracker CSV, as the tool will automatically put your information into the correct formatting and structure. Manual edits will not necessarily be in the correct format.</p>
@@ -782,14 +863,14 @@
 </figure></p>
 <ol>
 <li>
-<p>When you edit your first result, the tool will create an "archive" folder and will archive the original version of your result annotation (.txt) file there, so there are no issues with file naming. The User Status Message Box will also display a message providing information on the location of the original annotation file.</p>
+<p>When you edit your first result, the tool will create an "archive" folder and will archive the original version of your result annotation (.txt) file there, so there are no issues with file naming. The User Status Message Box will also display a message providing information on the location of the original annotation file (see example above).</p>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/edit-result-archive.PNG" />
     <figcaption></figcaption>
 </figure></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Currently you can only edit a result once within the tool, due to an issue of duplicate files in the archive folder. This will be addressed in later releases of the tool. For a temporary fix, if you need to make second or third edits to the same result file, you should go into the archive folder and change the name of the result txt file saved there (for example, you can change the name from "result-trk-result-1" to "result-trk-result-1-1").</p>
+<p>Currently, you can only edit a result once within the tool, due to an issue of duplicate files in the archive folder. This will be addressed in later releases of the tool. For a temporary fix, if you need to make second or third edits to the same result file, you should go into the archive folder and change the name of the result txt file saved there (for example, you can change the name from "result-trk-result-1" to "result-trk-result-1-1").</p>
 </div>
 </li>
 </ol>
@@ -838,13 +919,13 @@
       
       
         
-        <a href="../resulttotrack/" class="md-footer__link md-footer__link--next" aria-label="Next: Add a Result to the Result Tracker(s)" rel="next">
+        <a href="../viewresult/" class="md-footer__link md-footer__link--next" aria-label="Next: View the Results Tracker" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Add a Result to the Result Tracker(s)
+              View the Results Tracker
             </div>
           </div>
           <div class="md-footer__button md-icon">

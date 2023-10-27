@@ -1,6 +1,6 @@
 # Downloading the Desktop Application Tool for Mac
 
-1. Navigate to the [latest release for the tool](https://github.com/norc-heal/heal-data-pkg-tool/releases/latest/). 
+1. Navigate to the [latest release for the tool](https://github.com/norc-heal/heal-data-pkg-tool/releases/latest/){target=_blank}. 
     1. Expand "Assets" and select "dsc-pkg-tool-mac.zip" to download the tool.
 
     ![](../../app-screenshots/source-code-mac.png)

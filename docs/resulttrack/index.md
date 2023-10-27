@@ -6,7 +6,7 @@ full-width: true
 
 # About the Results Tracker
 
-![](../app-screenshots/results-track-first.PNG){: loading=lazy width="550" align=right } This tab creates the Results Tracker(s). Each Results Tracker provides an annotated inventory of all results included in a multi-result file. The depth and extent of information included in a Results Tracker will be determined by the approach you have chosen for annotation of your data.
+![](../app-screenshots/results-track-first.PNG){: loading=lazy width="550" align=right } This tab will help you create and fill out Results Tracker(s). Each Results Tracker provides an annotated inventory of all results included in a multi-result file. The depth and extent of information included in a Results Tracker will be determined by the approach you have chosen for annotation of your data.
 
 You should create one Results Tracker for **each** multi-result file (e.g., manuscript, poster, etc.) that you share. If you only have one multi-result file that you are planning to share, you will only need to create one Results Tracker. However, if you have multiple multi-result files, you will need to create a Results Tracker for each multi-result file.
 

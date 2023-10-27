@@ -17,7 +17,7 @@
         <figcaption></figcaption>
     </figure>
 
-5. Your new dsc-pkg directory will contain an empty experiment tracker and resource tracker. The following steps will guide you through how to use the tool to fill out the experiment tracker, resource tracker, and results tracker (which will be created as you move through the process of entering results information).
+5. Your new dsc-pkg directory will contain an empty Experiment Tracker and Resource Tracker. The following steps will guide you through how to use the tool to fill out the Experiment Tracker, Resource Tracker, and Results Tracker (the last of which will be created as you move through the process of entering results information).
 
     <figure markdown>
         ![](../app-screenshots/dsc-pkg-content.PNG)

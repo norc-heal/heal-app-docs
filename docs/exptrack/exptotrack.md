@@ -22,14 +22,10 @@ full-width: true
         <figcaption></figcaption>
     </figure>
 
-3. A second File Explorer window will pop up prompting you to select the data package directory where the experiment tracker is saved. 
-
-    1. This will be your dsc-pkg folder, which is the same location where your experiment text file was saved. 
-    2. Select the dsc-pkg folder.
-    3. Once selected, the User Status Message Box should display a confirmation message:
+3. Your experiment will be written to the experiment tracker. The User Status Message Box will print a confirmation:
 
     <figure markdown>
-        ![](../app-screenshots/exp-track-confirm.PNG)
+        ![](../app-screenshots/exp-track-saved.PNG)
         <figcaption></figcaption>
     </figure>
 
@@ -44,4 +40,4 @@ full-width: true
 
 !!! note "Viewing the Tracker"
 
-    If you want to review your Experiment Tracker at any point, you can [view the current tracker within the tool](editexp.md) to identify whether there are errors or changes to be made.
+    If you want to review your Experiment Tracker at any point, you can [view the current tracker within the tool](viewexp.md) to identify whether there are errors or changes to be made.

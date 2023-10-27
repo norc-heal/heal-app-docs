@@ -2,7 +2,7 @@
 # Creating a Data Package Directory
 
 1. Click on the "Data Package" tab. 
-2. Within the "Create" tab, select "Create New Data Package".
+2. Within the "Create" tab, select "Create New Data Package."
 
     <figure markdown>
         ![](../app-screenshots/create-new.png)

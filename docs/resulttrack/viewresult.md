@@ -6,7 +6,7 @@ full-width: true
 
 # Viewing the Results Tracker
 
-If you need to view anything that you have already input into the Results Tracker, you can use the View Tracker feature. It may be useful to view your Results Tracker within the application to:
+If you need to view anything that you have already input into the Results Tracker, you can use the "View Tracker" feature. It may be useful to view your Results Tracker within the application to:
 
 * Review which individual results associated with a multi-result file that you have already annotated and determining which you still need to annotate.
 * Find/confirm the result ID for a particular result to determine where edits need to be made when there has been a change.

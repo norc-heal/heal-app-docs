@@ -1,4 +1,4 @@
-# Running the Desktop Application Tool for Mac
+# Downloading the Desktop Application Tool for Mac
 
 1. Navigate to the [latest release for the tool](https://github.com/norc-heal/heal-data-pkg-tool/releases/latest/). 
     1. Expand "Assets" and select "dsc-pkg-tool-mac.zip" to download the tool.
@@ -13,19 +13,19 @@
 
     !!! warning
 
-        If you double click on the dsc-pkg-tool icon, you will receive a warning that the tool "cannot be opened because it is from an unidentified developer." You can avoid this error by opening via right-click.
+        If you double click on the dsc-pkg-tool icon, you will receive a warning that the tool "cannot be opened because it is from an unidentified developer." You can bypass this error by opening via right-click.
     
-    1. You will receive a pop-up asking you to confirm that you want to open. Select "Open."
+3. You will receive a pop-up asking you to confirm that you want to open. Select "Open."
 
     <figure markdown>
         ![](../../app-screenshots/mac-gui-open.png)
         <figcaption></figcaption>
     </figure>
 
-3. The tool should open:
+4. The tool should open:
 
     ![](../../app-screenshots/mac-gui.png)
 
 !!! note
 
-    If you are unable to open the tool following on Mac following this set of directions, please contact us.
+    If you are unable to open the tool on Mac after following this set of directions, please contact us.

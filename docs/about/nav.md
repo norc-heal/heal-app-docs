@@ -2,8 +2,11 @@
 
 !!! note 
     When you open the tool, the window (console) below will pop up and begin running. **Do not close it.** Once it executes, the tool will open. You will need to leave this window open when you are using the tool.
-
+    <figure markdown>
     ![](../app-screenshots/exe-window.PNG)
+        <figcaption></figcaption>
+    </figure>
+    *Note: The screenshot above shows the Windows console. The Mac console will look slightly different.*
 
 When the tool loads, it will look like this (Windows):
     <figure markdown>
@@ -22,7 +25,7 @@ Within each of these tabs, there are 2-3 sub-tabs. Each has an "Info" tab, which
 
 ## App Messages and Guidance
 ### Working Data Package Directory
-The Working Data Package Directory will always be displayed at the top of the tool's main window. Each time you open the data packaging tool, you will first need to ste your working data package directory (e.g., provide the path to your existing data package directory). This will enable the tool to interface with the data package folder during your session.
+The Working Data Package Directory will always be displayed at the top of the tool's main window. Each time you open the data packaging tool, you will first need to set your working data package directory (e.g., provide the path to your existing data package directory). This will enable the tool to interface with the data package folder during your session.
 
 ![](../app-screenshots/work-dir-view.PNG)
 
@@ -32,7 +35,7 @@ The Working Data Package Directory will always be displayed at the top of the to
 Within each tab, there is a User Status Message Box:
 ![](../app-screenshots/usmb-intro.PNG)
 
-The User Status Message Box will print out messages when you make certain selections or save changes to files (e.g., adding a result to a Results Tracker). The box will provide information on the status of changes and any errors that may occur. It will also provide helpful tips on next steps. This message box is another tool meant to help you through the process, so we advise you to review the messages produced whenever you make a change.
+The User Status Message Box will print out messages when you make certain selections or save changes to files (e.g., adding a result to a Results Tracker). The box will provide information on the status of changes and any errors that may occur. It will also provide helpful tips on next steps. This is another tool meant to help you through the process, so we advise you to review the messages and use the tips provided.
 
 ### Guide to Text Colors
 

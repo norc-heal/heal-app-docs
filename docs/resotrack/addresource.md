@@ -1,57 +1,80 @@
+---
+hide:
+  - toc
+full-width: true
+---
+
+
 # Adding a New Resource
 
-1. Navigate to the "Add Resource" tab and select "Annotate a new resource."
+### Getting Started
+
+!!! info "Reminder"
+    **Your first step each time you open the tool should be to set your working data package directory.** 
+    
+    * If you have not yet set your working data package directory this session, do so before attempting to annotate.
+    * If you have not set your working package directory before attempting to annotate a resource, the tool cannot automatically generate your resource-ID or connect your resource to your data package folder. You will receive the error message below.
+
+        ![](../app-screenshots/work-dir-error.PNG)
+
+1. Navigate to the "Add Resource" tab and select "Add a new resource." 
 
     <figure markdown>
-        ![](../app-screenshots/annotate-resource.PNG)
+        ![](../app-screenshots/add-resource-1.PNG)
         <figcaption></figcaption>
     </figure>
 
-2. Select "Add DSC Package Directory." Navigate to your dsc-pkg folder and click "Select FOlder." This will set your resource to be saved to the tracker. This also detects and automatically inputs the next sequential Resource ID (e.g., resource-1, resource-2, etc.).
-    1. This step is necessary, as you will not be able to save a resource until you specify the location of your DSC package directory.
+2. The tool will look through your set working data package directory to determine whether there are existing annotated resource files saved in the folder and will automatically generate the next sequential Resource ID (e.g., result-1, result-2, etc.).
+    1. The User Status Message Box will display a message to acknowledge this:
 
     <figure markdown>
-        ![](../app-screenshots/resource-add-dir.PNG)
+        ![](../app-screenshots/auto-resource-id.PNG)
         <figcaption></figcaption>
     </figure>
 
-3. Fill out the corresponding fields. Based on your selection for "Resource Category," different options will appear in the form.
+### Filling Out the Form
+
+!!! Tip
+    * For additional information about each form field, please refer to the [Resource Tracker schema](../schemas/md_resource_tracker.md)
+    * Hovering over each field in the form will provide additional informaiton about what should be contained in the field. For example, for the Resource Title field:
+
+        ![](../app-screenshots/tooltip-resource.PNG)
+
+1. Fill out the **Resource File Path** and **Resource Description**.
+2. Select a **Resource Category**.
+    1. Based on the Resource Category selected, additional fields will appear within the form.
 
     <figure markdown>
-        ![](../app-screenshots/response-cat-opt.PNG)
+        ![](../app-screenshots/resource-category.PNG)
         <figcaption></figcaption>
     </figure>
 
-## Resource Fields
-#### Resource Categories (and Sub-Categories)
+***Resource Categories (and Sub-Categories)***
 
 You can use the guide below to determine which resource category (and sub-category, if applicable) that your resource should go in.
 
 * Note that you will need to input any Results Trackers and Data Dictionaries as well as your Experiment Tracker as resources in the Resource Tracker (as metadata).
+* As noted above, additional fields will appear within the form based on the Resource Category selected. These additional fields are noted in the table below.
 
-| Resource Category               | Sub-category                          |
-| ------------------------------- | ------------------------------------- |
-| Multi-result | Figure<br>Table<br>Text<br>Draft publication<br>Final publication |
-| Single-result | Figure<br>Table<br>Text<br>Draft publication<br>Final publication |
-| Tabular-data | Raw data<br>Processed intermediate data<br>Processed final data |
-| Non-tabular-data | Raw data<br>Processed intermediate data<br>Processed final data |
-| Metadata | HEAL-formatted data dictionary<br>Other data dictionary<br>Protocol<br>ID map<br>Analysis plan<br>HEAL-formatted results tracker<br>HEAL-formatted experiment tracker |
-| Code | No sub-categories |
-
-1. Certain Resource Category selections will result in additional fields (beyond sub-category) appearing in the form. For information about these category-specific fields, see below:
-
-    1. Multi-result file
-        1. "Associated Results Tracker": provide the path to the results tracker assocaited with this multi-result file.
-            1. For more information on the Results Tracker, [click here](../resulttrack/index.md).
-
-    2. Tabular-data file
-        1. "Resource Row Description": explanation of what one row within the tabular data file represents (e.g., one row represents one subject at one timepoint)
-        2. "Associated Data Dictionary" and "Associated Protocol": this is where you should put the data dictionary and protocol associated with the tabular data file, not in the "Associated Files/Dependencies" field.
-    
-    3. Non-tabular-data file
-        1. "Associated Protocol": this is where you should put the protocol associated with the non-tabular data file (if applicable); do not put the associated protocol in the "Associated FIles/Dependencies" field.
+| Resource Category               | Sub-category                          | Additional Resource Annotation Fields |
+| ------------------------------- | ------------------------------------- | ------------------------------------- |
+| Multi-result | Figure<br>Table<br>Text<br>Draft publication<br>Final publication | **Associated Results Tracker**: provides the path to the Results Tracker<br>associated with this multi-result file
+| Single-result | Figure<br>Table<br>Text<br>Draft publication<br>Final publication | No additional Resource Tracker fields
+| Tabular-data | Raw data<br>Processed intermediate data<br>Processed final data | **Resource Row Description**: explanation of what one row within the tabular<br>file represents<br>**Associated Data Dictionary**: file path for the data dictionary associated with<br>the tabular file (should not be put in the Associated Files/Dependencies field)<br>**Associated Protocol**: file path for the protocol associated<br>with the tabular file (should not be put in the Associated Files/Dependencies field)
+| Non-tabular-data | Raw data<br>Processed intermediate data<br>Processed final data | **Associated Protocol**: file path for the protocol associated with the tabular<br>file (should not be put in the Associated Files/Dependencies field)
+| Metadata | HEAL-formatted data dictionary<br>Other data dictionary<br>Protocol<br>ID map<br>Analysis plan<br>HEAL-formatted results tracker<br>HEAL-formatted experiment tracker | No additional Resource Tracker fields
+| Code | No sub-categories | No additional Resource Tracker fields
 
 Although different fields will appear for different resource categories (as discussed above), there are a few fields that will appear in every instance. They are described below:
+
+3. **Experiment Resource "Belongs" To**: You can define the experiment with which your resource is associated here.
+    1. This option allows you to associate your resources directly with experimental research questions and hypotheses, which can be useful for future researchers trying to understand your experiments and findings.
+    2. The field pipes in all existing experiment names from the Experiment Tracker into a drop-down menu.
+
+    <figure markdown>
+        ![](../app-screenshots/resource-assoc-exp.PNG)
+        <figcaption></figcaption>
+    </figure>  
 
 #### Associated Files/Dependencies
 

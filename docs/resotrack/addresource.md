@@ -67,31 +67,33 @@ You can use the guide below to determine which resource category (and sub-catego
 
 Although different fields will appear for different resource categories (as discussed above), there are a few fields that will appear in every instance. They are described below:
 
-3. **Experiment Resource "Belongs" To**: You can define the experiment with which your resource is associated here.
-    1. This option allows you to associate your resources directly with experimental research questions and hypotheses, which can be useful for future researchers trying to understand your experiments and findings.
-    2. The field pipes in all existing experiment names from the Experiment Tracker into a drop-down menu.
+3. **Experiment Resource 'Belongs' To**: You can define the experiment to which your resource is associated here.
+    1. This option allows you to assocaite your resources directly with experimental research questions and hypotheses, which can be useful for future researchers trying to undersatnd your experiments and findings.
+    2. This field pipes in all existing experiment names from the Experiment Tracker into a drop-down menu.
 
     <figure markdown>
-        ![](../app-screenshots/resource-assoc-exp.PNG)
+        ![](../app-screenshots/exp-reso-belongs.PNG)
         <figcaption></figcaption>
     </figure>  
 
-#### Associated Files/Dependencies
+4. **Associated Files/Dependencies**
 
-This is where you will list dependencies associated with the resource. How you record dependencies will depend on your annotation approach:
+    This is where you will list dependencies associated with the resource. How you record dependencies will depend on your annotation approach. For more information about how to decide on your annotation approach, refer to the [HEAL data packaging guidance documentation](https://norc-heal.github.io/heal-data-pkg-guide/).
 
-    LEAVING BLANK BECAUSE WE ARE DISCUSSING ANNOTATION APPROACHES CURRENTLY
+    Regardless of your annotation approach, there are two ways to add "Associated Files/Dependencies" in the form.
 
-1. Regardless of your annotation approach, ther eare two ways to add "Associated Files/Dependencies" in the form:
+    !!! warning
 
-    1. If you are adding only a few associated files/dependencies, you can add each individually using the "Associated Files/Dependencies" arrow button:
+        **You should only utilize one of the below methods for entering dependencies when adding a specific result.** If you add some files as associated files/dependencies manually and then utilize the "Add Multiple Resource Dependencies" option, those files may overwrite the files you entered manually.
 
-    <figure markdown>
-        ![](../app-screenshots/results-assoc-single.PNG)
-        <figcaption></figcaption>
-    </figure>
+    1. *Single-add*: If you are adding only a few associated files/dependencies, you can add each individually using the "Associated Files/Dependencies" arrow button:
 
-    2. If you would like to add many associated files at once, you can use the "Add Multiple Resource Dependencies," which can be found at the top of the window:
+        <figure markdown>
+            ![](../app-screenshots/results-assoc-single.PNG)
+            <figcaption></figcaption>
+        </figure>
+
+    2. *Multi-add*: If you would like to add many associated files at once, you can use the "Add Multiple Resource Dependencies" option, which can be found at the top of the window:
 
         <figure markdown>
             ![](../app-screenshots/multiple-resource-dep.PNG)
@@ -99,40 +101,35 @@ This is where you will list dependencies associated with the resource. How you r
         </figure>
 
         1. Fill in this field with associated files/dependencies using drag and drop.
-
             <figure markdown>
-            ![](../app-screenshots/resource-multi-depend.PNG)
-            <figcaption></figcaption>
+                ![](../app-screenshots/resource-multi-depend.PNG)
+                <figcaption></figcaption>
             </figure>
-        
-        2. The files you add via drag and drop will automatically appear in the "Associated Files/Dependencies" section of the form:
-
+        2. The files you add via drag and drop will automatically appear in the "Associated Files/Dependencies" section of the form.
             <figure markdown>
-            ![](../app-screenshots/results-multi-auto.PNG)
-            <figcaption></figcaption>
+                ![](../app-screenshots/results-multi-auto.PNG)
+                <figcaption></figcaption>
             </figure>
 
-#### Access
+5. **Access**
 
-This specifies the level of access that you will apply to this resource (permanent private, temporary private, restricted access, or public).
+    This specifies the level of access that you will apply to this resource (permanent private, temporary private, restricted access, or public).
     <figure markdown>
-        ![](../app-screenshots/results-multi-auto.PNG)
+        ![](../app-screenshots/resource-access.PNG)
         <figcaption></figcaption>
     </figure>
 
-1. If you select "temporary-private," you will need to add another row and select what the level of access of the resource will be when the temporary private period ends.
-    1. You will also need to fill in an "Access Date" when the temporary private period will end. This can just be a projection; you are not bound by this date.
+    1. If you select "temporary-private," you will need to add another row and select what the level of access of the resource will be when the temporary private period ends.
+        1. You will also need to fill in an "Access Date" when the temporary private period will end. This can just be a projection; you are not bound by this date.
 
-    <figure markdown>
-        ![](../app-screenshots/access-date.PNG)
-        <figcaption></figcaption>
-    </figure>
+        <figure markdown>
+            ![](../app-screenshots/access-date.PNG)
+            <figcaption></figcaption>
+        </figure>
 
-#### Software used to produce/read the resource file
+6. **Software used to produce/read the resource file**: If specific or proprietary software is required to open or read the resource, you should fill this out. This will be an important characteristic of the resource tht investigators will need in order to understand how they can use the resource.
 
-If specific or proprietary software is required to open or read the resource, you should fill this out. This will be an important characteristic of the resource tht investigators will need in order to understand how they can use the resource.
-
-This field is not required. If no special/proprietary software was used to produce/read the resource file, leave this field blank.
+    This field is not required. If no special/proprietary software was used to produce/read the resource file, leave this field blank.
 
 ## Adding Multiple "Like" Files
 
@@ -144,10 +141,10 @@ If you have multiple "like" files with a similar naming convention, you may want
 * "Like" files have the same file extension.
 * To be able to use this feature in the tool, "like" files must have a similar naming convention:
     * For example, multiple data files by subject ID grouped in folders by week would be "like" files. The naming convention here is week-#/subject-#
-    <figure markdown>
-        ![](../app-screenshots/like-files-ex.PNG)
-        <figcaption></figcaption>
-    </figure>
+        <figure markdown>
+            ![](../app-screenshots/like-files-ex.png)
+            <figcaption></figcaption>
+        </figure>
 
     * Another example: for an experiment testing samples on multiple different dates, files could follow the naming convention sample_1_date_20230818
     * If you have "like" files, but they don't follow a common naming convention, you will need to re-name the files (under a common naming convention) in order to be able to use this feature.
@@ -224,12 +221,58 @@ To use this feature:
 
 ## Saving Your Resource
 
-After filling out the form for your resource, click "Save resource." The User Status Message Box should display a message confirming that your resource file was written to your dsc-pkg folder:
+Once you have finished entering the resource information, select "Save resource."
+
+!!! warning
+
+    **Make sure you do not have your Resource Tracker open before trying to save.**
+
+    If you attempt to save a resource but have the Resource Tracker open, the annotated resource file *will* save to your dsc-pkg folder, but the tool *will not* be able to save the information to the Resource Tracker. You will receive this error:
+
     <figure markdown>
-        ![](../app-screenshots/usmb-resource-save.ong)
+        ![](../app-screenshots/reso-track-open-error.PNG)
         <figcaption></figcaption>
     </figure>
 
-* This message will alos include a note about all the files you listed as associated files/dependencies for your resource. This should be a helpful guide as to what resource(s) to annotate next, depending on your annotation approach.
-    * If you are annotating holistically, annotate each of these files and add them as their own resource to the Resource Tracker.
-    * If you are annotating minimally, annotate only the files that you will share in a public repository.
+    As the printed message explains, in this case, you will have to use the "Batch add existing resource(s) to tracker" option to add this annotated resource file to the Resource Tracker.
+    
+
+1. After you select "Save resource," the User Status Message Box should display a message confirming that your resource file saved successfully and that the resource has been written to the Resource Tracker file:
+    <figure markdown>
+        ![](../app-screenshots/usmb-resource-save.png)
+        <figcaption></figcaption>
+    </figure>
+
+    * This message will also include a note about all the files you listed as associated files/dependencies for your resource. This should be a helpful guide as to what resource(s) to annotate next, depending on your annotation approach.
+        * If you are annotating holistically, annotate each of these files and add them as their own resource to the Resource Tracker.
+        * If you are annotating minimally, annotate only the files that you will share in a public repository.
+
+    <figure markdown>
+        ![](../app-screenshots/list-to-annotate.PNG)
+        <figcaption></figcaption>
+    </figure>
+
+2. Although the tool will automatically add your resource to the Resource Tracker as part of the "save" process, your individual resource annotation file will also be saved as a .txt file within the dsc-pkg folder.
+
+    <figure markdown>
+        ![](../app-screenshots/resource-txt-file.PNG)
+        <figcaption></figcaption>
+    </figure>
+
+!!! note
+
+    Once you have created them, you will not generally need to interact with the annotation files (.txt files) directly unless:
+
+    1. You need to edit an existing annotated resource
+    2. There is an error in automatically the resoruce to the Resource Tracker, which would necessitate manually batch adding resources to the tracker
+
+## Next Steps
+
+1. After you have saved your resource, you can annotate a new resource.
+    1. If you would like to annotate a new resource, you can select "Clear from" at the top of the Annotate Resource window. This will reset your form and generate the next sequential resource ID, so you can start annotating a new resource.
+        1. The User Status Message Box will print a message confirming your form was successfully cleared and that the new sequential ID has been generated.
+
+        <figure markdown>
+            ![](../app-screenshots/usmb-clear-resource-form.PNG)
+            <figcaption></figcaption>
+        </figure>

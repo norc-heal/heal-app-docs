@@ -74,13 +74,13 @@ Once you have finished entering the experiment information, select "Save experim
 
     **Make sure that you do not have your Experiment Tracker open before trying to save.**
 
-    If you attempt to save a result but have the Experiment Tracker open, the annotated experiment file *will* save to your dsc-pkg folder, but the tool *will not* be able to automatically save the information to the Results Tracker. You will receive this error:
+    If you attempt to save an experiment but have the Experiment Tracker open, the annotated experiment file *will* save to your dsc-pkg folder, but the tool *will not* be able to automatically save the information to the Experiment Tracker. You will receive this error:
         <figure markdown>
             ![](../app-screenshots/exp-tracker-open-error.PNG)
             <figcaption></figcaption>
         </figure>
     
-    As the printed message explains, in this case, you will have to use the ["Batch add existing experiment(s) to tracker" option](batchexp.md) to add this annotated result file to the Experiment Tracker.
+    As the printed message explains, in this case, you will have to use the ["Batch add existing experiment(s) to tracker" option](batchexp.md) to add this annotated experiment file to the Experiment Tracker.
 
 1. If the experiment is saved successfully, the User Status Message Box will display this message to indicate your experiment saved successfully and that the experiment has been written to the Experiment Tracker file:
 

@@ -27,6 +27,13 @@ nav:
   - The Resource Tracker:
       - resotrack/index.md
       - Add a New Resource: resotrack/addresource.md
+      - Edit an Existing Resource: resotrack/editresource.md
+      - View the Resource Tracker: resotrack/viewresource.md
+      - Advanced - Batch Add Resources to the Tracker: resotrack/batchreso.md
+  - Data Dictionary:
+      - datadict/index.md
+      - Create a Data Dictionary: datadict/create.md
+      - Preparing Files for Ingest: datadict/prepare.md
   - Schemas:
       - schemas/index.md
       - Experiment Tracker: schemas/md_experiment_tracker.md
@@ -73,6 +80,7 @@ plugins:
   - search
   - mkdocs-video:
       is_video: True
+  - external-markdown
 
 # TODO: add footer (this may be included in the custom jinja template?)
 #    [![](img/gen3.png)](https://ctds.uchicago.edu/gen3)[![](img/createdby.png)](https://ctds.uchicago.edu/)

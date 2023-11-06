@@ -56,7 +56,7 @@ You can use the guide below to determine which resource category (and sub-catego
 * Note that you will need to input any Results Trackers and Data Dictionaries as well as your Experiment Tracker as resources in the Resource Tracker (as metadata).
 * As noted above, additional fields will appear within the form based on the Resource Category selected. These additional fields are noted in the table below.
 
-| Resource Category               | Sub-category                          | Additional Resource Annotation Fields |
+| Resource Category               | Sub-category                          | Additional Resource Annotation Fields for Category |
 | ------------------------------- | ------------------------------------- | ------------------------------------- |
 | Multi-result | Figure<br>Table<br>Text<br>Draft publication<br>Final publication | **Associated Results Tracker**: provides the path to the Results Tracker<br>associated with this multi-result file
 | Single-result | Figure<br>Table<br>Text<br>Draft publication<br>Final publication | No additional Resource Tracker fields

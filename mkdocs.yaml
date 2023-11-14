@@ -33,12 +33,14 @@ nav:
   - Data Dictionary:
       - datadict/index.md
       - Create a Data Dictionary: datadict/create.md
-      - Preparing Files for Ingest: datadict/prepare.md
+      - Validate a Data Dictionary: datadict/validate.md
+      - View/Edit a Data Dictionary: datadict/view.md
   - Schemas:
       - schemas/index.md
       - Experiment Tracker: schemas/md_experiment_tracker.md
       - Resource Tracker: schemas/md_resource_tracker.md
       - Results Tracker: schemas/md_results_tracker.md
+      - Data Dictionary: schemas/md_data_dict.md
  
 theme:
   name: material

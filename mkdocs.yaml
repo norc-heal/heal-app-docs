@@ -24,6 +24,7 @@ nav:
       - Edit a Result: resulttrack/editresult.md
       - Add a Result to the Result Tracker(s): resulttrack/resulttotrack.md
       - View the Results Tracker: resulttrack/viewresult.md
+      - Advanced - Batch Add Results to the Tracker: resulttrack/batchresult.md
   - The Resource Tracker:
       - resotrack/index.md
       - Add a New Resource: resotrack/addresource.md

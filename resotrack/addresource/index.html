@@ -1,0 +1,1347 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://norc-heal.github.io/heal-data-pkg-tool-docs/resotrack/addresource/">
+      
+      <link rel="icon" href="../../assets/heal_logo.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
+    
+    
+      
+        <title>Adding a New Resource - HEAL Data Packaging Tool How-To</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7a952b86.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="heal_platform" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#adding-a-new-resource" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://github.com/norc-heal" title="HEAL Data Packaging Tool How-To" class="md-header__button md-logo" aria-label="HEAL Data Packaging Tool How-To" data-md-component="logo">
+      
+  <img src="../../assets/HEAL_Initiative_White-cropped.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HEAL Data Packaging Tool How-To
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Adding a New Resource
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/norc-heal/heal-data-pkg-tool-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://github.com/norc-heal" title="HEAL Data Packaging Tool How-To" class="md-nav__button md-logo" aria-label="HEAL Data Packaging Tool How-To" data-md-component="logo">
+      
+  <img src="../../assets/HEAL_Initiative_White-cropped.svg" alt="logo">
+
+    </a>
+    HEAL Data Packaging Tool How-To
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/norc-heal/heal-data-pkg-tool-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../about/">About the HEAL Data Packaging Tool</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="About the HEAL Data Packaging Tool" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          About the HEAL Data Packaging Tool
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/purpose/" class="md-nav__link">
+        Purpose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/trackers/" class="md-nav__link">
+        The Trackers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          Downloading the Tool
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Downloading the Tool" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Downloading the Tool
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/download/start-win/" class="md-nav__link">
+        Windows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/download/start-mac/" class="md-nav__link">
+        Mac
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/nav/" class="md-nav__link">
+        Navigating the Tool
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../datadir/">Data Package</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Data Package" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Data Package
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadir/pkgdir/" class="md-nav__link">
+        Creating a New Data Package
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadir/setdir/" class="md-nav__link">
+        Setting Your Working Data Package Directory
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../exptrack/">The Experiment Tracker</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="The Experiment Tracker" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          The Experiment Tracker
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exptrack/addexp/" class="md-nav__link">
+        Add a New Experiment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exptrack/editexp/" class="md-nav__link">
+        Edit an Existing Experiment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exptrack/viewexp/" class="md-nav__link">
+        View the Experiment Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exptrack/batchexp/" class="md-nav__link">
+        Advanced - Batch Add Experiments to the Tracker
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../resulttrack/">The Results Tracker</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="The Results Tracker" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          The Results Tracker
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resulttrack/addresult/" class="md-nav__link">
+        Add a New Result
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resulttrack/editresult/" class="md-nav__link">
+        Edit an Existing Result
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resulttrack/viewresult/" class="md-nav__link">
+        View the Results Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resulttrack/batchresult/" class="md-nav__link">
+        Advanced - Batch Add Results to the Tracker
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../schemas/">Schemas</a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Schemas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Schemas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schemas/md_experiment_tracker/" class="md-nav__link">
+        Experiment Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schemas/md_resource_tracker/" class="md-nav__link">
+        Resource Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schemas/md_results_tracker/" class="md-nav__link">
+        Results Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schemas/md_data_dict/" class="md-nav__link">
+        Data Dictionary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filling-out-the-form-fields" class="md-nav__link">
+    Filling Out the Form Fields
+  </a>
+  
+    <nav class="md-nav" aria-label="Filling Out the Form Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resource-categories-and-sub-categories" class="md-nav__link">
+    Resource Categories (and Sub-Categories)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experiment-resource-belongs-to" class="md-nav__link">
+    Experiment Resource 'Belongs' To
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#associated-filesdependencies" class="md-nav__link">
+    Associated Files/Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access" class="md-nav__link">
+    Access
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-used-to-produceread-the-resource-file" class="md-nav__link">
+    Software used to produce/read the resource file
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-multiple-like-files" class="md-nav__link">
+    Adding Multiple "Like" Files
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding Multiple "Like" Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-like-files" class="md-nav__link">
+    What are "like" files?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add-multiple-like-files" class="md-nav__link">
+    How to add multiple "like" files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-your-resource" class="md-nav__link">
+    Saving Your Resource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    Next Steps
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/norc-heal/heal-data-pkg-tool-docs/edit/master/docs/resotrack/addresource.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="adding-a-new-resource">Adding a New Resource<a class="headerlink" href="#adding-a-new-resource" title="Permanent link">&para;</a></h1>
+<h3 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Reminder</p>
+<p><strong>Your first step each time you open the tool should be to set your working data package directory.</strong> </p>
+<ul>
+<li>If you have not yet set your working data package directory this session, do so before attempting to annotate.</li>
+<li>
+<p>If you have not set your working package directory before attempting to annotate a resource, the tool cannot automatically generate your resource-ID or connect your resource to your data package folder. You will receive the error message below.</p>
+<p><img alt="" src="../../app-screenshots/work-dir-error.PNG" /></p>
+</li>
+</ul>
+</div>
+<ol>
+<li>
+<p>Navigate to the "Add Resource" tab and select "Add a new resource." </p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/add-resource-1.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p>The tool will look through your set working data package directory to determine whether there are existing annotated resource files saved in the folder and will automatically generate the next sequential Resource ID (e.g., result-1, result-2, etc.).</p>
+<ol>
+<li>The User Status Message Box will display a message to acknowledge this:</li>
+</ol>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/auto-resource-id.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+</ol>
+<h3 id="filling-out-the-form-fields">Filling Out the Form Fields<a class="headerlink" href="#filling-out-the-form-fields" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>For additional information about each form field, please refer to the <a href="../../schemas/md_resource_tracker/" target="_blank">Resource Tracker schema</a></li>
+<li>
+<p>Hovering over each field in the form will provide additional information about what should be contained in the field. For example, for the Resource Title field:</p>
+<p><img alt="" src="../../app-screenshots/tooltip-resource.PNG" /></p>
+</li>
+</ul>
+</div>
+<ol>
+<li>Fill out the <strong>Resource File Path</strong> and <strong>Resource Description</strong>.</li>
+<li>
+<p>Select a <strong>Resource Category</strong>.</p>
+<ol>
+<li>Based on the Resource Category selected, additional fields will appear within the form.</li>
+</ol>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/resource-category.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+</ol>
+<h4 id="resource-categories-and-sub-categories">Resource Categories (and Sub-Categories)<a class="headerlink" href="#resource-categories-and-sub-categories" title="Permanent link">&para;</a></h4>
+<p>Below is a table of all the resource category and sub-category options for your reference. The table also contains information on which fields will appear when you choose a specific category or sub-category.</p>
+<table>
+<thead>
+<tr>
+<th>Resource Category</th>
+<th>Sub-category</th>
+<th>Additional Resource Annotation Fields for Category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Multi-result</td>
+<td>Figure<br>Table<br>Text<br>Draft publication<br>Publication<br>Report<br>White paper<br>Poster</td>
+<td><ul><li><strong>Results Resource - Sub-Category</strong></li><li><strong>Associated Results Tracker</strong>: provides the path to the Results Tracker associated with this multi-result file;<br><em>Note that the Associated Files/Dependencies field will no longer appear.</em></li></td>
+</tr>
+<tr>
+<td>Single-result</td>
+<td>Figure<br>Table<br>Text<br>Draft publication<br>Publication<br>Report<br>White paper<br>Poster</td>
+<td><ul><li><strong>Results Resource - Sub-Category</strong></li></td>
+</tr>
+<tr>
+<td>Tabular-data</td>
+<td>Raw data<br>Processed intermediate data<br>Processed final data</td>
+<td><ul><li><strong>Resource Row Description</strong>: explanation of what one row within the tabular file represents</li><li><strong>Data Resource - Sub-Category</strong></li><li><strong>Associated Data Dictionary</strong>: file path for the data dictionary associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li><li><strong>Associated Protocol</strong>: file path for the protocol associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li></td>
+</tr>
+<tr>
+<td>Non-tabular-data</td>
+<td>Raw data<br>Processed intermediate data<br>Processed final data</td>
+<td><ul><li><strong>Data Resource - Sub-Category</strong></li><li><strong>Associated Protocol</strong>: file path for the protocol associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li></td>
+</tr>
+<tr>
+<td>Metadata</td>
+<td>HEAL-formatted data dictionary<br>Other formatted data dictionary<br>Protocol<br>ID map<br>Analysis plan<br>HEAL-formatted results tracker<br>HEAL-formatted experiment tracker</td>
+<td><ul><li><strong>Metadata Resource - Sub-Category</strong></li><li><em>Note that if you select heal-formatted-results-tracker as the sub-category, the "Associated Files/Dependencies field will no longer appear.</em></li></td>
+</tr>
+<tr>
+<td>Code</td>
+<td>No sub-categories</td>
+<td><ul><li>No additional Resource Tracker fields</li></td>
+</tr>
+</tbody>
+</table>
+<h4 id="experiment-resource-belongs-to">Experiment Resource 'Belongs' To<a class="headerlink" href="#experiment-resource-belongs-to" title="Permanent link">&para;</a></h4>
+<ol>
+<li>This option allows you to associate your resources directly with experimental research questions and hypotheses, which can be useful for future researchers trying to understand your experiments and findings.</li>
+<li>
+<p>This field pipes in all existing experiment names from the Experiment Tracker into a drop-down menu.</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/exp-reso-belongs.PNG" />
+    <figcaption></figcaption>
+</figure>  </p>
+</li>
+</ol>
+<h4 id="associated-filesdependencies">Associated Files/Dependencies<a class="headerlink" href="#associated-filesdependencies" title="Permanent link">&para;</a></h4>
+<p>This is where you will list dependencies associated with the resource. How you record dependencies will depend on your annotation approach. For more information about how to decide on your annotation approach, refer to the <a href="https://norc-heal.github.io/heal-data-pkg-guide/" target="_blank">HEAL data packaging guidance documentation</a>.</p>
+<p>Regardless of your annotation approach, there are two ways to add "Associated Files/Dependencies" in the form.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>You should only utilize one of the below methods for entering dependencies for a specific resource.</strong> If you add some files as associated files/dependencies manually and then utilize the "Add Multiple Resource Dependencies" option, those files may overwrite the files you entered manually.</p>
+</div>
+<ol>
+<li>
+<p><strong><em>Single-add</em></strong>: If you are adding only a few associated files/dependencies, you can add each individually using the "Associated Files/Dependencies" arrow button:</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/results-assoc-single.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p><strong><em>Multi-add</em></strong>: If you would like to add many associated files at once, you can use the "Add Multiple Resource Dependencies" option, which can be found at the top of the window:</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/multiple-resource-dep.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+<ol>
+<li>Fill in this field with associated files/dependencies using drag and drop.
+    <figure markdown>
+        <img alt="" src="../../app-screenshots/resource-multi-depend.PNG" />
+        <figcaption></figcaption>
+    </figure></li>
+<li>The files you add via drag and drop will automatically appear in the "Associated Files/Dependencies" section of the form.
+    <figure markdown>
+        <img alt="" src="../../app-screenshots/resource-multi-auto.PNG" />
+        <figcaption></figcaption>
+    </figure></li>
+</ol>
+</li>
+</ol>
+<h4 id="access">Access<a class="headerlink" href="#access" title="Permanent link">&para;</a></h4>
+<p>This specifies the level of access that you will apply to this resource (permanent private, temporary private, restricted access, or public).
+    <figure markdown>
+        <img alt="" src="../../app-screenshots/resource-access.PNG" />
+        <figcaption></figcaption>
+    </figure></p>
+<ol>
+<li>
+<p><strong>If you select "temporary-private,"</strong> you will need to also denote 1) the level of access for the resource after the temporary private period and 2) the timepoint of the end of the temporary private period (Access Date). </p>
+<ol>
+<li>Add an additional row and select the level of access of the resource once the temporary private period ends.</li>
+<li>Fill in the "Access Date" when the temporary private period will end. This can just be a projection; you are not bound by this date.</li>
+</ol>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/access-date.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p>For other access levels, you will not need to complete these additional steps.</p>
+</li>
+</ol>
+<h4 id="software-used-to-produceread-the-resource-file">Software used to produce/read the resource file<a class="headerlink" href="#software-used-to-produceread-the-resource-file" title="Permanent link">&para;</a></h4>
+<p>If specific or proprietary software is required to open or read the resource, you should fill this out.</p>
+<p>This field is not required. If no special/proprietary software was used to produce/read the resource file, leave this field blank.</p>
+<h2 id="adding-multiple-like-files">Adding Multiple "Like" Files<a class="headerlink" href="#adding-multiple-like-files" title="Permanent link">&para;</a></h2>
+<p>If you have multiple "like" files with a similar naming convention, you may want to add and annotate them all at once rather than individually. The tool has a special feature that you can utilize to annotate multiple "like" files all at once.</p>
+<h3 id="what-are-like-files">What are "like" files?<a class="headerlink" href="#what-are-like-files" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Examples of "like" files may be multiple datasets where each is a run of the same set of experiments or experimental results where each dataset corresponds to one subject's data. "Like" files will also have the same file extension.</li>
+<li>
+<p>To be able to use this feature in the tool, "like" files must follow a common naming convention:</p>
+<ol>
+<li>
+<p>For example, multiple data files by subject ID grouped in folders by week would be "like" files. The naming convention here is week-#/subject-#
+    <figure markdown>
+        <img alt="" src="../../app-screenshots/like-files-ex.png" />
+        <figcaption></figcaption>
+    </figure></p>
+</li>
+<li>
+<p>Another example: for an experiment testing samples on multiple different dates, files could follow the naming convention sample_1_date_20230818, sample_2_date_20230818, etc.</p>
+</li>
+<li>If you have "like" files, but they don't follow a common naming convention, you will need to re-name the files (using a common naming convention) in order to be able to use this feature.</li>
+</ol>
+</li>
+</ol>
+<p>If you have determined that you have a set of 'like' resources that you would like to annotate all at once, follow the steps below.</p>
+<h3 id="how-to-add-multiple-like-files">How to add multiple "like" files<a class="headerlink" href="#how-to-add-multiple-like-files" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>Select "Add Multiple 'like' Resources"
+    <figure markdown>
+        <img alt="" src="../../app-screenshots/multi-like-1.PNG" />
+        <figcaption></figcaption>
+    </figure></p>
+</li>
+<li>
+<p>Drag and drop all "like" files you want to annotate together. The first of those files paths will appear in the "Resource File Path" field in the form.</p>
+<ol>
+<li>If your "like" files are in "like" folders (as in the above example of week-#/subject-# structure), you can drag the folders into the box, and the tool will unpack them for you.</li>
+</ol>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/multi-like-2.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p>Once you add your "like" files, a box will pop up asking you to add a naming convention. You will need to enter a naming convention for your like files in the "Resource File Name Convention" box shown below:</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/name-convent-1.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+<ol>
+<li>
+<p>Follow the instructions in the dialog box above as to how to create a naming convention. Specifically, make sure that you use the {} brackets to bound the number, date, or descriptive information that changes from one like file to another.</p>
+<ol>
+<li>Your will specify your naming convention slightly differently depending on whether it is integrated within the directory structure (e.g., multiple data files by subject ID grouped in folders by week) or within the filename (e.g., multiple data files within the same directory that only differ by filename).</li>
+</ol>
+</li>
+<li>
+<p><strong>If your naming convention is within the directory structure</strong>:</p>
+<ol>
+<li>
+<p>Copy the file path from the Resource File Path field and paste into the Resource File Name Convention box:</p>
+<p><figure markdown>
+<img alt="" src="../../app-screenshots/name-convent-2.PNG" />
+<figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p>Change the piece that changes from one like file to another to a descriptive name within {}. Do not remove the file extension from the path (e.g., .txt, .csv, .xlsx).</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/name-convent-3.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p>Select "Apply Name Convention."</p>
+</li>
+<li>
+<p>Check the User Status Message Box to confirm that your naming convention was able to be applied.</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/usmb-like-files.png" />
+<figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p>If you receive an error in the User Status Message Box, review your naming convention and ensure that:</p>
+<ol>
+<li>You have used {} to bound the changing number, date, or information that varies among your like files.</li>
+<li>You have retained the file extension in the path.</li>
+<li>Your files are actually "like" named.</li>
+</ol>
+</li>
+<li>
+<p>If the User Status Message Box prints a successful result, also refer to the "Resource File Description" to confirm that the naming convention was applied how you intended:
+<figure markdown>
+    <img alt="" src="../../app-screenshots/name-convent-5.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>If your naming convention is fully contained within the file name</strong>:</p>
+<ol>
+<li>
+<p>You should only include the file name in the "Resource File Name Convention" field (rather than the file path).
+<figure markdown>
+    <img alt="" src="../../app-screenshots/name-convent-6.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p>Select "Apply Name Convention."</p>
+</li>
+<li>Check the User Status Message Box to confirm that your naming convention was able to be applied.
+    <figure markdown>
+        <img alt="" src="../../app-screenshots/usmb-like-files-2.PNG" />
+        <figcaption></figcaption>
+    </figure></li>
+<li>If you receive an error in the User Status Message Box, review your naming convention and ensure that:<ol>
+<li>You have used {} to bound the changing number, date, or information that varies among your like files.</li>
+<li>Your files are actually "like" named.</li>
+</ol>
+</li>
+<li>
+<p>If the User Status Message Box prints a successful result, also refer to the "Resource File Description" to confirm that the naming convention was applied how you intended.</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/name-convent-applied.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="saving-your-resource">Saving Your Resource<a class="headerlink" href="#saving-your-resource" title="Permanent link">&para;</a></h2>
+<p>Once you have finished entering the resource information, select "Save resource."</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Make sure you do not have your Resource Tracker open before trying to save.</strong></p>
+<p>If you attempt to save a resource but have the Resource Tracker open, the annotated resource file <em>will</em> save to your dsc-pkg folder, but the tool <em>will not</em> be able to save the information to the Resource Tracker. You will receive this error:</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/reso-track-open-error.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+<p>As the printed message explains, in this case, you will have to use the <a href="../batchreso/">"Batch add existing resource(s) to tracker"</a> option to add this annotated resource file to the Resource Tracker.</p>
+</div>
+<ol>
+<li>
+<p>After you select "Save resource," the User Status Message Box should display a message confirming that your resource file saved successfully and that the resource has been written to the Resource Tracker file:
+    <figure markdown>
+        <img alt="" src="../../app-screenshots/usmb-resource-save.png" />
+        <figcaption></figcaption>
+    </figure></p>
+<ol>
+<li>This message will also include a note about all the files you listed as associated files/dependencies for your resource. This should be a helpful guide as to what resource(s) to annotate next, depending on your annotation approach.</li>
+</ol>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/list-to-annotate.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p>Although the tool will automatically add your resource to the Resource Tracker as part of the "save" process, your individual resource annotation file will also be saved as a .txt file within the dsc-pkg folder.</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/resource-txt-file.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Once you have created them, you will not generally need to interact with the annotation files (.txt files) directly unless:</p>
+<ol>
+<li>You need to <a href="../editresource/">edit an existing annotated resource</a></li>
+<li>There was an error in automatically the resoresourceruce to the Resource Tracker, which would necessitate manually <a href="../batchreso/">batch adding resources to the tracker</a></li>
+</ol>
+</div>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<ol>
+<li>After you have saved your resource, you can annotate a new resource.<ol>
+<li>
+<p>If you would like to annotate a new resource, you can select "Clear form" at the top of the Annotate Resource window. This will reset your form and generate the next sequential resource ID, so you can start annotating a new resource.</p>
+<ol>
+<li>The User Status Message Box will print a message confirming your form was successfully cleared and that the new sequential ID has been generated.</li>
+</ol>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/usmb-clear-resource-form.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+</ol>
+</li>
+</ol>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.indexes", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.37e9125f.min.js"></script>
+      
+    
+  </body>
+</html>

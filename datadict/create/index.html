@@ -1,0 +1,1205 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://norc-heal.github.io/heal-data-pkg-tool-docs/datadict/create/">
+      
+      <link rel="icon" href="../../assets/heal_logo.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
+    
+    
+      
+        <title>Create a New Data Dictionary - HEAL Data Packaging Tool How-To</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7a952b86.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="heal_platform" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#create-a-new-data-dictionary" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://github.com/norc-heal" title="HEAL Data Packaging Tool How-To" class="md-header__button md-logo" aria-label="HEAL Data Packaging Tool How-To" data-md-component="logo">
+      
+  <img src="../../assets/HEAL_Initiative_White-cropped.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HEAL Data Packaging Tool How-To
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Create a New Data Dictionary
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/norc-heal/heal-data-pkg-tool-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://github.com/norc-heal" title="HEAL Data Packaging Tool How-To" class="md-nav__button md-logo" aria-label="HEAL Data Packaging Tool How-To" data-md-component="logo">
+      
+  <img src="../../assets/HEAL_Initiative_White-cropped.svg" alt="logo">
+
+    </a>
+    HEAL Data Packaging Tool How-To
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/norc-heal/heal-data-pkg-tool-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../about/">About the HEAL Data Packaging Tool</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="About the HEAL Data Packaging Tool" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          About the HEAL Data Packaging Tool
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/purpose/" class="md-nav__link">
+        Purpose
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/trackers/" class="md-nav__link">
+        The Trackers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          Downloading the Tool
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Downloading the Tool" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Downloading the Tool
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/download/start-win/" class="md-nav__link">
+        Windows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/download/start-mac/" class="md-nav__link">
+        Mac
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/nav/" class="md-nav__link">
+        Navigating the Tool
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../datadir/">Data Package</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Data Package" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Data Package
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadir/pkgdir/" class="md-nav__link">
+        Creating a New Data Package
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadir/setdir/" class="md-nav__link">
+        Setting Your Working Data Package Directory
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../exptrack/">The Experiment Tracker</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="The Experiment Tracker" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          The Experiment Tracker
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exptrack/addexp/" class="md-nav__link">
+        Add a New Experiment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exptrack/editexp/" class="md-nav__link">
+        Edit an Existing Experiment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exptrack/viewexp/" class="md-nav__link">
+        View the Experiment Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exptrack/batchexp/" class="md-nav__link">
+        Advanced - Batch Add Experiments to the Tracker
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../resulttrack/">The Results Tracker</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="The Results Tracker" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          The Results Tracker
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resulttrack/addresult/" class="md-nav__link">
+        Add a New Result
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resulttrack/editresult/" class="md-nav__link">
+        Edit an Existing Result
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resulttrack/viewresult/" class="md-nav__link">
+        View the Results Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resulttrack/batchresult/" class="md-nav__link">
+        Advanced - Batch Add Results to the Tracker
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../schemas/">Schemas</a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Schemas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Schemas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schemas/md_experiment_tracker/" class="md-nav__link">
+        Experiment Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schemas/md_resource_tracker/" class="md-nav__link">
+        Resource Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schemas/md_results_tracker/" class="md-nav__link">
+        Results Tracker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../schemas/md_data_dict/" class="md-nav__link">
+        Data Dictionary
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-data-dictionary" class="md-nav__link">
+    Creating a new data dictionary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ensuring-that-you-have-a-valid-heal-data-dictionary" class="md-nav__link">
+    Ensuring that you have a valid HEAL data dictionary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-considerations-for-specific-file-types" class="md-nav__link">
+    Special considerations for specific file types
+  </a>
+  
+    <nav class="md-nav" aria-label="Special considerations for specific file types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#excel-data-file-with-multiple-tabs" class="md-nav__link">
+    Excel Data File with multiple tabs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sas-file" class="md-nav__link">
+    SAS File
+  </a>
+  
+    <nav class="md-nav" aria-label="SAS File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-sas7bdat-and-sas7bcat-file" class="md-nav__link">
+    Creating a sas7bdat and sas7bcat file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-through-the-tool" class="md-nav__link">
+    Running through the tool
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-csv-data-dictionary" class="md-nav__link">
+    Minimal CSV Data Dictionary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redcap-data-dictionary" class="md-nav__link">
+    REDCap Data Dictionary
+  </a>
+  
+    <nav class="md-nav" aria-label="REDCap Data Dictionary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#export-your-redcap-data-dictionary" class="md-nav__link">
+    Export your REDCap data dictionary
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/norc-heal/heal-data-pkg-tool-docs/edit/master/docs/datadict/create.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="create-a-new-data-dictionary">Create a New Data Dictionary<a class="headerlink" href="#create-a-new-data-dictionary" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Reminder</p>
+<p><strong>Your first step each time you open the tool should be to set your working data package directory.</strong></p>
+<ul>
+<li>If you have not yet set your working data package directory this session, do so before attempting to create a data dictionary.</li>
+<li>If you have not set your working data package directory before attempting to use the data dictionary converter, the tool will not be able to save your output data dictionary to your data package folder. You will receive the error message below.
+    <figure markdown>
+        <img alt="" src="../../app-screenshots/dd-work-dir-error.PNG" />
+        <figcaption></figcaption>
+    </figure>     </li>
+</ul>
+</div>
+<h2 id="creating-a-new-data-dictionary">Creating a new data dictionary<a class="headerlink" href="#creating-a-new-data-dictionary" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>When you would like to create a new data dictionary, go to the "Create" tab. You will be able to start either with a data file or a data dictionary file, if you have one.
+    <figure markdown>
+        <img alt="" src="../../app-screenshots/data-dict-options.PNG" />
+        <figcaption></figcaption>
+    </figure>  </p>
+<div class="admonition warning">
+<p class="admonition-title">Special considerations for certain files</p>
+<p>To ensure that your files are able to be read into the tool and converted correctly, certain file types may require some additional considerations/preparation.</p>
+<ul>
+<li><a href="#excel-data-file-with-multiple-tabs">Multi-tab Excel files</a></li>
+<li><a href="#sas-file">SAS files</a></li>
+<li><a href="#minimal-csv-data-dictionary">Minimal CSV Data Dictionaries</a></li>
+<li><a href="#redcap-data-dictionary">REDCap Data Dictionaries</a></li>
+</ul>
+</div>
+</li>
+<li>
+<p>Select the data dictionary conversion that you would like to complete and select the corresponding file in File Explorer.</p>
+</li>
+<li>
+<p>If the conversion is successful, then the User Status Message Box will print a successful message:
+    <figure markdown>
+        <img alt="" src="../../app-screenshots/usmb-dd.PNG" />
+        <figcaption></figcaption>
+    </figure>  </p>
+</li>
+<li>
+<p>Some input file types contain more metadata than others, so depending on the input file, you may need to take additional steps to ensure you have a valid HEAL-compliant data dictionary.</p>
+</li>
+</ol>
+<h2 id="ensuring-that-you-have-a-valid-heal-data-dictionary">Ensuring that you have a valid HEAL data dictionary<a class="headerlink" href="#ensuring-that-you-have-a-valid-heal-data-dictionary" title="Permanent link">&para;</a></h2>
+<p>Once you have output your data dictionary, you may have to take additional steps, depending on your original input file type, to ensure that your data dictionary is "valid." A valid HEAL-compliant data dictionary will contain at least a name and description for each variable.</p>
+<p><strong>If you started with an input file that was rich in metadata, this metadata will be extracted by the tool.</strong> You can expect that the data dictionary output by the tool will be fairly complete and likely will be valid. Metadata-rich files include SPSS and Stata files, and SAS files (if a sas7bcat file is included).</p>
+<p>Similarly, if you input a REDCap CSV data dictionary, your output HEAL CSV data dictionary should be fairly complete and valid.</p>
+<p><em>Example of the data dictionary output based on a metadata-rich file:</em>
+    <figure markdown>
+    <img alt="" src="../../app-screenshots/metadata-rich-dd-ex.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+<p><strong>If you started with a CSV or Excel file, however, the output data dictionary will be a "minimal data dictionary."</strong> Unlike metadata-rich files (SPSS, Stata, SAS), which contain information about variable names, labels, and encodings within the file, CSV and Excel files do not contain this metadata. Therefore, the output data dictionary will contain the variable names and types, but not descriptions. The tool will also attempt to infer whether variables are categorical, and if so, what those categories are. However, if there are categories not included in the data, those will not be able to be inferred and included.</p>
+<p><em>Example of the data dictionary output based on a CSV or Excel file:</em>
+    <figure markdown>
+    <img alt="" src="../../app-screenshots/minimal-dd-ex.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+<p><strong>If you start with a non-metatadata-rich file, you will need to edit your data dictionary after it has been output.</strong> For the data dictionary to be considered valid, each variable must have a name and description. You may also want to add in additional constraints that the tool did not infer such as variable encodings.</p>
+<p>For more information on the additional columns within the HEAL-compliant data dictionary output by the tool as well as guidance on which fields may be most useful to prioritize filling out, refer to the <a href="../../schemas/md_data_dict/" target="_blank">Data Dictionary metadata schema</a>.</p>
+<h2 id="special-considerations-for-specific-file-types">Special considerations for specific file types<a class="headerlink" href="#special-considerations-for-specific-file-types" title="Permanent link">&para;</a></h2>
+<p>Certain data files and data dictionaries may require additional steps and preparation. See below for information on these specific circumstances for certain data files.</p>
+<ul>
+<li><a href="#excel-data-file-with-multiple-tabs">Excel Data File with multiple tabs</a></li>
+<li><a href="#sas-file">SAS File</a></li>
+<li><a href="#minimal-csv-data-dictionary">Minimal CSV Data Dictionary</a></li>
+<li><a href="#redcap-data-dictionary">REDCap Data Dictionary</a></li>
+</ul>
+<h3 id="excel-data-file-with-multiple-tabs">Excel Data File with multiple tabs<a class="headerlink" href="#excel-data-file-with-multiple-tabs" title="Permanent link">&para;</a></h3>
+<p>In order for the tool to successfully produce a data dictionary from an Excel file with multiple tabs, each tab within that Excel must first be a <strong>clean dataset</strong> that follows a standard tabular format: the top row should list all variables across the columns and the columns should contain the data.</p>
+<p>Once you have a clean dataset in each tab, there are two options for output for Excel data files with multiple tabs.
+        <figure markdown>
+    <img alt="" src="../../app-screenshots/dd-excel-1.PNG" />
+    <figcaption></figcaption>
+</figure>  </p>
+<ol>
+<li>
+<p><strong>Excel Data File &gt;&gt; HEAL CSV Data Dictionary (one per tab)</strong></p>
+<ol>
+<li>This will take a multi-tab Excel file and output one data dictionary for each tab in the Excel. The naming convention of the file will be 'heal-csv-dd-filename-tabname.'</li>
+<li>Each data dictionary will include a row for every variable within that specific tab.</li>
+</ol>
+</li>
+<li>
+<p><strong>Excel Data File &gt;&gt; HEAL CSV Data Dictionary (one across tabs)</strong></p>
+<ol>
+<li>This will take a multi-tab Excel file and output a single data dictionary with structure 'heal-csv-dd-filename.'</li>
+<li>This single data dictionary will include a row for every variable across all tabs.</li>
+<li>If you use this method, it is important that you ensure that variable names across sheets are consistent.<ol>
+<li>This works particularly well if your data is structured such that the same variables are used across sheets.</li>
+<li>However, if you are using the same variable name in multiple different sheets, but it does not have the same meaning in each sheet, you should either vary the name of variables across sheets or you should use the one per tab option.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="sas-file">SAS File<a class="headerlink" href="#sas-file" title="Permanent link">&para;</a></h3>
+<p>For tabular files saved in SAS (sas7bdat), you will want to have an accompanying catalog file (sas7bcat). Although the sas7bdat contains variable metadata information (variable names and variable labels/descriptions), the sas7bcat contains information about the formats and encoding of the variables, which are important for producing a complete data dictionary.</p>
+<h4 id="creating-a-sas7bdat-and-sas7bcat-file">Creating a sas7bdat and sas7bcat file<a class="headerlink" href="#creating-a-sas7bdat-and-sas7bcat-file" title="Permanent link">&para;</a></h4>
+<p>Many SAS users build formats and labels into their data processing and analysis scripts. In this section, we provide syntax that can be easily copy-pasted into these existing workflows to create <code>sas7bdat</code> and <code>sas7bcat</code> files to input into the <code>vlmd</code> tool. </p>
+<p>This script template can be run separately or inserted directly at the end of a SAS user's workflow. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If inserted directly, remember to delete the lines with <code>%INCLUDE</code>)</p>
+</div>
+<details class="template" open="open">
+<summary>Template</summary>
+<div class="highlight"><span class="filename">template.sas</span><pre><span></span><code><span class="cm">/*1. Read in data file without value labels and run full code. </span>
+<span class="cm">        Note: The most important pieces to run here are the PROC FORMAT statement(s) and any data steps </span>
+<span class="cm">        that assign formats and variable labels which are needed for the data dictionary. You may have defined variable labels and values in separate scripts for different analyses. In order to capture all your defined variable labels and values across scripts, you will need an %INCLUDE statement for each SAS script that defines unique variable labels or value labels.*/</span>
+
+<span class="nf">%INCLUDE</span> <span class="s">&quot;&lt;INSERT SAS SCRIPT HERE FILE PATH HERE&gt;&quot;</span>; <span class="c">/* THIS WILL RUN A SEPARATE SAS SCRIPT*/</span>
+<span class="nf">%INCLUDE</span> <span class="s">&quot;&lt;INSERT SAS SCRIPT HERE FILE PATH HERE&gt;&quot;</span>; <span class="c">/* THIS WILL RUN A SECOND SEPARATE SAS SCRIPT*/</span> 
+
+<span class="c">/*2. Output the format catalog (sas7bcat) */</span>
+<span class="c">/*2a. If you do not have an out directory, assign one to output the SAS catalog and data file. If you already have an out directory assigned, skip this step and replace “out” with your out directory libname in the flow*/</span>
+
+<span class="k">libname</span> <span class="k">out</span> <span class="s">&quot;&lt;INSERT THE DESIRED LOCATION (FILE PATH) TO YOUR SAS7BCAT AND SAS7BDAT FILES HERE&gt;&quot;</span>;
+
+<span class="cm">/*2b. Output the format catalog.</span>
+<span class="cm">        Note: The format catalog is automatically stored in work.formats. This step copies the format file to the </span>
+<span class="cm">        out directory as a sas7bcat file.*/</span>
+<span class="kr">proc catalog </span>cat=work<span class="m">.</span>FORMATS;
+    copy <span class="k">out</span>=<span class="k">out</span><span class="m">.</span>FORMATS<span class="kr">;</span>
+<span class="kr">    run;</span>
+
+<span class="c">/*3. Output the data file (sas7bdat) */</span>
+<span class="kr">data </span><span class="k">out</span><span class="m">.</span>yourdata;
+    <span class="k">set</span> &lt;<span class="k">INSERT</span> THE NAME OF YOUR FINAL SAS DATASET HERE&gt;<span class="kr">;</span>
+<span class="kr">    run;</span>
+</code></pre></div>
+</details>
+<p>The below SAS syntax is an example of how to use the template within your SAS workflow.</p>
+<p>The below sample script creates all of our variable and value labels. Your workflow may include multiple SAS scripts with multiple format statements and may include analyses and other PROC calls for data exploration, 
+but for demonstration purposes, this example only uses one script and focuses on defining the variable and value labels.</p>
+<details class="example template usage" open="open">
+<summary>Example</summary>
+<div class="highlight"><span class="filename">my_existing_sas_workflow.sas</span><pre><span></span><code><span class="c">/*1. Read in input data */</span>
+<span class="kr">proc import </span>datafile=<span class="s">&quot;myprojectfolder/input/mydata.csv&quot;</span>
+    <span class="k">out</span>=raw
+    dbms=csv <span class="k">replace</span>;
+    getnames=yes<span class="kr">;</span>
+<span class="kr">run;</span>
+
+<span class="c">/*2. Set up proc format and apply formats and variable labels in data step */</span>
+<span class="c">/*Create encodings (value labels)*/</span>
+<span class="kr">proc format;</span>
+    VALUE YESNO
+    <span class="m">0</span>       =<span class="s">&quot;No&quot;</span>
+    <span class="m">1</span>       =<span class="s">&quot;Yes&quot;</span>
+
+    VALUE PUBLIC
+    <span class="m">1</span>=<span class="s">&#39;State mental health authority (SMHA)&#39;</span>
+    <span class="m">2</span>=<span class="s">&#39;Other state government agency or department&#39;</span>
+    <span class="m">3</span>=<span class="s">&#39;Regional/district authority or county, local, or municipal government&#39;</span>
+    <span class="m">4</span>=<span class="s">&#39;Tribal government&#39;</span>
+    <span class="m">5</span>=<span class="s">&#39;Indian Health Service&#39;</span>
+    <span class="m">6</span>=<span class="s">&#39;Department of Veterans Affairs&#39;</span>
+    <span class="m">7</span>=<span class="s">&#39;Other&#39;</span>
+
+    VALUE FOCUS
+    <span class="m">1</span>=<span class="s">&#39;Mental health treatment&#39;</span>
+    <span class="m">2</span>=<span class="s">&#39;Substance abuse treatment&#39;</span>
+    <span class="m">3</span>=<span class="s">&#39;Mix of mental health and substance abuse treatment (neither is primary)&#39;</span>
+    <span class="m">4</span>=<span class="s">&#39;General health care&#39;</span>
+    <span class="m">5</span>=<span class="s">&#39;Other service focus&#39;</span>;
+
+<span class="c">**Apply formats to dataset;</span>
+<span class="kr">data </span>processed;
+    <span class="k">set</span> raw;
+
+    <span class="c">/*Assign formats*/</span>
+    <span class="k">format</span> YOUNGADULTS TREATPSYCHOTHRPY TREATTRAUMATHRPY YESNO. FOCUS FOCUS. PUBLIC PUBLIC.;
+    <span class="c">/*Add variable labels*/</span>
+    <span class="k">label</span> YOUNGADULTS=<span class="s">&quot;Accepts young adults (aged 18-25 years old) for Tx&quot;</span>
+            TREATPSYCHOTHRPY=<span class="s">&quot;Facility offers individual psychotherapy&quot;</span>
+            TREATTRAUMATHRPY=<span class="s">&quot;Facility offers trauma therapy&quot;</span>
+            FOCUS=<span class="s">&quot;Primary treatment focus of facility&quot;</span>
+            PUBLIC=<span class="s">&quot;Public agency or department that operates facility&quot;</span><span class="kr">;</span>
+<span class="kr">run;</span>
+</code></pre></div>
+<p>This second script called <code>my_output.sas</code> is the filled out template. Note the <code>%INCLUDE</code> function that calls <code>my_existing_sas_workflow.sas</code></p>
+<div class="highlight"><span class="filename">my_output.sas</span><pre><span></span><code><span class="cm">/*1. Read in data file without value labels and run full code. </span>
+<span class="cm">        Note: The most important pieces to run here are the PROC FORMAT statement(s) and any data steps </span>
+<span class="cm">        that assign formats and variable labels which are needed for the data dictionary. You may have defined variable labels and values in separate scripts for different analyses. In order to capture all your defined variable labels and values across scripts, you will need an %INCLUDE statement for each SAS script that defines unique variable labels or value labels.*/</span>*/
+
+<span class="nf">%INCLUDE</span> <span class="s">&quot;myprojectfolder/my_existing_workflow.sas&quot;</span>; <span class="c">/* THIS WILL RUN A SEPARATE SAS SCRIPT*/</span>
+
+<span class="c">/*2. Output the format catalog (sas7bcat) */</span>
+<span class="c">/*2a. If you do not have an out directory, assign one to output the SAS catalog and data file.*/</span>
+<span class="k">libname</span> <span class="k">out</span> <span class="s">&quot;myprojectfolder/output&quot;</span>;
+
+<span class="cm">/*2b. Output the format catalog.</span>
+<span class="cm">        Note: The format catalog is automatically stored in work.formats. This step copies the format file to the </span>
+<span class="cm">        out directory as a sas7bcat file.*/</span>
+<span class="kr">proc catalog </span>cat=work<span class="m">.</span>FORMATS;
+    copy <span class="k">out</span>=<span class="k">out</span><span class="m">.</span>FORMATS<span class="kr">;</span>
+<span class="kr">    run;</span>
+
+<span class="c">/*3. Output the data file (sas7bdat) to your output folder*/</span>
+<span class="kr">data </span><span class="k">out</span><span class="m">.</span>yourdata;
+    <span class="k">set</span> processed<span class="kr">;</span>
+<span class="kr">    run;</span>
+</code></pre></div>
+</details>
+<h4 id="running-through-the-tool">Running through the tool<a class="headerlink" href="#running-through-the-tool" title="Permanent link">&para;</a></h4>
+<p>After creating the necessary sas7bdat and sas7bcat files, you are ready to convert to a HEAL-compliant data dictionary using the data packaging tool. </p>
+<p><strong>Before you begin, ensure that your sas7bdat and sas7bcat files are saved in the same folder.</strong> The tool will only ask you to select your sas7bdat file. If the sas7bcat file is located in the same directory, the tool will automatically detect it, as well. If not detected, the tool will run without the sas7bcat catalog file and the encodings (i.e., value labels) will not be extracted from the catalog file and will not appear in your data dictionary. The output will be a minimal HEAL-compliant data dictionary.</p>
+<h3 id="minimal-csv-data-dictionary">Minimal CSV Data Dictionary<a class="headerlink" href="#minimal-csv-data-dictionary" title="Permanent link">&para;</a></h3>
+<p>If you have already created a data dictionary in CSV format, you can also use that to generate a HEAL-compliant data dictionary. </p>
+<p><strong>The only requirements for a "minimal CSV data dictionary" to be ingested by the tool and converted into a HEAL-compliant data dictionary are two columns: name and description.</strong> With these two columns included, the data dictionary output will be a valid data dictionary (although it will be a fairly minimal data dictionary).</p>
+<p>However, this does not mean that you must only include these two columns. You may already have additional columns in your existing data dictionary, or you may want to add columns beyond name and description to better describe your dataset. For information on which additional columns it may be most helpful to include within your minimal data dictionary, and how to create, label, and format them to be successfully ingested and output by the data dictionary converter tool, refer to the <a href="../../schemas/md_data_dict/" target="_blank">HEAL Data Dictionary metadata schema</a>.</p>
+<h3 id="redcap-data-dictionary">REDCap Data Dictionary<a class="headerlink" href="#redcap-data-dictionary" title="Permanent link">&para;</a></h3>
+<p>If you collected data in a <a href="https://www.project-redcap.org" target="_blank">REDCap</a> data management system, HEAL-compliant data dictionaries can be generated directly from an exported REDCap data dictionary.</p>
+<p>The REDCap data dictionary export serves the purpose of providing variable-level metadata in a standardized, tabular format and is generally easy to export.</p>
+<h4 id="export-your-redcap-data-dictionary">Export your REDCap data dictionary<a class="headerlink" href="#export-your-redcap-data-dictionary" title="Permanent link">&para;</a></h4>
+<p>To download a REDCap CSV export, do the following*: </p>
+<ol>
+<li>After logging in to your REDCap project page, locate the <code>Data dictionary</code> page. A link to this page may be available on the project side bar (see image below) or in the <code>Project Setup tab</code> at the top of your page.</li>
+</ol>
+<p><img alt="redcap_dd_link" src="https://raw.githubusercontent.com/HEAL/healdata-utils/main/docs/assets/redcap_data_dictionary_page.png" title="Redcap DD Export button" /></p>
+<ol>
+<li>After arriving at the <code>Data dictionary</code> page, click on <code>Download the current data dictionary</code> to export the dictionary (see below).</li>
+</ol>
+<p><img alt="redcap_export_link" src="https://raw.githubusercontent.com/HEAL/healdata-utils/main/docs/assets/redcap_csv_dd_export_link.png" title="Redcap DD Export button" /></p>
+<p>*there may be slight differences depending on your specific REDCap instance and version</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.indexes", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.37e9125f.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -96,7 +96,7 @@ Regardless of your annotation approach, there are two ways to add "Associated Fi
         </figure>
     2. The files you add via drag and drop will automatically appear in the "Associated Files/Dependencies" section of the form.
         <figure markdown>
-            ![](../app-screenshots/results-multi-auto.PNG)
+            ![](../app-screenshots/resource-multi-auto.PNG)
             <figcaption></figcaption>
         </figure>
 

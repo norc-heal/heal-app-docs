@@ -1,9 +1,3 @@
----
-hide:
-  - toc
-full-width: true
----
-
 
 # Adding a New Result
 
@@ -47,24 +41,25 @@ full-width: true
         <figcaption></figcaption>
     </figure>
 
-1. Select a **Result Category.** 
-    1. Based on the Result Category selected, additional questions will appear within the form.
+#### Result Category
+1. Based on the Result Category selected, additional questions will appear within the form.
 
     <figure markdown>
         ![](../app-screenshots/result-category.PNG)
         <figcaption></figcaption>
     </figure>
 
-3. **Experiment Result 'Belongs' To**: You can define the experiment with which your result is associated here.
-    1. This option allows you to associate your results directly with experimental research questions and hypotheses, which can be useful for future researchers trying to understand your experiments and findings. 
-    2. This field pipes in all existing experiment names from the Experiment Tracker into a drop-down menu.
+#### Experiment Result 'Belongs' To
+1. This option allows you to associate your results directly with experimental research questions and hypotheses, which can be useful for future researchers trying to understand your experiments and findings. 
+2. This field pipes in all existing experiment names from the Experiment Tracker into a drop-down menu.
 
      <figure markdown>
         ![](../app-screenshots/result-assoc-exp.PNG)
         <figcaption></figcaption>
     </figure>  
 
-2. **Associated Multi-Result File(s)**: You will also need to provide the path for the Associated Multi-Result File (e.g., manuscript, poster, etc.), in which the individual result appears. To add, select the arrow below the field:
+#### Associated Multi-Result File(s)
+1. You will need to provide the path for the Associated Multi-Result File (e.g., manuscript, poster, etc.), in which the individual result appears. To add, select the arrow below the field:
 
     <figure markdown>
         ![](../app-screenshots/assoc-multi-result-file-2.PNG)
@@ -78,45 +73,50 @@ full-width: true
         <figcaption></figcaption>
     </figure>
 
-3. **Figure Number/Table Number**: If you selected "Figure" or "Table" within "Result Category," you will need to provide a corresponding figure/table number for each "Associated Multi-Result File."
-    1. Click on the arrow to insert each figure/table number. 
-        1. Ensure that the figure/table numbers are in the same order as the multi-result files. You can adjust the order using the green up and down arrows.
+#### Figure Number/Table Number
+1. If you selected "Figure" or "Table" within "Result Category," you will need to provide a corresponding figure/table number for each "Associated Multi-Result File."
+1. Click on the arrow to insert each figure/table number. 
+    1. Ensure that the figure/table numbers are in the same order as the multi-result files. You can adjust the order using the green up and down arrows.
         
         <figure markdown>
             ![](../app-screenshots/figure-num.PNG)
             <figcaption></figcaption>
         </figure>
         
-4. **Associated Files/Dependencies**: There are two ways to add "Associated Files/Dependencies," manually or via batch add. See below for descriptions of each.
+#### Associated Files/Dependencies
+This is where you will list dependencies for the result. How you record dependencies will depend on your annotation approach. For more information about how to decide on your annotation approach, refer to the [HEAL data packaging guidance documenation](https://norc-heal.github.io/heal-data-pkg-guide/){target=_blank}. 
 
-    !!! Warning
+Regardless of your annotation approach, there are two ways to add "Associated Files/Dependencies," manually or via batch add. See below for descriptions of each.
 
-        **You should only utilize one of the below methods for entering dependencies when adding a specific result.** If you add some files as associated files/dependencies manually and then utilize the "Add Multiple Results Dependencies" option, those files may overwrite the files you entered manually.
+!!! Warning
 
-    2. *Manually adding Associated Files/Dependencies*
+    **You should only utilize one of the below methods for entering dependencies when adding a specific result.** If you add some files as associated files/dependencies manually and then utilize the "Add Multiple Results Dependencies" option, those files may overwrite the files you entered manually.
 
-        1. If you are adding only a few associated files/dependencies, you can add each row individually using the arrow button:
+1. ***Manually adding Associated Files/Dependencies***
+
+    1. If you are adding only a few associated files/dependencies, you can add each row individually using the arrow button:
 
         ![](../app-screenshots//results-assoc-single.PNG)
 
-    3. *Batch adding Associated Files/Dependencies*
+2. ***Batch adding Associated Files/Dependencies***
 
-        1. If you would like to add many associated files at once, you can use the "Add Multiple Results Dependencies" option, which can be found at the top of the "Add Results" window:
+    1. If you would like to add many associated files at once, you can use the "Add Multiple Results Dependencies" option, which can be found at the top of the "Add Results" window:
 
-            ![](../app-screenshots/multi-depend-add.PNG)
+        ![](../app-screenshots/multi-depend-add.PNG)
 
-            1. Fill in this field with associated files/dependencies using drag-and-drop from your file explorer.
+        1. Fill in this field with associated files/dependencies using drag-and-drop from your file explorer.
 
-            ![](../app-screenshots/results-multi-depend.PNG)
+        ![](../app-screenshots/results-multi-depend.PNG)
 
-            2. The files you drag and drop will automatically appear in the "Associated Files/Dependencies" section in the form.
+        2. The files you drag and drop will automatically appear in the "Associated Files/Dependencies" section in the form.
 
-            ![](../app-screenshots/results-multi-auto.PNG)
+        ![](../app-screenshots/results-multi-auto.png)
 
 
-1. **Result Supports**:  describes the larger claim that the result is used to support in the multi-result file. This is not required but can be very useful for data reuse and interpretation for future researchers.
+#### Result Supports
+This describes the larger claim that the result is used to support in the multi-result file. This is not required but can be very useful for data reuse and interpretation for future researchers.
 
-    ![](../app-screenshots/results-support.PNG)
+![](../app-screenshots/results-support.PNG)
 
 ### Saving Your Result
 

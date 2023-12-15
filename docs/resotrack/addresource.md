@@ -49,11 +49,11 @@ Below is a table of all the resource category and sub-category options for your 
 
 | Resource Category               | Sub-category                          | Additional Resource Annotation Fields for Category |
 | ------------------------------- | ------------------------------------- | ------------------------------------- |
-| Multi-result | Figure<br>Table<br>Text<br>Draft publication<br>Publication<br>Report<br>White paper<br>Poster | <ul><li>**Results Resource - Sub-Category**</li><li>**Associated Results Tracker**: provides the path to the Results Tracker associated with this multi-result file;<br>*Note that the Associated Files/Dependencies field will no longer appear.*</li>
-| Single-result | Figure<br>Table<br>Text<br>Draft publication<br>Publication<br>Report<br>White paper<br>Poster | <ul><li>**Results Resource - Sub-Category**</li>
+| Multi-result | Peer-review manuscript<br>Report<br>White paper<br>Presentation<br>Poster | <ul><li>**Multi-result Resource - Sub-Category**</li><li>**Associated Results Tracker**: provides the path to the Results Tracker associated with this multi-result file;<br>*Note that the Associated Files/Dependencies field will no longer appear.*</li>
+| Single-result | Figure<br>Table<br>Text | <ul><li>**Single-result Resource - Sub-Category**</li>
 | Tabular-data | Raw data<br>Processed intermediate data<br>Processed final data | <ul><li>**Resource Row Description**: explanation of what one row within the tabular file represents</li><li>**Data Resource - Sub-Category**</li><li>**Associated Data Dictionary**: file path for the data dictionary associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li><li>**Associated Protocol**: file path for the protocol associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li>
 | Non-tabular-data | Raw data<br>Processed intermediate data<br>Processed final data | <ul><li>**Data Resource - Sub-Category**</li><li>**Associated Protocol**: file path for the protocol associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li>
-| Metadata | HEAL-formatted data dictionary<br>Other formatted data dictionary<br>Protocol<br>ID map<br>Analysis plan<br>HEAL-formatted results tracker<br>HEAL-formatted experiment tracker | <ul><li>**Metadata Resource - Sub-Category**</li><li>*Note that if you select heal-formatted-results-tracker as the sub-category, the "Associated Files/Dependencies field will no longer appear.*</li>
+| Metadata | HEAL-formatted data dictionary<br>Other formatted data dictionary<br>Protocol<br>Analysis plan<br>HEAL-formatted results tracker<br>HEAL-formatted experiment tracker<br>Other | <ul><li>**Metadata Resource - Sub-Category**</li><li>*Note that if you select heal-formatted-results-tracker as the sub-category, the "Associated Files/Dependencies field will no longer appear.*</li>
 | Code | No sub-categories | <ul><li>No additional Resource Tracker fields</li>
 
 #### Experiment Resource 'Belongs' To 
@@ -75,14 +75,18 @@ Regardless of your annotation approach, there are two ways to add "Associated Fi
 
     **You should only utilize one of the below methods for entering dependencies for a specific resource.** If you add some files as associated files/dependencies manually and then utilize the "Add Multiple Resource Dependencies" option, those files may overwrite the files you entered manually.
 
-1. ***Single-add***: If you are adding only a few associated files/dependencies, you can add each individually using the "Associated Files/Dependencies" arrow button:
+1. ***Manually adding Associated Files/Dependencies*** 
+
+    1. If you are adding only a few associated files/dependencies, you can add each individually using the "Associated Files/Dependencies" arrow button:
 
     <figure markdown>
         ![](../app-screenshots/results-assoc-single.PNG)
         <figcaption></figcaption>
     </figure>
 
-2. ***Multi-add***: If you would like to add many associated files at once, you can use the "Add Multiple Resource Dependencies" option, which can be found at the top of the window:
+2. ***Batch adding Associated Files/Dependencies*** 
+
+    1. If you would like to add many associated files at once, you can use the "Add Multiple Resource Dependencies" option, which can be found at the top of the window:
 
     <figure markdown>
         ![](../app-screenshots/multiple-resource-dep.PNG)
@@ -251,7 +255,9 @@ Once you have finished entering the resource information, select "Save resource.
         <figcaption></figcaption>
     </figure>
 
-    1. This message will also include a note about all the files you listed as associated files/dependencies for your resource. This should be a helpful guide as to what resource(s) to annotate next, depending on your annotation approach.
+    1. This message will also include a note about all the files you listed as associated files/dependencies for your resource. Each of these dependencies will also need to be documented as a resource. 
+        1. To make this process easier, these files will automatically be pulled into a resource list, which you can access via the ["Check Resources to Add"](checkresource.md) tab. 
+        2. You will be able to use the "Check Resources to Add" tab to directly select and document specific resources from the list.
 
     <figure markdown>
         ![](../app-screenshots/list-to-annotate.PNG)
@@ -270,7 +276,7 @@ Once you have finished entering the resource information, select "Save resource.
     Once you have created them, you will not generally need to interact with the annotation files (.txt files) directly unless:
 
     1. You need to [edit an existing annotated resource](editresource.md)
-    2. There was an error in automatically the resoresourceruce to the Resource Tracker, which would necessitate manually [batch adding resources to the tracker](batchreso.md)
+    2. There was an error in automatically adding the resource to the Resource Tracker, which would necessitate manually [batch adding resources to the tracker](batchreso.md)
 
 ## Next Steps
 

@@ -100,7 +100,7 @@ Once you have finished entering the experiment information, select "Save experim
     Once you have created them, you will not generally need to interact with the annotation files (.txt files) unless:
 
     1. You need to [edit an existing annotated experiment](editexp.md)
-    2. There is an error in automatically adding the experiment to the Experiment Tracker, which would necessitate manually [batch adding experiments to the tracker](batchexp.md)
+    2. There is an error in automatically adding the experiment to the Experiment Tracker, which would necessitate manually [batch adding experiments to the tracker](batchexp.md#batch-add-experiments-to-tracker)
 
 5. After you have added a new experiment, you can annotate a new experiment.
 
@@ -111,3 +111,9 @@ Once you have finished entering the experiment information, select "Save experim
             ![](../app-screenshots/exp-clear-form.PNG)
             <figcaption></figcaption>
         </figure>
+
+!!! tip 
+
+     If you need to annotate a new experiment that is very similar to a previously annotated experiment with only some slight changes, you can also use the advanced option ["Add a new experiment based on an existing experiment."](batchexp.md#add-a-new-experiment-based-on-existing-experiment) 
+     
+     This will allow you to copy the information from a previously annotated experiment into a new experiment, for ease of annotation.

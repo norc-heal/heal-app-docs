@@ -49,11 +49,11 @@ Below is a table of all the resource category and sub-category options for your 
 
 | Resource Category               | Sub-category                          | Additional Resource Annotation Fields for Category |
 | ------------------------------- | ------------------------------------- | ------------------------------------- |
-| Multi-result | Peer-review manuscript<br>Report<br>White paper<br>Presentation<br>Poster | <ul><li>**Multi-result Resource - Sub-Category**</li><li>**Associated Results Tracker**: provides the path to the Results Tracker associated with this multi-result file;<br>*Note that the Associated Files/Dependencies field will no longer appear.*</li>
-| Single-result | Figure<br>Table<br>Text | <ul><li>**Single-result Resource - Sub-Category**</li>
+| Publication | Peer-review manuscript<br>Report<br>White paper<br>Presentation<br>Poster | <ul><li>**Publication Resource - Sub-Category**</li><li>**Associated Results Tracker**: provides the path to the Results Tracker associated with this multi-result file;<br>*Note that the Associated Files/Dependencies field will no longer appear.*</li>
+| Result | Multi-panel figure<br>Single-panel figure<br>Table<br>Text | <ul><li>**Result Resource - Sub-Category**</li>
 | Tabular-data | Raw data<br>Processed intermediate data<br>Processed final data | <ul><li>**Resource Row Description**: explanation of what one row within the tabular file represents</li><li>**Data Resource - Sub-Category**</li><li>**Associated Data Dictionary**: file path for the data dictionary associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li><li>**Associated Protocol**: file path for the protocol associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li>
 | Non-tabular-data | Raw data<br>Processed intermediate data<br>Processed final data | <ul><li>**Data Resource - Sub-Category**</li><li>**Associated Protocol**: file path for the protocol associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li>
-| Metadata | HEAL-formatted data dictionary<br>Other formatted data dictionary<br>Protocol<br>Analysis plan<br>HEAL-formatted results tracker<br>HEAL-formatted experiment tracker<br>Other | <ul><li>**Metadata Resource - Sub-Category**</li><li>*Note that if you select heal-formatted-results-tracker as the sub-category, the "Associated Files/Dependencies field will no longer appear.*</li>
+| Metadata | HEAL-formatted data dictionary<br>Other formatted data dictionary<br>Protocol<br>Analysis plan<br>HEAL-formatted results tracker<br>Other | <ul><li>**Metadata Resource - Sub-Category**</li><li>*Note that if you select heal-formatted-results-tracker as the sub-category, the "Associated Files/Dependencies field will no longer appear.*</li>
 | Code | No sub-categories | <ul><li>No additional Resource Tracker fields</li>
 
 #### Experiment Resource 'Belongs' To 
@@ -288,3 +288,9 @@ Once you have finished entering the resource information, select "Save resource.
             ![](../app-screenshots/usmb-clear-resource-form.PNG)
             <figcaption></figcaption>
         </figure>
+
+!!! tip 
+
+     If you need to annotate a new resource that is very similar to a previously annotated resource with only some slight changes, you can also use the advanced option ["Add a new resource based on an existing resource."](batchreso.md#add-a-new-resource-based-on-an-existing-resource) 
+     
+     This will allow you to copy the information from a previously annotated resource into a new resource, for ease of annotation.

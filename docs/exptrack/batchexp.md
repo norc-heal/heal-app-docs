@@ -1,6 +1,6 @@
 # Advanced
 
-## Add a New Experiment Based on Existing Experiment
+## Add a New Experiment Based on an Existing Experiment
 
 If you need to annotate an experiment that is very similar to a previously annotated experiment, with only slight changes, you may want to use the "Add a new experiment based on existing experiment" option. 
 

@@ -80,7 +80,7 @@ Once you have finished entering the experiment information, select "Save experim
             <figcaption></figcaption>
         </figure>
     
-    As the printed message explains, in this case, you will have to use the ["Batch add existing experiment(s) to tracker" option](batchexp.md) to add this annotated experiment file to the Experiment Tracker.
+    As the printed message explains, in this case, you will have to use the ["Batch add existing experiment(s) to tracker" option](batchexp.md#batch-add-experiments-to-tracker) to add this annotated experiment file to the Experiment Tracker.
 
 1. If the experiment is saved successfully, the User Status Message Box will display this message to indicate your experiment saved successfully and that the experiment has been written to the Experiment Tracker file:
 
@@ -95,12 +95,12 @@ Once you have finished entering the experiment information, select "Save experim
         <figcaption></figcaption>
     </figure>
 
-!!! note
+    !!! note
 
-    Once you have created them, you will not generally need to interact with the annotation files (.txt files) unless:
+        Once you have created them, you will not generally need to interact with the annotation files (.txt files) unless:
 
-    1. You need to [edit an existing annotated experiment](editexp.md)
-    2. There is an error in automatically adding the experiment to the Experiment Tracker, which would necessitate manually [batch adding experiments to the tracker](batchexp.md#batch-add-experiments-to-tracker)
+        1. You need to [edit an existing annotated experiment](editexp.md)
+        2. There is an error in automatically adding the experiment to the Experiment Tracker, which would necessitate manually [batch adding experiments to the tracker](batchexp.md#batch-add-experiments-to-tracker)
 
 5. After you have added a new experiment, you can annotate a new experiment.
 

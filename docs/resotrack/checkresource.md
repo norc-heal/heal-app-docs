@@ -149,4 +149,4 @@ You can annotate resources directly from the resource list, rather than returnin
         <figcaption></figcaption>
     </figure>
 
-6. Repeat these steps annotating all resources that will not be shared in a repository using the "Rapid audit resource" feature. When documenting resources that *will* be shared, use the ["Add resource to tracker"](#add-resource-to-tracker) feature detailed above.
+6. Repeat these steps annotating all resources that will not be shared in a repository using the "Rapid audit resource" feature. As a reminder, when documenting resources that *will* be shared, use the ["Add resource to tracker"](#add-resource-to-tracker) feature detailed above.

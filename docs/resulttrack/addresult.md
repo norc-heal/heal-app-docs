@@ -59,15 +59,15 @@
     </figure>  
 
 #### Associated Publication
-1. If this figure is already part of a manuscript, poster, or other publication, you will provide the path for that publication here. If your figure is not currently associated with a publication, you can leave this field blank. When it is included within a publication, you should return to [edit the result annotation](editresult.md) to add in the associated publication. 
+1. If this figure is already part of a manuscript, poster, or other publication, you will provide the path for that publication here. If your figure is not currently associated with a publication, you can leave this field blank for now. Once this result is included within a publication, you should return to [edit the result annotation](editresult.md) to fill in the associated publication field for this result. 
 
-To add, select the arrow below the field:
+    To add an associated publication, select the arrow below the field:
     <figure markdown>
         ![](../app-screenshots/assoc-multi-result-file-2.PNG)
         <figcaption></figcaption>
     </figure>
         
-*If the result is associated with multiple publications*, select the arrow again and enter the paths to each of the publication files here. This will allow the tool to create a results tracker for each of those publications in future steps (or add the individual result to the right results trackers), all of which will be associated with this result.
+2. *If the result is associated with multiple publications*, select the arrow again and enter the paths to each of the publication files here. This will allow the tool to create a results tracker for each of those publications in future steps (or add the individual result to the right results trackers), all of which will be associated with this result.
     <figure markdown>
         ![](../app-screenshots/assoc-multi-result-file-multi.PNG)
         <figcaption></figcaption>
@@ -135,9 +135,9 @@ This describes the larger claim that the result is used to support in the public
         As the printed message explains, in this case, you will have to use the ["Batch add existing result(s) to tracker" option](batchresult.md#batch-add-results-to-tracker) to add this annotated result file to the Results Tracker.
 
 1. Each time you save a result, the tool will look for two things:
-    1. Any existing Results Trackers for the associated publication(s) included in the annotation. If they do not already exist, the tool will create one for each of the associated publication(s). 
+    1. Any existing Results Trackers for the associated publication(s) included in the annotation. If these Results Trackers do not already exist, the tool will create a Results Tracker for each of the associated publication(s). 
     2. A Results Tracker called "heal-csv-results-tracker-collect-all." This Results Tracker file will include a compilation of every annotated result, regardless of its associated publication.
-        1. If you annotate a result that is not yet associated with a publication, it will appear in this tracker only until you edit the result annotation to include an associated publication.
+        1. If you annotate a result that is not yet associated with a publication, it will appear only in this tracker until you edit the result annotation to include an associated publication.
 
 2. If your result saves successfully, The User Status Message Box will display this message to indicate your result saved successfully and that the result has been written to the corresponding Results Tracker file(s) as well as the results-tracker-collect-all file.
 
@@ -169,7 +169,7 @@ This describes the larger claim that the result is used to support in the public
 
 !!! tip 
 
-     If you need to annotate a new result that is very similar to a previously annotated result with only some slight changes, you can also use the advanced option ["Add a new result based on an existing result."](batchresult.md#add-a-new-resource-based-on-an-existing-resource) 
+     If you need to annotate a new result that is very similar to a previously annotated result with only some slight changes, you can also use the advanced option [**"Add a new result based on an existing result."**](batchresult.md#add-a-new-resource-based-on-an-existing-resource) 
      
      This will allow you to copy the information from a previously annotated result into a new result, for ease of annotation.
 

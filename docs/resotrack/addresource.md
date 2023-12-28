@@ -112,8 +112,8 @@ This specifies the level of access that you will apply to this resource (permane
         <figcaption></figcaption>
     </figure>
 
-1. **If you select "temporary-private,"** you will need to also denote 1) the level of access for the resource after the temporary private period and 2) the timepoint of the end of the temporary private period (Access Date). 
-    1. Add an additional row and select the level of access of the resource once the temporary private period ends.
+1. **If you select "temporary-private,"** you will need to complete two additional fields to specify: 1) the level of access for the resource after the temporary private period and 2) the timepoint of the end of the temporary private period (Access Date). 
+    1. First, add an additional row and select the designated level of access of the resource once the temporary private period ends.
     1. Fill in the "Access Date" when the temporary private period will end. This can just be a projection; you are not bound by this date.
 
     <figure markdown>
@@ -291,6 +291,6 @@ Once you have finished entering the resource information, select "Save resource.
 
 !!! tip 
 
-     If you need to annotate a new resource that is very similar to a previously annotated resource with only some slight changes, you can also use the advanced option ["Add a new resource based on an existing resource."](batchreso.md#add-a-new-resource-based-on-an-existing-resource) 
+     If you need to annotate a new resource that is very similar to a previously annotated resource with only some slight changes, you can also use the advanced option [**"Add a new resource based on an existing resource."**](batchreso.md#add-a-new-resource-based-on-an-existing-resource) 
      
      This will allow you to copy the information from a previously annotated resource into a new resource, for ease of annotation.

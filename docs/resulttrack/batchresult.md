@@ -14,7 +14,7 @@ With this feature, you will select a previously annotated result, and the tool w
         <figcaption></figcaption>
     </figure>
 
-2. Your working data package folder will open automatically. Select the result on which you want to base your new result annotation. 
+2. Your working data package folder will open automatically. Select the result upon which you want to base your new result annotation. 
 
     <figure markdown>
         ![](../app-screenshots/select-old-result.PNG)

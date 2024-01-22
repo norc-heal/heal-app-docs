@@ -25,6 +25,6 @@ Although you will only need to create your data package once, you will need to s
         2. You will need to update the dsc-pkg directory using the [Audit and Update] feature.
 
         <figure markdown>
-            ![](../app-screenshots/work-dir-update-error-202401.PNG)
+            ![](../app-screenshots/update-data-pkg.PNG)
             <figcaption></figcaption>
         </figure>

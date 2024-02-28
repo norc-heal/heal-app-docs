@@ -31,7 +31,7 @@ With this feature, you will select a previously annotated experiment, and tool w
 
 ## Batch Add Experiment(s) to Tracker
 
-If you try to save an experiment while you have the Experiment Tracker open, you will receive an error. The annotated experiment file will save as a .txt file within the dsc-pkg folder, but it will not be added to the Experiment Tracker. You will need to do this manually using the "Batch add existing experiment(s) to tracker" option.
+This feature allows you to manually add existing annotated experiments to the Experiment Tracker. You should not generally need to use this feature, but it is included to account for the possibility that an error in the saving process could cause your annotated experiment to be saved as a .txt file but not automatically added to the Experiment Tracker. In this case, you will be able to use the "Batch add existing experiment(s) to tracker" option to add these experiment(s) to the appropriate tracker.
 
 1. Ensure that your Experiment Tracker is closed before attempting to batch add experiments.
 1. Navigate to the "Add Experiment" tab and select "Batch add existing experiment(s) to tracker" under "Advanced."

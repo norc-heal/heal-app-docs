@@ -34,11 +34,11 @@ If you want to edit a result after you have created it, you can do so in the too
         <figcaption></figcaption>
     </figure>
 
-    1. When you edit your first result, the tool will create an "archive" folder and will archive the original version of your result annotation (.txt) file there, so there are no issues with file naming. The User Status Message Box will also display a message providing information on the location of the original annotation file (see example above).
+4. Make any necessary edits to your result file, and then select "Save result."
+
+    1. When you save your edited result, the tool will archive the original version of your result annotation (.txt) file in an "archive" folder, so there are no issues with duplicate file naming.
 
         <figure markdown>
             ![](../app-screenshots/edit-result-archive.PNG)
             <figcaption></figcaption>
         </figure>
-
-4. Make any necessary edits to your result file, and then select "Save result."

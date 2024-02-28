@@ -32,7 +32,7 @@ With this feature, you will select a previously annotated result, and the tool w
 
 ## Batch Add Result(s) to Tracker
 
-If you try to save a result while you have the corresponding Results Tracker open, you will receive an error. The annotated result file will save as a .txt file within the dsc-pkg folder, but it will not be added to the Results Tracker. You will need to do this manually using the "Batch add existing result(s) to tracker" option.
+This feature allows you to manually add existing annotated results to the appropriate Result Tracker. You should not generally need to use this feature, but it is included to account for the possibility that an error in the saving process could cause your annotated result to be saved as a .txt file but not automatically added to the appropriate Result Tracker. In this case, you will be able to use the "Batch add existing result(s) to tracker" option to add these result(s) to the appropriate tracker.
 
 1. Ensure that none of your Results Trackers are open before attempting to batch add results.
 1. Navigate to the "Add Result" tab and select "Batch add existing result(s) to tracker" under "Advanced."

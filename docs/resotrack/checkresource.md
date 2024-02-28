@@ -12,7 +12,7 @@ full-width: true
 
 Whenever you document a resource and add dependencies, the tool will pull any of those dependencies that have not yet been documented into a resource list. When you load the resource list, you will be able to view all resources (that have been added as dependencies) left to annotate. You will also be able to select and annotate remaining resources from this window.
 
-If you are using a minimal annotation standard, you will also be able to designate whether you are planning to share each resource within the list. If you are not planning to share a resource, you will be able to complete a "rapid audit" for that resource instead of providing full documentation. This will allow even those resources that will not be shared to have at least minimal descriptive information.
+If you are using a minimal annotation standard, you will also be able to designate whether you are planning to share each resource within the list. If you are not planning to share a resource, you will be able to complete a "rapid audit" for that resource instead of providing full documentation. This will mean even those resources that will not be shared to have at least minimal descriptive information.
 
 ***
 
@@ -36,7 +36,7 @@ If you are using a minimal annotation standard, you will also be able to designa
 
 **If you are loading your resource list for the first time:**
 
-2. You will need to respond to **two questions**: 1) how you would like the file paths to be displayed in the resource list and 2) whether you have chosen a minimal annotation standard. 
+2. You should start by responding to **two questions**: 1) how you would like the file paths to be displayed in the resource list and 2) whether you have chosen a minimal annotation standard. 
     1. Note that after you have selected your preferences for these two questions, the tool will save them, so you will not have to re-select them each time you load your resource list.
 
      <figure markdown>
@@ -45,8 +45,8 @@ If you are using a minimal annotation standard, you will also be able to designa
     </figure>
 
 
-    1. Question 1 is fairly simple and just a matter of preference as to how you would like to view the file paths as you are using this tab in the tool. You can choose to display file paths as full paths or as relative paths, relative to your working data package directory.
-    2. Question 2 asks you whether you have chosen a minimal annotation standard due to a low level of resources available to devote to data sharing. 
+    1. **Question 1** is fairly simple and just a matter of preference as to how you would like to view the file paths as you are using this tab in the tool. You can choose to display file paths as full paths or as relative paths, relative to your working data package directory.
+    2. **Question 2** asks you whether you have chosen a minimal annotation standard due to a low level of resources available to devote to data sharing. 
         1. If you need a refresher on how to answer this question, please refer to the [conceptual best practices guidance documentation](https://norc-heal.github.io/heal-data-pkg-guide/){target=_blank}.
         2. If you select this option, an additional column will appear within the resource list: "Share resource?"
 
@@ -82,15 +82,15 @@ You can annotate resources directly from the resource list, rather than returnin
     </figure>
 
 2. This will open the same "Annotate Resource" window that you would find if you annotated a new resource via the "Add Resource" tab. For a refresher on how to fill out this form, refer to the [instructions on adding a new resource](addresource.md).
-    1. In the example below, the resource being annotated had been added as an associated data dictionary for resource-5. The tool extracted this information and pre-filled some fields in the resource form automatically. 
-    <figure markdown>
-        ![](../app-screenshots/check-resources-add-window.PNG)
-        <figcaption></figcaption>
-    </figure>
-
-    2. For other associated files/dependencies, the tool will only pre-fill the resource file path.
+    1. For most associated files/dependencies, the tool will pre-fill the resource file path. 
     <figure markdown>
         ![](../app-screenshots/check-resources-add-window2.PNG)
+        <figcaption></figcaption>
+    </figure>
+    
+    2. For certain types of resources, the tool will pre-fill additional information. For example, in the below example the resource being annotated had been added as an associated data dictionary for resource-27. The tool extracted this information and pre-filled some fields in the resource form automatically. 
+    <figure markdown>
+        ![](../app-screenshots/check-resources-add-window.PNG)
         <figcaption></figcaption>
     </figure>
 
@@ -116,7 +116,7 @@ You can annotate resources directly from the resource list, rather than returnin
 
 ### Rapid Audit Resource
 
-1. If you have chosen a minimal annotation standard due to a low level of reosurces available to devote to data sharing, ensure that you have selected the checkbox in the optional section in the "Check Resources to Add" tab.
+1. If you have chosen a minimal annotation standard due to a low level of resources available to devote to data sharing, ensure that you have selected the checkbox in the optional section in the "Check Resources to Add" tab.
     1. Review the resource list and deselect any resources that you will not be sharing under "Share resource?" You will then be given the option to rapid audit these resources.
 
     <figure markdown>

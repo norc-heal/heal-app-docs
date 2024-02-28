@@ -126,13 +126,13 @@ This describes the larger claim that the result is used to support in the public
 
         **Make sure that you do not have your Results Tracker open before trying to save.**
 
-        If you attempt to save a result but have the corresponding Results Tracker open, the annotated result file *will* save to your dsc-pkg folder, but the tool *will not* be able to automatically save the information to the Results Tracker. You will receive this error:
+        If you attempt to save a result but have the corresponding Results Tracker open, the annotated experiment file will not save. You will receive this error:
             <figure markdown>
                 ![](../app-screenshots/result-tracker-open-error.PNG)
                 <figcaption></figcaption>
             </figure>
         
-        As the printed message explains, in this case, you will have to use the ["Batch add existing result(s) to tracker" option](batchresult.md#batch-add-results-to-tracker) to add this annotated result file to the Results Tracker.
+        To save your result, you will need to close the Results Tracker and then press "save result" again.
 
 1. Each time you save a result, the tool will look for two things:
     1. Any existing Results Trackers for the associated publication(s) included in the annotation. If these Results Trackers do not already exist, the tool will create a Results Tracker for each of the associated publication(s). 

@@ -31,7 +31,7 @@ With this feature, you will select a previously annotated resource, and the tool
 
 ## Batch Add Resource(s) to Tracker
 
-If you try to save a resource while you have the Resource Tracker open, you will receive an error. The annotated resource file will save as a .txt file within the dsc-pkg folder, but it will not be added to the Resource Tracker. You will need to add this resource manually using the "Batch add existing resource(s) to tracker" option.
+This feature allows you to manually add existing annotated resources to the Resource Tracker. You should not generally need to use this feature, but it is included to account for the possibility that an error in the saving process could cause your annotated resouce to be saved as a .txt file but not automatically added to the Resource Tracker. In this case, you will be able to use the "Batch add existing resource(s) to tracker" option to add these resource(s) to the appropriate tracker.
 
 1. Ensure that your Resource Tracker is not open before attempting to batch add resources.
 2. Navigate to the "Add Resource" tab and select "Batch add existing resource(s) to tracker" under "Advanced."

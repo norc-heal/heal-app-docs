@@ -22,32 +22,15 @@
         <figcaption></figcaption>
     </figure>
 
-    3. Next, the tool will update the necessary files and print out confirmation of the update in the user status message box.
+    3. Next, the tool will update the necessary files and print out confirmation of the update in the user status message box, as well as information on any files that were unable to be updated.
 
     <figure markdown>
         ![](../app-screenshots/update-success.PNG)
         <figcaption></figcaption>
     </figure>
 
-3. Your newly updated data package will be called "dsc-pkg-update-in-progress."
-4. After updating your data package, you will need to re-set your working data package directory as the newly updated data package.
-    1. Return to the "Create or Continue Data Package" tab and select "Continue Existing Data Package."
-
+3. After updating your data package, your newly updated data package will have the same name as your original data package. The original version of the data package directory will be saved with an archive label. The user status message box will print a confirmation of this.
     <figure markdown>
-        ![](../app-screenshots/reset-dsc-pkg.PNG)
-        <figcaption></figcaption>
-    </figure>
-
-    2. Navigate to the folder that holds your original dsc-pkg, and select the "dsc-pkg-update-in-progress" folder.
-
-    <figure markdown>
-        ![](../app-screenshots/updated-dsc-pkg.PNG)
-        <figcaption></figcaption>
-    </figure>
-
-    3. The tool will check this folder to confirm all files are updated and print a confirmation message in the user status message box.
-
-    <figure markdown>
-        ![](../app-screenshots/new-dsc-pkg-updated-usmb.PNG)
+        ![](../app-screenshots/archive-dsc-pkg.PNG)
         <figcaption></figcaption>
     </figure>

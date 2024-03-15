@@ -22,7 +22,7 @@ nav:
       - Add a New Experiment: exptrack/addexp.md
       - Edit an Existing Experiment: exptrack/editexp.md
       - View the Experiment Tracker: exptrack/viewexp.md
-      - Advanced: exptrack/batchexp.md
+      - Advanced - Batch Add Experiments to the Tracker: exptrack/batchexp.md
   - The Results Tracker:
       - resulttrack/index.md
       - Add a New Result: resulttrack/addresult.md
@@ -32,7 +32,6 @@ nav:
   - The Resource Tracker:
       - resotrack/index.md
       - Add a New Resource: resotrack/addresource.md
-      - Check Resources to Add: resotrack/checkresource.md
       - Edit an Existing Resource: resotrack/editresource.md
       - View the Resource Tracker: resotrack/viewresource.md
       - Advanced: resotrack/batchreso.md

@@ -14,8 +14,9 @@ nav:
       - Navigating the Tool: about/nav.md
   - Data Package:
       - The Data Package Tab: datadir/index.md
-      - Creating a New Data Package: datadir/pkgdir.md
-      - Setting Your Working Data Package Directory: datadir/setdir.md 
+      - Create a New Data Package: datadir/pkgdir.md
+      - Set Your Working Data Package Directory: datadir/setdir.md 
+      - Audit and Update Your Data Package Directory: datadir/update.md
   - The Experiment Tracker: 
       - exptrack/index.md
       - Add a New Experiment: exptrack/addexp.md
@@ -27,13 +28,13 @@ nav:
       - Add a New Result: resulttrack/addresult.md
       - Edit an Existing Result: resulttrack/editresult.md
       - View the Results Tracker: resulttrack/viewresult.md
-      - Advanced - Batch Add Results to the Tracker: resulttrack/batchresult.md
+      - Advanced: resulttrack/batchresult.md
   - The Resource Tracker:
       - resotrack/index.md
       - Add a New Resource: resotrack/addresource.md
       - Edit an Existing Resource: resotrack/editresource.md
       - View the Resource Tracker: resotrack/viewresource.md
-      - Advanced - Batch Add Resources to the Tracker: resotrack/batchreso.md
+      - Advanced: resotrack/batchreso.md
   - Data Dictionary:
       - datadict/index.md
       - Create a Data Dictionary: datadict/create.md

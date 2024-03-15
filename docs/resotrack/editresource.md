@@ -21,24 +21,46 @@ If you want to edit a resource after you have created it, you can do so in the t
         <figcaption></figcaption>
     </figure>  
 
-3. The information on your annotated resource will population in the "Annotate Result" window.
+3. The information on your annotated resource will population in the "Annotate Resource" window.
 
     <figure markdown>
         ![](../app-screenshots/edit-resource-fill.PNG)
         <figcaption></figcaption>
     </figure> 
 
-    1. When you edit your first resource, the tool will create an "archive" folder and will archive the original version of your resource annotation (.txt) file there, so there are no issues with duplicate file naming. The User Status Message Box will also display a message providing information on the location of the original annotation file (see example above).
+4. Make any necessary edits to your resource file, and then select "Save resource."
+    1. When you save your edited resource, the tool will archive the original version of your resource annotation (.txt) file in an "archive" folder, so there are no issues with duplicate file naming.
 
     <figure markdown>
         ![](../app-screenshots/archive-folder.PNG)
         <figcaption></figcaption>
     </figure> 
 
-    !!! note
+## Editing Multiple "Like" Resources
 
-        Currently, you can only edit a resource once within the tool, due to an issue of duplicate files in the archive folder. This will be addressed in later releases of the tool. 
-        
-        For a temporary fix, if you need to make second or third edits to the same resource file, you should go into the archive folder and change the name of the resource txt file saved there (for example, you can change the name from "resource-trk-result-1" to "resource-trk-result-1-1" and so on for additional revisions). This will prevent an error.
+If you have annotated multiple "like" files at once using the "Add Multiple 'like' Resources" option, you can also edit them as a group using the "Edit an existing resource" feature. You cannot edit individual resources that were added as a set of multiple "like" files.
 
-4. Make any necessary edits to your resource file, and then select "Save resource."
+1. If you would like to edit a multi-like file resource, select the resource txt file that is **first** in the series of annotated multiple-like file resources. For example, if you annotated 3 files as multiple 'like' resources, and the corresponding resource txt files created were the three files in the image below, you would want to select to edit resource-trk-resource-29.
+
+    <figure markdown>
+        ![](../app-screenshots/multi-like-edit.PNG)
+        <figcaption></figcaption>
+    </figure> 
+
+    1. If you select a resource that is not the first txt file in that series of annotated multiple 'like' files (in the above example, resource-trk-resource-29), you will receive an error in the User Status Message Box (below) instructing you to return to the edit option and select the first resource in the series.
+
+        <figure markdown>
+            ![](../app-screenshots/usmb-edit-like-error.PNG)
+            <figcaption></figcaption>
+        </figure> 
+
+2. The information on your annotated resource will population in the "Annotate Resource" window.
+
+    <figure markdown>
+        ![](../app-screenshots/edit-multi-like.PNG)
+        <figcaption></figcaption>
+    </figure> 
+
+3. Make any necessary edits to your multi 'like' resources, and then select "Save resource."
+    1. When you save your edited resource, the tool will archive the original versions of your multi 'like' resource annotation (.txt) files in an "archive" folder, so there are no issues with duplicate file naming.
+

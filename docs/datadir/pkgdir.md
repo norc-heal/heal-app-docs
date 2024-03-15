@@ -5,7 +5,7 @@
 2. Within the "Create" tab, select "Create New Data Package."
 
     <figure markdown>
-        ![](../app-screenshots/create-new.png)
+        ![](../app-screenshots/create-new-202401.png)
         <figcaption></figcaption>
     </figure>
 
@@ -13,7 +13,7 @@
 4. Once you select a location, the folder "dsc-pkg" will appear within that folder. The tool will also display the new folder location in the user status message box and set the dsc-pkg folder you have just created as your working data package directory for the current session:
 
     <figure markdown>
-        ![](../app-screenshots/new-pkg-dir.PNG)
+        ![](../app-screenshots/new-pkg-dir-202401.PNG)
         <figcaption></figcaption>
     </figure>
 

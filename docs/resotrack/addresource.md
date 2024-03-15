@@ -49,16 +49,17 @@ Below is a table of all the resource category and sub-category options for your 
 
 | Resource Category               | Sub-category                          | Additional Resource Annotation Fields for Category |
 | ------------------------------- | ------------------------------------- | ------------------------------------- |
-| Multi-result | Figure<br>Table<br>Text<br>Draft publication<br>Publication<br>Report<br>White paper<br>Poster | <ul><li>**Results Resource - Sub-Category**</li><li>**Associated Results Tracker**: provides the path to the Results Tracker associated with this multi-result file;<br>*Note that the Associated Files/Dependencies field will no longer appear.*</li>
-| Single-result | Figure<br>Table<br>Text<br>Draft publication<br>Publication<br>Report<br>White paper<br>Poster | <ul><li>**Results Resource - Sub-Category**</li>
+| Publication | Peer-review manuscript<br>Report<br>White paper<br>Presentation<br>Poster | <ul><li>**Publication Resource - Sub-Category**</li><li>**Associated Results Tracker**: provides the path to the Results Tracker associated with this multi-result file;<br>*Note that the Associated Files/Dependencies field will no longer appear.*</li>
+| Result | Multi-panel figure<br>Single-panel figure<br>Table<br>Text | <ul><li>**Result Resource - Sub-Category**</li>
 | Tabular-data | Raw data<br>Processed intermediate data<br>Processed final data | <ul><li>**Resource Row Description**: explanation of what one row within the tabular file represents</li><li>**Data Resource - Sub-Category**</li><li>**Associated Data Dictionary**: file path for the data dictionary associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li><li>**Associated Protocol**: file path for the protocol associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li>
 | Non-tabular-data | Raw data<br>Processed intermediate data<br>Processed final data | <ul><li>**Data Resource - Sub-Category**</li><li>**Associated Protocol**: file path for the protocol associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li>
-| Metadata | HEAL-formatted data dictionary<br>Other formatted data dictionary<br>Protocol<br>ID map<br>Analysis plan<br>HEAL-formatted results tracker<br>HEAL-formatted experiment tracker | <ul><li>**Metadata Resource - Sub-Category**</li><li>*Note that if you select heal-formatted-results-tracker as the sub-category, the "Associated Files/Dependencies field will no longer appear.*</li>
+| Metadata | HEAL-formatted data dictionary<br>Other formatted data dictionary<br>Protocol<br>Analysis plan<br>HEAL-formatted results tracker<br>Other | <ul><li>**Metadata Resource - Sub-Category**</li><li>*Note that if you select heal-formatted-results-tracker as the sub-category, the "Associated Files/Dependencies field will no longer appear.*</li>
 | Code | No sub-categories | <ul><li>No additional Resource Tracker fields</li>
 
 #### Experiment Resource 'Belongs' To 
-1. This option allows you to associate your resources directly with experimental research questions and hypotheses, which can be useful for future researchers trying to understand your experiments and findings.
+1. This option allows you to associate your resources directly with experimental research questions and hypotheses, which can be useful for future researchers trying to understand your experiments and findings. 
 2. This field pipes in all existing experiment names from the Experiment Tracker into a drop-down menu.
+    1. To use this option, you will need to enter experiment names when you are [documenting your experiments in the Experiment Tracker](../exptrack/addexp.md#filling-out-the-form). If you do not yet have experiments documented with names, you can still annotate your resource. You can just come back and use the edit feature to edit your resource annotation to associate that resource with an experiment later.
 
     <figure markdown>
         ![](../app-screenshots/exp-reso-belongs.PNG)
@@ -75,14 +76,18 @@ Regardless of your annotation approach, there are two ways to add "Associated Fi
 
     **You should only utilize one of the below methods for entering dependencies for a specific resource.** If you add some files as associated files/dependencies manually and then utilize the "Add Multiple Resource Dependencies" option, those files may overwrite the files you entered manually.
 
-1. ***Single-add***: If you are adding only a few associated files/dependencies, you can add each individually using the "Associated Files/Dependencies" arrow button:
+1. ***Manually adding Associated Files/Dependencies*** 
+
+    1. If you are adding only a few associated files/dependencies, you can add each individually using the "Associated Files/Dependencies" arrow button:
 
     <figure markdown>
         ![](../app-screenshots/results-assoc-single.PNG)
         <figcaption></figcaption>
     </figure>
 
-2. ***Multi-add***: If you would like to add many associated files at once, you can use the "Add Multiple Resource Dependencies" option, which can be found at the top of the window:
+2. ***Batch adding Associated Files/Dependencies*** 
+
+    1. If you would like to add many associated files at once, you can use the "Add Multiple Resource Dependencies" option, which can be found at the top of the window:
 
     <figure markdown>
         ![](../app-screenshots/multiple-resource-dep.PNG)
@@ -108,8 +113,8 @@ This specifies the level of access that you will apply to this resource (permane
         <figcaption></figcaption>
     </figure>
 
-1. **If you select "temporary-private,"** you will need to also denote 1) the level of access for the resource after the temporary private period and 2) the timepoint of the end of the temporary private period (Access Date). 
-    1. Add an additional row and select the level of access of the resource once the temporary private period ends.
+1. **If you select "temporary-private,"** you will need to complete two additional fields to specify: 1) the level of access for the resource after the temporary private period and 2) the timepoint of the end of the temporary private period (Access Date). 
+    1. First, add an additional row and select the designated level of access of the resource once the temporary private period ends.
     1. Fill in the "Access Date" when the temporary private period will end. This can just be a projection; you are not bound by this date.
 
     <figure markdown>
@@ -125,6 +130,10 @@ If specific or proprietary software is required to open or read the resource, yo
 
 This field is not required. If no special/proprietary software was used to produce/read the resource file, leave this field blank.
 
+#### Resource Note
+
+This field should be used for any additional notes that are not already covered in the other fields of the Resource Tracker but that would be important for someone viewing or re-using a resource. 
+
 ## Adding Multiple "Like" Files
 
 If you have multiple "like" files with a similar naming convention, you may want to add and annotate them all at once rather than individually. The tool has a special feature that you can utilize to annotate multiple "like" files all at once.
@@ -132,7 +141,7 @@ If you have multiple "like" files with a similar naming convention, you may want
 ### What are "like" files?
 
 1. Examples of "like" files may be multiple datasets where each is a run of the same set of experiments or experimental results where each dataset corresponds to one subject's data. "Like" files will also have the same file extension.
-2. To be able to use this feature in the tool, "like" files must follow a common naming convention:
+2. To use this feature in the tool, "like" files should follow a common naming convention:
     1. For example, multiple data files by subject ID grouped in folders by week would be "like" files. The naming convention here is week-#/subject-#
         <figure markdown>
             ![](../app-screenshots/like-files-ex.png)
@@ -140,7 +149,7 @@ If you have multiple "like" files with a similar naming convention, you may want
         </figure>
 
     2. Another example: for an experiment testing samples on multiple different dates, files could follow the naming convention sample_1_date_20230818, sample_2_date_20230818, etc.
-    3. If you have "like" files, but they don't follow a common naming convention, you will need to re-name the files (using a common naming convention) in order to be able to use this feature.
+    3. If you have "like" files, but they don't follow a common naming convention, you may want to re-name the files (applying a common naming convention) before using this feature.
 
 If you have determined that you have a set of 'like' resources that you would like to annotate all at once, follow the steps below.
 
@@ -160,7 +169,7 @@ If you have determined that you have a set of 'like' resources that you would li
         <figcaption></figcaption>
     </figure>
 
-3. Once you add your "like" files, a box will pop up asking you to add a naming convention. You will need to enter a naming convention for your like files in the "Resource File Name Convention" box shown below:
+3. Once you add your "like" files, a box will pop up asking you to add a naming convention. Enter a naming convention for your like files in the "Resource File Name Convention" box shown below:
 
     <figure markdown>
         ![](../app-screenshots/name-convent-1.PNG)
@@ -168,7 +177,7 @@ If you have determined that you have a set of 'like' resources that you would li
     </figure>
 
     1. Follow the instructions in the dialog box above as to how to create a naming convention. Specifically, make sure that you use the {} brackets to bound the number, date, or descriptive information that changes from one like file to another.
-        1. Your will specify your naming convention slightly differently depending on whether it is integrated within the directory structure (e.g., multiple data files by subject ID grouped in folders by week) or within the filename (e.g., multiple data files within the same directory that only differ by filename).
+        1. You will specify your naming convention slightly differently depending on whether the common naming convention it is integrated within the directory structure (e.g., multiple data files by subject ID grouped in folders by week) or within the filename (e.g., multiple data files within the same directory that only differ by filename).
 
     2. **If your naming convention is within the directory structure**:
         1. Copy the file path from the Resource File Path field and paste into the Resource File Name Convention box:
@@ -235,15 +244,14 @@ Once you have finished entering the resource information, select "Save resource.
 
     **Make sure you do not have your Resource Tracker open before trying to save.**
 
-    If you attempt to save a resource but have the Resource Tracker open, the annotated resource file *will* save to your dsc-pkg folder, but the tool *will not* be able to save the information to the Resource Tracker. You will receive this error:
+    If you attempt to save a resource but have the Resource Tracker open, the annotated resource file *will not* save. You will receive this error:
 
     <figure markdown>
         ![](../app-screenshots/reso-track-open-error.PNG)
         <figcaption></figcaption>
     </figure>
 
-    As the printed message explains, in this case, you will have to use the ["Batch add existing resource(s) to tracker"](batchreso.md) option to add this annotated resource file to the Resource Tracker.
-    
+    To save your resource, you will need to close the Resource Tracker and then press "save resource" again.
 
 1. After you select "Save resource," the User Status Message Box should display a message confirming that your resource file saved successfully and that the resource has been written to the Resource Tracker file:
     <figure markdown>
@@ -251,7 +259,9 @@ Once you have finished entering the resource information, select "Save resource.
         <figcaption></figcaption>
     </figure>
 
-    1. This message will also include a note about all the files you listed as associated files/dependencies for your resource. This should be a helpful guide as to what resource(s) to annotate next, depending on your annotation approach.
+    1. This message will also include a note about all the files you listed as associated files/dependencies for your resource. Each of these dependencies will also need to be documented as a resource. 
+        1. To make this process easier, these files will automatically be pulled into a resource list, which you can access via the ["Check Resources to Add"](checkresource.md) tab. 
+        2. You will be able to use the "Check Resources to Add" tab to directly select and document specific resources from the list.
 
     <figure markdown>
         ![](../app-screenshots/list-to-annotate.PNG)
@@ -270,7 +280,7 @@ Once you have finished entering the resource information, select "Save resource.
     Once you have created them, you will not generally need to interact with the annotation files (.txt files) directly unless:
 
     1. You need to [edit an existing annotated resource](editresource.md)
-    2. There was an error in automatically the resoresourceruce to the Resource Tracker, which would necessitate manually [batch adding resources to the tracker](batchreso.md)
+    2. There was an error in automatically adding the resource to the Resource Tracker, which would necessitate manually [batch adding resources to the tracker](batchreso.md)
 
 ## Next Steps
 
@@ -282,3 +292,9 @@ Once you have finished entering the resource information, select "Save resource.
             ![](../app-screenshots/usmb-clear-resource-form.PNG)
             <figcaption></figcaption>
         </figure>
+
+!!! tip 
+
+     If you need to annotate a new resource that is very similar to a previously annotated resource with only some slight changes, you can also use the advanced option [**"Add a new resource based on an existing resource."**](batchreso.md#add-a-new-resource-based-on-an-existing-resource) 
+     
+     This will allow you to copy the information from a previously annotated resource into a new resource, for ease of annotation.

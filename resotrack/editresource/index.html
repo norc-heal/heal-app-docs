@@ -403,6 +403,8 @@
         
           
         
+          
+        
       
       
         
@@ -432,7 +434,7 @@
   
     <li class="md-nav__item">
       <a href="../../datadir/pkgdir/" class="md-nav__link">
-        Creating a New Data Package
+        Create a New Data Package
       </a>
     </li>
   
@@ -446,7 +448,21 @@
   
     <li class="md-nav__item">
       <a href="../../datadir/setdir/" class="md-nav__link">
-        Setting Your Working Data Package Directory
+        Set Your Working Data Package Directory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadir/update/" class="md-nav__link">
+        Audit and Update Your Data Package Directory
       </a>
     </li>
   
@@ -670,7 +686,7 @@
   
     <li class="md-nav__item">
       <a href="../../resulttrack/batchresult/" class="md-nav__link">
-        Advanced - Batch Add Results to the Tracker
+        Advanced
       </a>
     </li>
   
@@ -764,9 +780,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Edit an Existing Resource
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Edit an Existing Resource
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#editing-multiple-like-resources" class="md-nav__link">
+    Editing Multiple "Like" Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -794,7 +841,7 @@
   
     <li class="md-nav__item">
       <a href="../batchreso/" class="md-nav__link">
-        Advanced - Batch Add Resources to the Tracker
+        Advanced
       </a>
     </li>
   
@@ -1035,6 +1082,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#editing-multiple-like-resources" class="md-nav__link">
+    Editing Multiple "Like" Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1076,26 +1138,54 @@
 </figure>  </p>
 </li>
 <li>
-<p>The information on your annotated resource will population in the "Annotate Result" window.</p>
+<p>The information on your annotated resource will population in the "Annotate Resource" window.</p>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/edit-resource-fill.PNG" />
     <figcaption></figcaption>
 </figure> </p>
+</li>
+<li>
+<p>Make any necessary edits to your resource file, and then select "Save resource."</p>
 <ol>
-<li>When you edit your first resource, the tool will create an "archive" folder and will archive the original version of your resource annotation (.txt) file there, so there are no issues with duplicate file naming. The User Status Message Box will also display a message providing information on the location of the original annotation file (see example above).</li>
+<li>When you save your edited resource, the tool will archive the original version of your resource annotation (.txt) file in an "archive" folder, so there are no issues with duplicate file naming.</li>
 </ol>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/archive-folder.PNG" />
     <figcaption></figcaption>
 </figure> </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Currently, you can only edit a resource once within the tool, due to an issue of duplicate files in the archive folder. This will be addressed in later releases of the tool. </p>
-<p>For a temporary fix, if you need to make second or third edits to the same resource file, you should go into the archive folder and change the name of the resource txt file saved there (for example, you can change the name from "resource-trk-result-1" to "resource-trk-result-1-1" and so on for additional revisions). This will prevent an error.</p>
-</div>
+</li>
+</ol>
+<h2 id="editing-multiple-like-resources">Editing Multiple "Like" Resources<a class="headerlink" href="#editing-multiple-like-resources" title="Permanent link">&para;</a></h2>
+<p>If you have annotated multiple "like" files at once using the "Add Multiple 'like' Resources" option, you can also edit them as a group using the "Edit an existing resource" feature. You cannot edit individual resources that were added as a set of multiple "like" files.</p>
+<ol>
+<li>
+<p>If you would like to edit a multi-like file resource, select the resource txt file that is <strong>first</strong> in the series of annotated multiple-like file resources. For example, if you annotated 3 files as multiple 'like' resources, and the corresponding resource txt files created were the three files in the image below, you would want to select to edit resource-trk-resource-29.</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/multi-like-edit.PNG" />
+    <figcaption></figcaption>
+</figure> </p>
+<ol>
+<li>
+<p>If you select a resource that is not the first txt file in that series of annotated multiple 'like' files (in the above example, resource-trk-resource-29), you will receive an error in the User Status Message Box (below) instructing you to return to the edit option and select the first resource in the series.</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/usmb-edit-like-error.PNG" />
+    <figcaption></figcaption>
+</figure> </p>
+</li>
+</ol>
 </li>
 <li>
-<p>Make any necessary edits to your resource file, and then select "Save resource."</p>
+<p>The information on your annotated resource will population in the "Annotate Resource" window.</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/edit-multi-like.PNG" />
+    <figcaption></figcaption>
+</figure> </p>
+</li>
+<li>
+<p>Make any necessary edits to your multi 'like' resources, and then select "Save resource."</p>
+<ol>
+<li>When you save your edited resource, the tool will archive the original versions of your multi 'like' resource annotation (.txt) files in an "archive" folder, so there are no issues with duplicate file naming.</li>
+</ol>
 </li>
 </ol>
 

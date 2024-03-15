@@ -15,7 +15,7 @@
     
     
       
-        <title>Advanced - Batch Add Resources to the Tracker - HEAL Data Packaging Tool How-To</title>
+        <title>Advanced - HEAL Data Packaging Tool How-To</title>
       
     
     
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Advanced - Batch Add Resources to the Tracker
+              Advanced
             
           </span>
         </div>
@@ -403,6 +403,8 @@
         
           
         
+          
+        
       
       
         
@@ -432,7 +434,7 @@
   
     <li class="md-nav__item">
       <a href="../../datadir/pkgdir/" class="md-nav__link">
-        Creating a New Data Package
+        Create a New Data Package
       </a>
     </li>
   
@@ -446,7 +448,21 @@
   
     <li class="md-nav__item">
       <a href="../../datadir/setdir/" class="md-nav__link">
-        Setting Your Working Data Package Directory
+        Set Your Working Data Package Directory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadir/update/" class="md-nav__link">
+        Audit and Update Your Data Package Directory
       </a>
     </li>
   
@@ -670,7 +686,7 @@
   
     <li class="md-nav__item">
       <a href="../../resulttrack/batchresult/" class="md-nav__link">
-        Advanced - Batch Add Results to the Tracker
+        Advanced
       </a>
     </li>
   
@@ -793,12 +809,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Advanced - Batch Add Resources to the Tracker
+          Advanced
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Advanced - Batch Add Resources to the Tracker
+        Advanced
       </a>
       
         
@@ -815,6 +831,13 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-new-resource-based-on-an-existing-resource" class="md-nav__link">
+    Add a New Resource Based on an Existing Resource
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#batch-add-resources-to-tracker" class="md-nav__link">
@@ -1073,6 +1096,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#add-a-new-resource-based-on-an-existing-resource" class="md-nav__link">
+    Add a New Resource Based on an Existing Resource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#batch-add-resources-to-tracker" class="md-nav__link">
     Batch Add Resource(s) to Tracker
   </a>
@@ -1100,8 +1130,37 @@
 
 
 <h1 id="advanced">Advanced<a class="headerlink" href="#advanced" title="Permanent link">&para;</a></h1>
+<h2 id="add-a-new-resource-based-on-an-existing-resource">Add a New Resource Based on an Existing Resource<a class="headerlink" href="#add-a-new-resource-based-on-an-existing-resource" title="Permanent link">&para;</a></h2>
+<p>If you need to annotate a resource that is very similar to a previously annotated resource, with only small changes, you may want to use the "Add a new resource based on an existing resource" option. </p>
+<p>With this feature, you will select a previously annotated resource, and the tool will copy the information from the chosen resource into a new resource annotation form with a unique resource-ID. You will then only need to edit the information rather than reproduce it.</p>
+<ol>
+<li>
+<p>Select "Add a new resource based on an existing resource."</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/new-resource-based-on-old.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p>Your working data package folder will open automatically. Select the resource on which you want to base your new resource annotation. </p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/select-old-resource.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p>The annotate resource form will open and populate with the selected resource information with a unique ID.</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/populate-new-resource.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p>Edit the form to reflect the differences in this new resource. Save the form.</p>
+</li>
+</ol>
 <h2 id="batch-add-resources-to-tracker">Batch Add Resource(s) to Tracker<a class="headerlink" href="#batch-add-resources-to-tracker" title="Permanent link">&para;</a></h2>
-<p>If you try to save a resource while you have the Resource Tracker open, you will receive an error. The annotated resource file will save as a .txt file within the dsc-pkg folder, but it will not be added to the Resource Tracker. You will need to add this resource manually using the "Batch add existing resource(s) to tracker" option.</p>
+<p>This feature allows you to manually add existing annotated resources to the Resource Tracker. You should not generally need to use this feature, but it is included to account for the possibility that an error in the saving process could cause your annotated resouce to be saved as a .txt file but not automatically added to the Resource Tracker. In this case, you will be able to use the "Batch add existing resource(s) to tracker" option to add these resource(s) to the appropriate tracker.</p>
 <ol>
 <li>Ensure that your Resource Tracker is not open before attempting to batch add resources.</li>
 <li>

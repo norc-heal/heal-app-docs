@@ -403,6 +403,8 @@
         
           
         
+          
+        
       
       
         
@@ -432,7 +434,7 @@
   
     <li class="md-nav__item">
       <a href="../../datadir/pkgdir/" class="md-nav__link">
-        Creating a New Data Package
+        Create a New Data Package
       </a>
     </li>
   
@@ -446,7 +448,21 @@
   
     <li class="md-nav__item">
       <a href="../../datadir/setdir/" class="md-nav__link">
-        Setting Your Working Data Package Directory
+        Set Your Working Data Package Directory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadir/update/" class="md-nav__link">
+        Audit and Update Your Data Package Directory
       </a>
     </li>
   
@@ -670,7 +686,7 @@
   
     <li class="md-nav__item">
       <a href="../../resulttrack/batchresult/" class="md-nav__link">
-        Advanced - Batch Add Results to the Tracker
+        Advanced
       </a>
     </li>
   
@@ -782,7 +798,7 @@
   
     <li class="md-nav__item">
       <a href="../../resotrack/batchreso/" class="md-nav__link">
-        Advanced - Batch Add Resources to the Tracker
+        Advanced
       </a>
     </li>
   
@@ -958,40 +974,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Experiment Tracker
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         Experiment Tracker
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    Properties
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1066,21 +1051,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    Properties
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1100,21 +1070,7 @@
 
 
 <h1 id="heal-experiment-tracker">HEAL Experiment Tracker<a class="headerlink" href="#heal-experiment-tracker" title="Permanent link">&para;</a></h1>
-<p><em>HEAL DSC Core Metadata piece to track and provide basic information about experiment(s) you will perform as part of your HEAL study. Clinical studies will often have only one experiment to report, while basic science studies often have several experiments that are grouped together under a single study.</em></p>
-<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong><code>experiment.id</code></strong> <em>(string)</em>: id assigned to each experiment relevant to the data package; prefix is 'exp-' followed by a number starting with 1 for the first experiment, and iterating by 1 for each successive experiment (i.e. exp-1, exp-2, etc.).</li>
-<li><strong><code>experiment.type</code></strong> <em>(string)</em>: discovery|materials and methods development. Must be one of: <code>["discovery", "materials and methods development"]</code>.</li>
-<li><strong><code>experiment.description</code></strong> <em>(string)</em>: provide a brief description of the experiment; this is NOT a protocol.</li>
-<li><strong><code>experiment.question</code></strong> <em>(array)</em>: what question(s) does the experimentalist hope to address with this experiment? be as specific as possible.<ul>
-<li><strong>Items</strong> <em>(string)</em></li>
-</ul>
-</li>
-<li><strong><code>experiment.hypothesis</code></strong> <em>(array)</em>: for each question the experimentalist hopes to address with this experiment, what does the experimentalist hypothesize will be the result(s) of the experiment? Be as specific as possible.<ul>
-<li><strong>Items</strong> <em>(string)</em></li>
-</ul>
-</li>
-</ul>
+<p>{{ external_markdown('https://raw.githubusercontent.com/norc-heal/heal-data-pkg-tool/main/md_experiment_tracker.md', '') }}</p>
 
 
 

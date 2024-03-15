@@ -403,6 +403,8 @@
         
           
         
+          
+        
       
       
         
@@ -432,7 +434,7 @@
   
     <li class="md-nav__item">
       <a href="../../datadir/pkgdir/" class="md-nav__link">
-        Creating a New Data Package
+        Create a New Data Package
       </a>
     </li>
   
@@ -446,7 +448,21 @@
   
     <li class="md-nav__item">
       <a href="../../datadir/setdir/" class="md-nav__link">
-        Setting Your Working Data Package Directory
+        Set Your Working Data Package Directory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadir/update/" class="md-nav__link">
+        Audit and Update Your Data Package Directory
       </a>
     </li>
   
@@ -670,7 +686,7 @@
   
     <li class="md-nav__item">
       <a href="../../resulttrack/batchresult/" class="md-nav__link">
-        Advanced - Batch Add Results to the Tracker
+        Advanced
       </a>
     </li>
   
@@ -782,7 +798,7 @@
   
     <li class="md-nav__item">
       <a href="../../resotrack/batchreso/" class="md-nav__link">
-        Advanced - Batch Add Resources to the Tracker
+        Advanced
       </a>
     </li>
   
@@ -1054,8 +1070,49 @@
 
 
 <h1 id="validate-a-data-dictionary">Validate a Data Dictionary<a class="headerlink" href="#validate-a-data-dictionary" title="Permanent link">&para;</a></h1>
-<p><strong>This feature is still in production.</strong> </p>
-<p>Data dictionary validation will be available in the next release of the tool.</p>
+<p>You can use the Data Dictionary Validation tool to confirm that your data dictionary is HEAL-compliant. You may want to do this if you have made edits to a data dictionary that was produced by the tool or if you have another data dictionary that you believe could be considered HEAL-compliant.</p>
+<p>Before using the validation feature, you may want to review your data dictionary to confirm that you think it is likely HEAL-compliant. Please refer to the <a href="../../schemas/md_data_dict/" target="_blank">Data Dictionary schema</a> for information on what makes a data dictionary HEAL compliant.</p>
+<ol>
+<li>
+<p>Select Validate HEAL CSV Data Dictionary.
+    <figure markdown>
+        <img alt="" src="../../app-screenshots/validate-dd.PNG" />
+        <figcaption></figcaption>
+    </figure></p>
+</li>
+<li>
+<p>Navigate to and select the data dictionary you would like to validate.</p>
+</li>
+<li>
+<p>The User Status Message Box will print out a message with some information about the validation attempt.</p>
+<ol>
+<li>
+<p>If the data dictionary is HEAL-compliant, the user status message box will print out a confirmation message.</p>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/valid-dd-success.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+<li>
+<p>If the data dictionary is <em>not</em> HEAL compliant, the user status message box will print out information about what part of the validation failed.</p>
+<ol>
+<li>For more information about what needs to be changed/added to make your data dictionary HEAL-compliant, refer to the <a href="../../schemas/md_data_dict/">Data Dictionary schema</a>.</li>
+<li>In the below example, the data dictionary is missing descriptions for the variables. Description is a required field, so the validation fails.</li>
+</ol>
+<p><figure markdown>
+    <img alt="" src="../../app-screenshots/dd-valid-fail-desc.PNG" />
+    <figcaption></figcaption>
+</figure></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Once you have a validated, HEAL-compliant data dictionary, this step is complete. </p>
+<ol>
+<li>If you make any edits to the data dictionary after validating, you should run the validation again to confirm that it is still compliant.</li>
+</ol>
+</li>
+</ol>
 
 
 

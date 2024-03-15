@@ -405,6 +405,8 @@
         
           
         
+          
+        
       
       
         
@@ -434,7 +436,7 @@
   
     <li class="md-nav__item">
       <a href="../../datadir/pkgdir/" class="md-nav__link">
-        Creating a New Data Package
+        Create a New Data Package
       </a>
     </li>
   
@@ -448,7 +450,21 @@
   
     <li class="md-nav__item">
       <a href="../../datadir/setdir/" class="md-nav__link">
-        Setting Your Working Data Package Directory
+        Set Your Working Data Package Directory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadir/update/" class="md-nav__link">
+        Audit and Update Your Data Package Directory
       </a>
     </li>
   
@@ -729,7 +745,7 @@
   
     <li class="md-nav__item">
       <a href="../../resulttrack/batchresult/" class="md-nav__link">
-        Advanced - Batch Add Results to the Tracker
+        Advanced
       </a>
     </li>
   
@@ -841,7 +857,7 @@
   
     <li class="md-nav__item">
       <a href="../../resotrack/batchreso/" class="md-nav__link">
-        Advanced - Batch Add Resources to the Tracker
+        Advanced
       </a>
     </li>
   
@@ -1167,7 +1183,7 @@
 </div>
 <ol>
 <li>
-<p><strong>Experiment name</strong>: This field can act as a more descriptive shorthand name for the experiment in addition to the experiment ID.</p>
+<p><strong>Experiment name</strong>: This field can act as a more descriptive shorthand name for the experiment in addition to the experiment ID. This field is optional. You may not want to use it if, for example, your study only has one experiment.</p>
 <ol>
 <li>The experiment name should follow the format of default-experiment-name, with words separated by a "-". <ol>
 <li>Although not required, filling in the experiment name may help your internal team, as well as external investigators, to quickly understand the purpose and content of the experiment without having to read through the description, questions, and hypotheses.</li>
@@ -1211,12 +1227,12 @@
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>Make sure that you do not have your Experiment Tracker open before trying to save.</strong></p>
-<p>If you attempt to save an experiment but have the Experiment Tracker open, the annotated experiment file <em>will</em> save to your dsc-pkg folder, but the tool <em>will not</em> be able to automatically save the information to the Experiment Tracker. You will receive this error:
+<p>If you attempt to save an experiment but have the Experiment Tracker open, the annotated experiment file <em>will not</em> save. You will receive this error:
     <figure markdown>
         <img alt="" src="../../app-screenshots/exp-tracker-open-error.PNG" />
         <figcaption></figcaption>
     </figure></p>
-<p>As the printed message explains, in this case, you will have to use the <a href="../batchexp/">"Batch add existing experiment(s) to tracker" option</a> to add this annotated experiment file to the Experiment Tracker.</p>
+<p>To save your experiment, you will need to close the Experiment Tracker and then press "save experiment" again.</p>
 </div>
 <ol>
 <li>
@@ -1232,17 +1248,15 @@
         <img alt="" src="../../app-screenshots/exp-txt-file.PNG" />
         <figcaption></figcaption>
     </figure></p>
-</li>
-</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Once you have created them, you will not generally need to interact with the annotation files (.txt files) unless:</p>
 <ol>
 <li>You need to <a href="../editexp/">edit an existing annotated experiment</a></li>
-<li>There is an error in automatically adding the experiment to the Experiment Tracker, which would necessitate manually <a href="../batchexp/">batch adding experiments to the tracker</a></li>
+<li>There is an error in automatically adding the experiment to the Experiment Tracker, which would necessitate manually <a href="../batchexp/#batch-add-experiments-to-tracker">batch adding experiments to the tracker</a></li>
 </ol>
 </div>
-<ol>
+</li>
 <li>
 <p>After you have added a new experiment, you can annotate a new experiment.</p>
 <ol>

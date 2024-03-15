@@ -403,6 +403,8 @@
         
           
         
+          
+        
       
       
         
@@ -432,7 +434,7 @@
   
     <li class="md-nav__item">
       <a href="../../datadir/pkgdir/" class="md-nav__link">
-        Creating a New Data Package
+        Create a New Data Package
       </a>
     </li>
   
@@ -446,7 +448,21 @@
   
     <li class="md-nav__item">
       <a href="../../datadir/setdir/" class="md-nav__link">
-        Setting Your Working Data Package Directory
+        Set Your Working Data Package Directory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadir/update/" class="md-nav__link">
+        Audit and Update Your Data Package Directory
       </a>
     </li>
   
@@ -670,7 +686,7 @@
   
     <li class="md-nav__item">
       <a href="../../resulttrack/batchresult/" class="md-nav__link">
-        Advanced - Batch Add Results to the Tracker
+        Advanced
       </a>
     </li>
   
@@ -824,6 +840,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#resource-note" class="md-nav__link">
+    Resource Note
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -914,7 +937,7 @@
   
     <li class="md-nav__item">
       <a href="../batchreso/" class="md-nav__link">
-        Advanced - Batch Add Resources to the Tracker
+        Advanced
       </a>
     </li>
   
@@ -1211,6 +1234,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#resource-note" class="md-nav__link">
+    Resource Note
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1345,14 +1375,14 @@
 </thead>
 <tbody>
 <tr>
-<td>Multi-result</td>
-<td>Figure<br>Table<br>Text<br>Draft publication<br>Publication<br>Report<br>White paper<br>Poster</td>
-<td><ul><li><strong>Results Resource - Sub-Category</strong></li><li><strong>Associated Results Tracker</strong>: provides the path to the Results Tracker associated with this multi-result file;<br><em>Note that the Associated Files/Dependencies field will no longer appear.</em></li></td>
+<td>Publication</td>
+<td>Peer-review manuscript<br>Report<br>White paper<br>Presentation<br>Poster</td>
+<td><ul><li><strong>Publication Resource - Sub-Category</strong></li><li><strong>Associated Results Tracker</strong>: provides the path to the Results Tracker associated with this multi-result file;<br><em>Note that the Associated Files/Dependencies field will no longer appear.</em></li></td>
 </tr>
 <tr>
-<td>Single-result</td>
-<td>Figure<br>Table<br>Text<br>Draft publication<br>Publication<br>Report<br>White paper<br>Poster</td>
-<td><ul><li><strong>Results Resource - Sub-Category</strong></li></td>
+<td>Result</td>
+<td>Multi-panel figure<br>Single-panel figure<br>Table<br>Text</td>
+<td><ul><li><strong>Result Resource - Sub-Category</strong></li></td>
 </tr>
 <tr>
 <td>Tabular-data</td>
@@ -1366,7 +1396,7 @@
 </tr>
 <tr>
 <td>Metadata</td>
-<td>HEAL-formatted data dictionary<br>Other formatted data dictionary<br>Protocol<br>ID map<br>Analysis plan<br>HEAL-formatted results tracker<br>HEAL-formatted experiment tracker</td>
+<td>HEAL-formatted data dictionary<br>Other formatted data dictionary<br>Protocol<br>Analysis plan<br>HEAL-formatted results tracker<br>Other</td>
 <td><ul><li><strong>Metadata Resource - Sub-Category</strong></li><li><em>Note that if you select heal-formatted-results-tracker as the sub-category, the "Associated Files/Dependencies field will no longer appear.</em></li></td>
 </tr>
 <tr>
@@ -1378,9 +1408,12 @@
 </table>
 <h4 id="experiment-resource-belongs-to">Experiment Resource 'Belongs' To<a class="headerlink" href="#experiment-resource-belongs-to" title="Permanent link">&para;</a></h4>
 <ol>
-<li>This option allows you to associate your resources directly with experimental research questions and hypotheses, which can be useful for future researchers trying to understand your experiments and findings.</li>
+<li>This option allows you to associate your resources directly with experimental research questions and hypotheses, which can be useful for future researchers trying to understand your experiments and findings. </li>
 <li>
 <p>This field pipes in all existing experiment names from the Experiment Tracker into a drop-down menu.</p>
+<ol>
+<li>To use this option, you will need to enter experiment names when you are <a href="../../exptrack/addexp/#filling-out-the-form">documenting your experiments in the Experiment Tracker</a>. If you do not yet have experiments documented with names, you can still annotate your resource. You can just come back and use the edit feature to edit your resource annotation to associate that resource with an experiment later.</li>
+</ol>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/exp-reso-belongs.PNG" />
     <figcaption></figcaption>
@@ -1396,14 +1429,20 @@
 </div>
 <ol>
 <li>
-<p><strong><em>Single-add</em></strong>: If you are adding only a few associated files/dependencies, you can add each individually using the "Associated Files/Dependencies" arrow button:</p>
+<p><strong><em>Manually adding Associated Files/Dependencies</em></strong> </p>
+<ol>
+<li>If you are adding only a few associated files/dependencies, you can add each individually using the "Associated Files/Dependencies" arrow button:</li>
+</ol>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/results-assoc-single.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
 <li>
-<p><strong><em>Multi-add</em></strong>: If you would like to add many associated files at once, you can use the "Add Multiple Resource Dependencies" option, which can be found at the top of the window:</p>
+<p><strong><em>Batch adding Associated Files/Dependencies</em></strong> </p>
+<ol>
+<li>If you would like to add many associated files at once, you can use the "Add Multiple Resource Dependencies" option, which can be found at the top of the window:</li>
+</ol>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/multiple-resource-dep.PNG" />
     <figcaption></figcaption>
@@ -1430,9 +1469,9 @@
     </figure></p>
 <ol>
 <li>
-<p><strong>If you select "temporary-private,"</strong> you will need to also denote 1) the level of access for the resource after the temporary private period and 2) the timepoint of the end of the temporary private period (Access Date). </p>
+<p><strong>If you select "temporary-private,"</strong> you will need to complete two additional fields to specify: 1) the level of access for the resource after the temporary private period and 2) the timepoint of the end of the temporary private period (Access Date). </p>
 <ol>
-<li>Add an additional row and select the level of access of the resource once the temporary private period ends.</li>
+<li>First, add an additional row and select the designated level of access of the resource once the temporary private period ends.</li>
 <li>Fill in the "Access Date" when the temporary private period will end. This can just be a projection; you are not bound by this date.</li>
 </ol>
 <p><figure markdown>
@@ -1447,13 +1486,15 @@
 <h4 id="software-used-to-produceread-the-resource-file">Software used to produce/read the resource file<a class="headerlink" href="#software-used-to-produceread-the-resource-file" title="Permanent link">&para;</a></h4>
 <p>If specific or proprietary software is required to open or read the resource, you should fill this out.</p>
 <p>This field is not required. If no special/proprietary software was used to produce/read the resource file, leave this field blank.</p>
+<h4 id="resource-note">Resource Note<a class="headerlink" href="#resource-note" title="Permanent link">&para;</a></h4>
+<p>This field should be used for any additional notes that are not already covered in the other fields of the Resource Tracker but that would be important for someone viewing or re-using a resource. </p>
 <h2 id="adding-multiple-like-files">Adding Multiple "Like" Files<a class="headerlink" href="#adding-multiple-like-files" title="Permanent link">&para;</a></h2>
 <p>If you have multiple "like" files with a similar naming convention, you may want to add and annotate them all at once rather than individually. The tool has a special feature that you can utilize to annotate multiple "like" files all at once.</p>
 <h3 id="what-are-like-files">What are "like" files?<a class="headerlink" href="#what-are-like-files" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Examples of "like" files may be multiple datasets where each is a run of the same set of experiments or experimental results where each dataset corresponds to one subject's data. "Like" files will also have the same file extension.</li>
 <li>
-<p>To be able to use this feature in the tool, "like" files must follow a common naming convention:</p>
+<p>To use this feature in the tool, "like" files should follow a common naming convention:</p>
 <ol>
 <li>
 <p>For example, multiple data files by subject ID grouped in folders by week would be "like" files. The naming convention here is week-#/subject-#
@@ -1465,7 +1506,7 @@
 <li>
 <p>Another example: for an experiment testing samples on multiple different dates, files could follow the naming convention sample_1_date_20230818, sample_2_date_20230818, etc.</p>
 </li>
-<li>If you have "like" files, but they don't follow a common naming convention, you will need to re-name the files (using a common naming convention) in order to be able to use this feature.</li>
+<li>If you have "like" files, but they don't follow a common naming convention, you may want to re-name the files (applying a common naming convention) before using this feature.</li>
 </ol>
 </li>
 </ol>
@@ -1490,7 +1531,7 @@
 </figure></p>
 </li>
 <li>
-<p>Once you add your "like" files, a box will pop up asking you to add a naming convention. You will need to enter a naming convention for your like files in the "Resource File Name Convention" box shown below:</p>
+<p>Once you add your "like" files, a box will pop up asking you to add a naming convention. Enter a naming convention for your like files in the "Resource File Name Convention" box shown below:</p>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/name-convent-1.PNG" />
     <figcaption></figcaption>
@@ -1499,7 +1540,7 @@
 <li>
 <p>Follow the instructions in the dialog box above as to how to create a naming convention. Specifically, make sure that you use the {} brackets to bound the number, date, or descriptive information that changes from one like file to another.</p>
 <ol>
-<li>Your will specify your naming convention slightly differently depending on whether it is integrated within the directory structure (e.g., multiple data files by subject ID grouped in folders by week) or within the filename (e.g., multiple data files within the same directory that only differ by filename).</li>
+<li>You will specify your naming convention slightly differently depending on whether the common naming convention it is integrated within the directory structure (e.g., multiple data files by subject ID grouped in folders by week) or within the filename (e.g., multiple data files within the same directory that only differ by filename).</li>
 </ol>
 </li>
 <li>
@@ -1586,12 +1627,12 @@
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>Make sure you do not have your Resource Tracker open before trying to save.</strong></p>
-<p>If you attempt to save a resource but have the Resource Tracker open, the annotated resource file <em>will</em> save to your dsc-pkg folder, but the tool <em>will not</em> be able to save the information to the Resource Tracker. You will receive this error:</p>
+<p>If you attempt to save a resource but have the Resource Tracker open, the annotated resource file <em>will not</em> save. You will receive this error:</p>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/reso-track-open-error.PNG" />
     <figcaption></figcaption>
 </figure></p>
-<p>As the printed message explains, in this case, you will have to use the <a href="../batchreso/">"Batch add existing resource(s) to tracker"</a> option to add this annotated resource file to the Resource Tracker.</p>
+<p>To save your resource, you will need to close the Resource Tracker and then press "save resource" again.</p>
 </div>
 <ol>
 <li>
@@ -1601,7 +1642,11 @@
         <figcaption></figcaption>
     </figure></p>
 <ol>
-<li>This message will also include a note about all the files you listed as associated files/dependencies for your resource. This should be a helpful guide as to what resource(s) to annotate next, depending on your annotation approach.</li>
+<li>This message will also include a note about all the files you listed as associated files/dependencies for your resource. Each of these dependencies will also need to be documented as a resource. <ol>
+<li>To make this process easier, these files will automatically be pulled into a resource list, which you can access via the <a href="../checkresource/">"Check Resources to Add"</a> tab. </li>
+<li>You will be able to use the "Check Resources to Add" tab to directly select and document specific resources from the list.</li>
+</ol>
+</li>
 </ol>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/list-to-annotate.PNG" />
@@ -1621,7 +1666,7 @@
 <p>Once you have created them, you will not generally need to interact with the annotation files (.txt files) directly unless:</p>
 <ol>
 <li>You need to <a href="../editresource/">edit an existing annotated resource</a></li>
-<li>There was an error in automatically the resoresourceruce to the Resource Tracker, which would necessitate manually <a href="../batchreso/">batch adding resources to the tracker</a></li>
+<li>There was an error in automatically adding the resource to the Resource Tracker, which would necessitate manually <a href="../batchreso/">batch adding resources to the tracker</a></li>
 </ol>
 </div>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
@@ -1640,6 +1685,11 @@
 </ol>
 </li>
 </ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you need to annotate a new resource that is very similar to a previously annotated resource with only some slight changes, you can also use the advanced option <a href="../batchreso/#add-a-new-resource-based-on-an-existing-resource"><strong>"Add a new resource based on an existing resource."</strong></a> </p>
+<p>This will allow you to copy the information from a previously annotated resource into a new resource, for ease of annotation.</p>
+</div>
 
 
 

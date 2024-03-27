@@ -1375,6 +1375,41 @@
 </thead>
 <tbody>
 <tr>
+<td>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Multi-result</td>
+<td>Figure<br>Table<br>Text<br>Draft publication<br>Publication<br>Report<br>White paper<br>Poster</td>
+<td><ul><li><strong>Results Resource - Sub-Category</strong></li><li><strong>Associated Results Tracker</strong>: provides the path to the Results Tracker associated with this multi-result file;<br><em>Note that the Associated Files/Dependencies field will no longer appear.</em></li></td>
+</tr>
+<tr>
+<td>Single-result</td>
+<td>Figure<br>Table<br>Text<br>Draft publication<br>Publication<br>Report<br>White paper<br>Poster</td>
+<td><ul><li><strong>Results Resource - Sub-Category</strong></li></td>
+</tr>
+<tr>
+<td>Tabular-data</td>
+<td>Raw data<br>Processed intermediate data<br>Processed final data</td>
+<td><ul><li><strong>Resource Row Description</strong>: explanation of what one row within the tabular file represents</li><li><strong>Data Resource - Sub-Category</strong></li><li><strong>Associated Data Dictionary</strong>: file path for the data dictionary associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li><li><strong>Associated Protocol</strong>: file path for the protocol associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li></td>
+</tr>
+<tr>
+<td>Non-tabular-data</td>
+<td>Raw data<br>Processed intermediate data<br>Processed final data</td>
+<td><ul><li><strong>Data Resource - Sub-Category</strong></li><li><strong>Associated Protocol</strong>: file path for the protocol associated with the tabular file (should not be put in the Associated Files/Dependencies field)</li></td>
+</tr>
+<tr>
+<td>Metadata</td>
+<td>HEAL-formatted data dictionary<br>Other formatted data dictionary<br>Protocol<br>ID map<br>Analysis plan<br>HEAL-formatted results tracker<br>HEAL-formatted experiment tracker</td>
+<td><ul><li><strong>Metadata Resource - Sub-Category</strong></li><li><em>Note that if you select heal-formatted-results-tracker as the sub-category, the "Associated Files/Dependencies field will no longer appear.</em></li></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
 <td>Publication</td>
 <td>Peer-review manuscript<br>Report<br>White paper<br>Presentation<br>Poster</td>
 <td><ul><li><strong>Publication Resource - Sub-Category</strong></li><li><strong>Associated Results Tracker</strong>: provides the path to the Results Tracker associated with this multi-result file;<br><em>Note that the Associated Files/Dependencies field will no longer appear.</em></li></td>
@@ -1398,6 +1433,11 @@
 <td>Metadata</td>
 <td>HEAL-formatted data dictionary<br>Other formatted data dictionary<br>Protocol<br>Analysis plan<br>HEAL-formatted results tracker<br>Other</td>
 <td><ul><li><strong>Metadata Resource - Sub-Category</strong></li><li><em>Note that if you select heal-formatted-results-tracker as the sub-category, the "Associated Files/Dependencies field will no longer appear.</em></li></td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;&gt;&gt;&gt;&gt; doc-updates</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
 <td>Code</td>
@@ -1429,20 +1469,14 @@
 </div>
 <ol>
 <li>
-<p><strong><em>Manually adding Associated Files/Dependencies</em></strong> </p>
-<ol>
-<li>If you are adding only a few associated files/dependencies, you can add each individually using the "Associated Files/Dependencies" arrow button:</li>
-</ol>
+<p><strong><em>Single-add</em></strong>: If you are adding only a few associated files/dependencies, you can add each individually using the "Associated Files/Dependencies" arrow button:</p>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/results-assoc-single.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
 <li>
-<p><strong><em>Batch adding Associated Files/Dependencies</em></strong> </p>
-<ol>
-<li>If you would like to add many associated files at once, you can use the "Add Multiple Resource Dependencies" option, which can be found at the top of the window:</li>
-</ol>
+<p><strong><em>Multi-add</em></strong>: If you would like to add many associated files at once, you can use the "Add Multiple Resource Dependencies" option, which can be found at the top of the window:</p>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/multiple-resource-dep.PNG" />
     <figcaption></figcaption>
@@ -1642,11 +1676,7 @@
         <figcaption></figcaption>
     </figure></p>
 <ol>
-<li>This message will also include a note about all the files you listed as associated files/dependencies for your resource. Each of these dependencies will also need to be documented as a resource. <ol>
-<li>To make this process easier, these files will automatically be pulled into a resource list, which you can access via the <a href="../checkresource/">"Check Resources to Add"</a> tab. </li>
-<li>You will be able to use the "Check Resources to Add" tab to directly select and document specific resources from the list.</li>
-</ol>
-</li>
+<li>This message will also include a note about all the files you listed as associated files/dependencies for your resource. This should be a helpful guide as to what resource(s) to annotate next, depending on your annotation approach.</li>
 </ol>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/list-to-annotate.PNG" />
@@ -1666,7 +1696,7 @@
 <p>Once you have created them, you will not generally need to interact with the annotation files (.txt files) directly unless:</p>
 <ol>
 <li>You need to <a href="../editresource/">edit an existing annotated resource</a></li>
-<li>There was an error in automatically adding the resource to the Resource Tracker, which would necessitate manually <a href="../batchreso/">batch adding resources to the tracker</a></li>
+<li>There was an error in automatically the resoresourceruce to the Resource Tracker, which would necessitate manually <a href="../batchreso/">batch adding resources to the tracker</a></li>
 </ol>
 </div>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>

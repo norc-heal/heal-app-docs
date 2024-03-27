@@ -1,6 +1,8 @@
 # Advanced
+<<<<<<< HEAD
+=======
 
-## Add a New Experiment Based on Existing Experiment
+## Add a New Experiment Based on an Existing Experiment
 
 If you need to annotate an experiment that is very similar to a previously annotated experiment, with only slight changes, you may want to use the "Add a new experiment based on existing experiment" option. 
 
@@ -29,9 +31,10 @@ With this feature, you will select a previously annotated experiment, and tool w
 
 4. Edit the form to reflect the differences in this new experiment. Save the form.
 
+>>>>>>> doc-updates
 ## Batch Add Experiment(s) to Tracker
 
-If you try to save an experiment while you have the Experiment Tracker open, you will receive an error. The annotated experiment file will save as a .txt file within the dsc-pkg folder, but it will not be added to the Experiment Tracker. You will need to do this manually using the "Batch add existing experiment(s) to tracker" option.
+This feature allows you to manually add existing annotated experiments to the Experiment Tracker. You should not generally need to use this feature, but it is included to account for the possibility that an error in the saving process could cause your annotated experiment to be saved as a .txt file but not automatically added to the Experiment Tracker. In this case, you will be able to use the "Batch add existing experiment(s) to tracker" option to add these experiment(s) to the appropriate tracker.
 
 1. Ensure that your Experiment Tracker is closed before attempting to batch add experiments.
 1. Navigate to the "Add Experiment" tab and select "Batch add existing experiment(s) to tracker" under "Advanced."

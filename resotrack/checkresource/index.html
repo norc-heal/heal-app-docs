@@ -576,7 +576,7 @@
   
     <li class="md-nav__item">
       <a href="../../exptrack/batchexp/" class="md-nav__link">
-        Advanced - Batch Add Experiments to the Tracker
+        Advanced
       </a>
     </li>
   
@@ -707,18 +707,22 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       
       
         
           
             
+          
+        
           
         
           
@@ -760,6 +764,95 @@
       <a href="../addresource/" class="md-nav__link">
         Add a New Resource
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Check Resources to Add
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Check Resources to Add
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    Purpose
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loading-the-resource-list" class="md-nav__link">
+    Loading the Resource List
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-resource-from-the-resource-list" class="md-nav__link">
+    Adding a Resource from the Resource List
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding a Resource from the Resource List">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-resource-to-tracker" class="md-nav__link">
+    Add Resource to Tracker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rapid-audit-resource" class="md-nav__link">
+    Rapid Audit Resource
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1112,7 +1205,7 @@
 
 <h1 id="check-resources-to-add">Check Resources to Add<a class="headerlink" href="#check-resources-to-add" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p><img align="right" alt="" loading="lazy" src="../app-screenshots/check-resources.PNG" width="550" />As you document each resource, you will enter dependencies. After a file is listed as a dependency, it will need to be documented as a resource. This allows for future investigators to understand what files underlie the results. The "Check Resources to Add" tab is designed make this process easier. </p>
+<p><img align="right" alt="" loading="lazy" src="../../app-screenshots/check-resources.PNG" width="550" />As you document each resource, you will enter dependencies. After a file is listed as a dependency, it will need to be documented as a resource. This allows for future investigators to understand what files underlie the results. The "Check Resources to Add" tab is designed make this process easier. </p>
 <p>Whenever you document a resource and add dependencies, the tool will pull any of those dependencies that have not yet been documented into a resource list. When you load the resource list, you will be able to view all resources (that have been added as dependencies) left to annotate. You will also be able to select and annotate remaining resources from this window.</p>
 <p>If you are using a minimal annotation standard, you will also be able to designate whether you are planning to share each resource within the list. If you are not planning to share a resource, you will be able to complete a "rapid audit" for that resource instead of providing full documentation. This will mean even those resources that will not be shared to have at least minimal descriptive information.</p>
 <hr />
@@ -1121,7 +1214,7 @@
 <li>
 <p>Once you have documented one or more resources and their dependencies in the "Add Resource" tab, you will be able to view those dependencies in the Resource List. Navigate to the "Check Resources to Add" tab. Select "Load Resource List."</p>
 <p><figure markdown>
-    <img alt="" src="../app-screenshots/load-resource.PNG" />
+    <img alt="" src="../../app-screenshots/load-resource.PNG" />
     <figcaption></figcaption>
 </figure></p>
 <ol>
@@ -1131,7 +1224,7 @@
 <li>
 <p>When you open the "Load Resource List" window, you will find a list of all resources that have been added as dependencies, including the relative path, the type of dependency, the parent resource, and an option to "add resource to tracker."</p>
 <p><figure markdown>
-    <img alt="" src="../app-screenshots/load-resource-list.PNG" />
+    <img alt="" src="../../app-screenshots/load-resource-list.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
@@ -1144,7 +1237,7 @@
 <li>Note that after you have selected your preferences for these two questions, the tool will save them, so you will not have to re-select them each time you load your resource list.</li>
 </ol>
 <p><figure markdown>
-    <img alt="" src="../app-screenshots/load-resource-options.PNG" />
+    <img alt="" src="../../app-screenshots/load-resource-options.PNG" />
     <figcaption></figcaption>
 </figure></p>
 <ol>
@@ -1154,7 +1247,7 @@
 <li>
 <p>If you select this option, an additional column will appear within the resource list: "Share resource?"</p>
 <p><figure markdown>
-    <img alt="" src="../app-screenshots/minimal-annot.PNG" />
+    <img alt="" src="../../app-screenshots/minimal-annot.PNG" />
     <figcaption></figcaption>
 </figure></p>
 <ol>
@@ -1166,7 +1259,7 @@
 <li>Once a resource is deselected, the option to "rapidly audit" the resource will appear. This "rapid audit" form will be a modified version of the full resource annotation form, requiring only minimal information be provided.</li>
 </ol>
 <p><figure markdown>
-    <img alt="" src="../app-screenshots/deselect-share.PNG" />
+    <img alt="" src="../../app-screenshots/deselect-share.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
@@ -1188,7 +1281,7 @@
 <li>
 <p>You can annotate a resource directly from the resource list, rather than returning to the "Add Resource" tab. To annotate a resource within the resource list, select "Add resource to tracker."</p>
 <p><figure markdown>
-    <img alt="" src="../app-screenshots/check-resources-add.PNG" />
+    <img alt="" src="../../app-screenshots/check-resources-add.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
@@ -1198,7 +1291,7 @@
 <li>
 <p>For most associated files/dependencies, the tool will pre-fill the resource file path. 
 <figure markdown>
-    <img alt="" src="../app-screenshots/check-resources-add-window2.PNG" />
+    <img alt="" src="../../app-screenshots/check-resources-add-window2.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
@@ -1214,7 +1307,7 @@
 <li>
 <p>Fill in the form as usual, including adding the associated files/dependencies.</p>
 <p><figure markdown>
-    <img alt="" src="../app-screenshots/check-resources-fill-form.PNG" />
+    <img alt="" src="../../app-screenshots/check-resources-fill-form.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
@@ -1228,7 +1321,7 @@
 <li>In the example, below although the cohort file, raw data, and statistical analysis plan were all added as dependencies for resource-6 (documented above), only the cohort file has been added to the resource list upon refresh. The statistical analysis plan has already been documented, so it does not appear, and the raw data was already listed as a dependency of resource-5.</li>
 </ol>
 <p><figure markdown>
-    <img alt="" src="../app-screenshots/check-resources-refresh.PNG" />
+    <img alt="" src="../../app-screenshots/check-resources-refresh.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
@@ -1244,14 +1337,14 @@
 <li>Review the resource list and deselect any resources that you will not be sharing under "Share resource?" You will then be given the option to rapid audit these resources.</li>
 </ol>
 <p><figure markdown>
-    <img alt="" src="../app-screenshots/resources-shared-check.PNG" />
+    <img alt="" src="../../app-screenshots/resources-shared-check.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
 <li>
 <p>For resources that you will not share, select the "Rapid audit resource" option. You will be presented with a pared down version of the "Annotate Resource" form. As in the normal resource annotation form, additional fields may appear based on the "Resource Category."</p>
 <p><figure markdown>
-    <img alt="" src="../app-screenshots/rapid-audit-resource.PNG" />
+    <img alt="" src="../../app-screenshots/rapid-audit-resource.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
@@ -1261,7 +1354,7 @@
 <li>Note that because the resource being annotated here is a tabular file, the associated data dictionary and associated protocol fields have also popped up.</li>
 </ol>
 <p><figure markdown>
-    <img alt="" src="../app-screenshots/rapid-audit-resource-2.PNG" />
+    <img alt="" src="../../app-screenshots/rapid-audit-resource-2.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
@@ -1275,7 +1368,7 @@
 <li>Each new resource added to the list will automatically be assumed to be shared, so it is important to also review the updated resource list and ensure that all resources that will not be shared are deselected under "Share resource?"</li>
 </ol>
 <p><figure markdown>
-    <img alt="" src="../app-screenshots/check-resources-after-audit.PNG" />
+    <img alt="" src="../../app-screenshots/check-resources-after-audit.PNG" />
     <figcaption></figcaption>
 </figure></p>
 </li>
@@ -1300,6 +1393,44 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../addresource/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Add a New Resource" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Add a New Resource
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../editresource/" class="md-footer__link md-footer__link--next" aria-label="Next: Edit an Existing Resource" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Edit an Existing Resource
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

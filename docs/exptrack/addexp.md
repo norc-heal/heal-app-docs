@@ -35,7 +35,7 @@ full-width: true
 !!! Tip
     For additional information about each form field, please refer to the [Experiment Tracker schema](../schemas/md_experiment_tracker.md).
 
-1. **Experiment name**: This field can act as a more descriptive shorthand name for the experiment in addition to the experiment ID.
+1. **Experiment name**: This field can act as a more descriptive shorthand name for the experiment in addition to the experiment ID. This field is optional. You may not want to use it if, for example, your study only has one experiment.
     1. The experiment name should follow the format of default-experiment-name, with words separated by a "-". 
         1. Although not required, filling in the experiment name may help your internal team, as well as external investigators, to quickly understand the purpose and content of the experiment without having to read through the description, questions, and hypotheses.
     2. If you do not follow the required format, you will receive an error:
@@ -74,13 +74,14 @@ Once you have finished entering the experiment information, select "Save experim
 
     **Make sure that you do not have your Experiment Tracker open before trying to save.**
 
-    If you attempt to save an experiment but have the Experiment Tracker open, the annotated experiment file *will* save to your dsc-pkg folder, but the tool *will not* be able to automatically save the information to the Experiment Tracker. You will receive this error:
+    If you attempt to save an experiment but have the Experiment Tracker open, the annotated experiment file *will not* save. You will receive this error:
         <figure markdown>
             ![](../app-screenshots/exp-tracker-open-error.PNG)
             <figcaption></figcaption>
         </figure>
+
+    To save your experiment, you will need to close the Experiment Tracker and then press "save experiment" again.
     
-    As the printed message explains, in this case, you will have to use the ["Batch add existing experiment(s) to tracker" option](batchexp.md) to add this annotated experiment file to the Experiment Tracker.
 
 1. If the experiment is saved successfully, the User Status Message Box will display this message to indicate your experiment saved successfully and that the experiment has been written to the Experiment Tracker file:
 
@@ -95,12 +96,12 @@ Once you have finished entering the experiment information, select "Save experim
         <figcaption></figcaption>
     </figure>
 
-!!! note
+    !!! note
 
-    Once you have created them, you will not generally need to interact with the annotation files (.txt files) unless:
+        Once you have created them, you will not generally need to interact with the annotation files (.txt files) unless:
 
-    1. You need to [edit an existing annotated experiment](editexp.md)
-    2. There is an error in automatically adding the experiment to the Experiment Tracker, which would necessitate manually [batch adding experiments to the tracker](batchexp.md#batch-add-experiments-to-tracker)
+        1. You need to [edit an existing annotated experiment](editexp.md)
+        2. There is an error in automatically adding the experiment to the Experiment Tracker, which would necessitate manually [batch adding experiments to the tracker](batchexp.md#batch-add-experiments-to-tracker)
 
 5. After you have added a new experiment, you can annotate a new experiment.
 

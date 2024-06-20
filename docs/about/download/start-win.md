@@ -33,6 +33,17 @@
 
 5. Double-click the file to open the tool.
 
+    !!! info
+
+        When you double-click the file, you may receive an "Open File - Security Warning" pop-up box. Select "Run" to bypass this.
+            <figure markdown>
+                ![](../../app-screenshots/windows-run-warning.png)
+                <figcaption></figcaption>
+            </figure>
+
+
+6. You are ready to start using the data packaging tool. Proceed to the "[Data Package](../../datadir/index.md)" tab to create your data package.
+
     <figure markdown>
         ![](../../app-screenshots/windows-gui.PNG)
         <figcaption></figcaption>

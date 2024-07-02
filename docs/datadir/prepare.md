@@ -6,7 +6,7 @@ full-width: true
 
 # Prepare Your Data Package for Submission
 
-Once you have finished preparing your data package locally, you can use this tab to prepare your data package for submission to a repository. The "flavor(s)" of shareable data package that you produce for submission to a repository will depend on how and when you want to share your data. For guidance on how to determine what flavor(s) of shareable data package, refer to the [Data Packaging Guidance Documentation](https://norc-heal.github.io/heal-data-pkg-guide/submit/){target="_blank"} on preparing your data package for submission.
+Once you have finished preparing your data package locally, you can use this tab to prepare your data package for submission to a repository. The "flavor(s)" of shareable data package that you choose to produce for submission to a repository will depend on how and when you want to share your data. For guidance on how to determine what flavor(s) of shareable data package you should create, refer to the [Data Packaging Guidance Documentation](https://norc-heal.github.io/heal-data-pkg-guide/submit/){target="_blank"} on preparing your data package for submission.
 
 1. First, select the flavor of data package that you want to prepare:  
     1. Open-access now
@@ -44,15 +44,16 @@ Once you have finished preparing your data package locally, you can use this tab
         </figure>
 
 3. Next, you should review your newly created shareable data package to confirm that all files you intend to share are included (and any files you do not intend to share are not included).
-    1. Navigate to the directory in which your original study folder is located. You will see a new folder has been created. The name of this folder will be your study folder name with "-shareable-data-pkgs-yyyy-mm-dd" appended. In the below example, the folder title became "vivli-test-study-shareable-datapkgs-2024-06-12." The date on this folder will be today's date.
+    1. Navigate to the directory in which your study folder is located. You will see a new folder has been created. The name of this folder will be your study folder name with "-shareable-data-pkgs-yyyy-mm-dd" appended. In the below example, the folder title became "vivli-test-study-shareable-datapkgs-2024-06-14." The date on this folder will be today's date.
+    2. This folder will contain any shareable data packages you have created on today's date.
 
         <figure markdown>
             ![](../app-screenshots/shareable-pkg-ex.png)
             <figcaption></figcaption>
         </figure>
 
-    2. Open this folder; it will contain any shareable data packages you have created. Once you have opened the folder, confirm that it contains:
-        1. Each type (i.e., "flavor") of shareable data package you have created on today's date (with the dates appropriately specified, as necessary)
+    2. Open this folder. Confirm that it contains:
+        1. Each type (i.e., "flavor") of shareable data package you have created on today's date (with the dates appropriately specified, as necessary, for packages with embargo restrictions)
         2. A HEAL CSV Resource Tracker - This will be your overview Resource Tracker, which designates which files are shared in which shareable data package.
         3. A README file
 
@@ -77,15 +78,16 @@ Once you have finished preparing your data package locally, you can use this tab
             * An open-access-by-date shareable data package should also contain all resources that would be included in an open-access-now shareable data package; it should not include any managed access files.
             * A managed-access-by-date shareable data package should also contain all resources that would be included in an open-access-now, open-access-by-date, and managed-access-now shareable data package.
 
-    4. We encourage you to review each of the shareable data packages before sharing them publicly to ensure that each contains only the resources which you intend to share. Open one of your shareable data packages.
+    4. We encourage you to review each of the shareable data packages before sharing them publicly to ensure that each contains only the resources which you intend to share. 
+        1. To review, open one of your shareable data packages.
         1. The folder structure within your shareable data package should mirror that of your study folder/local data package. Some folders may be empty; this will occur if you did not share any resources from those folders in this flavor of shareable data package.
 
-        <figure markdown>
-            ![](../app-screenshots/share-folder-structure.png)
-            <figcaption></figcaption>
-        </figure>
+            <figure markdown>
+                ![](../app-screenshots/share-folder-structure.png)
+                <figcaption></figcaption>
+            </figure>
 
-        2. With the dsc-pkg folder, you will find the following files:
+        2. Within the dsc-pkg folder, you will find the following files:
 
             * An Experiment Tracker
             * A Resource Tracker

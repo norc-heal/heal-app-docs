@@ -16,7 +16,7 @@ nav:
       - The Data Package Tab: datadir/index.md
       - Create a New Data Package: datadir/pkgdir.md
       - Set Your Working Data Package Directory: datadir/setdir.md 
-      - Audit and Update Your Data Package Directory: datadir/update.md
+      - Update Your Data Package Directory: datadir/update.md
       - Prepare Data Package for Submission: datadir/prepare.md
   - The Experiment Tracker: 
       - exptrack/index.md
@@ -34,6 +34,7 @@ nav:
       - resotrack/index.md
       - Add a New Resource: resotrack/addresource.md
       - Edit an Existing Resource: resotrack/editresource.md
+      - Check Resources to Add: resotrack/checkresource.md
       - View the Resource Tracker: resotrack/viewresource.md
       - Advanced: resotrack/batchreso.md
   - Data Dictionary:

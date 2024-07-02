@@ -1,13 +1,13 @@
-# Auditing and Updating A Data Package Directory
+# Updating A Data Package Directory
 
 1. If you try to "Continue an Existing Data Package" and the files within your data package are not up to date with the current version of the tool, you will receive a warning message to update your files before proceeding.
 
     <figure markdown>
-        ![](../app-screenshots/update-data-pkg.PNG)
+        ![](../app-screenshots/work-dir-update-needed.PNG)
         <figcaption></figcaption>
     </figure>
 
-2. To update your data package, navigate to "Audit and Update" tab and select "Update Package Versions."
+2. To update your data package, navigate to the "Update Data Package" tab and select "Update Package Versions."
 
     <figure markdown>
         ![](../app-screenshots/audit-update-tab.PNG)
@@ -15,6 +15,10 @@
     </figure>
 
     1. Depending on the size of the data package you are updating, this may take a few minutes.
+
+        !!! note
+            During the time that the tool is updating your files, the tool window may not respond. **This is expected.** Do not close the tool during the update. After the updates are complete, the tool will respond again.
+
     2. First, the tool will audit the current files within your data package and determine which need to be updated.
 
     <figure markdown>

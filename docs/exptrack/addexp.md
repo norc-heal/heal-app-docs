@@ -112,3 +112,9 @@ Once you have finished entering the experiment information, select "Save experim
             ![](../app-screenshots/exp-clear-form.PNG)
             <figcaption></figcaption>
         </figure>
+
+!!! tip 
+
+     If you need to annotate a new experiment that is very similar to a previously annotated experiment with only some slight changes, you can also use the advanced option ["Add a new experiment based on an existing experiment."](batchexp.md#add-a-new-experiment-based-on-existing-experiment) 
+     
+     This will allow you to copy the information from a previously annotated experiment into a new experiment, for ease of annotation.

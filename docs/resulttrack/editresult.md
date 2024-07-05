@@ -27,7 +27,7 @@ If you want to edit a result after you have created it, you can do so in the too
         <figcaption></figcaption>
     </figure>
 
-3. The information on your annotated result will populate in the "Annotate Result" window.
+3. Your annotated result information will populate in the "Annotate Result" window.
 
     <figure markdown>
         ![](../app-screenshots/edit-result-2.PNG)

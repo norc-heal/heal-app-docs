@@ -21,6 +21,13 @@ In addition to the publication-specific Results Trackers, you will have one over
 *Example of a Results Tracker with multiple individual results annotated:*
 ![](../app-screenshots/results-track-ex.PNG)
 
+<br><br>
+
+
+
+*Example of a Results Tracker with multiple individual results annotated:*
+![](../app-screenshots/results-track-ex.PNG)
+
 
 
 

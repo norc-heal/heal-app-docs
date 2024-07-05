@@ -23,7 +23,7 @@ The tabs within the tool are organized sequentially to walk through the steps of
 
 Within each of these tabs, there are 2-3 sub-tabs. Each has an "Info" tab, which provides information on what the app will create within the selected step. Depending on which domain you are viewing, the additional tabs will vary. Each individual tab will provide the necessary forms and guidance to execute the steps for that domain.
 
-## App Messages and Guidance
+## Tool Messages and Guidance
 ### Working Data Package Directory
 The Working Data Package Directory will always be displayed at the top of the tool's main window. Each time you open the data packaging tool, you will first need to set your working data package directory (e.g., provide the path to your existing data package directory). This will enable the tool to interface with the data package folder during your session.
 

@@ -4,7 +4,7 @@ hide:
 full-width: true
 ---
 
-# About the Data Package Tab
+# Creating or Continuing A Data Package
 
 ![](../app-screenshots/windows-gui.PNG){: loading=lazy width="550" align=right }The Data Package tab will always be the first place you visit when you open the data packaging tool. The Data Package directory is where all of your data packaging documentation will live, including your study’s experiment tracker, resource tracker, results trackers, and data dictionaries.   
 

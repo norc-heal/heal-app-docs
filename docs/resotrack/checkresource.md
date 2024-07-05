@@ -94,10 +94,29 @@ You can annotate resources directly from the resource list, rather than returnin
         <figcaption></figcaption>
     </figure>
 
+    2. For other associated files/dependencies, the tool will only pre-fill the resource file path.
+    <figure markdown>
+        ![](../app-screenshots/check-resources-add-window2.PNG)
+        <figcaption></figcaption>
+    </figure>
+
 3. Fill in the form as usual, including adding the associated files/dependencies.
+
+    <figure markdown>
+        ![](../app-screenshots/check-resources-fill-form.PNG)
+        <figcaption></figcaption>
+    </figure>
+
 4. Save the resource, and close the form.
-5. Return to the "Check Resources to Add" tab and select "Load Resource List" to refresh the resource to add list. 
+5. Return to the "Check Resources to Add" tab and select "Load Resource List" to refresh the list. 
     1. The resource you have just annotated will be removed from the refreshed list, and any newly added dependencies will appear. 
+    2. In the example, below although the cohort file, raw data, and statistical analysis plan were all added as dependencies for resource-6 (documented above), only the cohort file has been added to the resource list upon refresh. The statistical analysis plan has already been documented, so it does not appear, and the raw data was already listed as a dependency of resource-5.
+
+    <figure markdown>
+        ![](../app-screenshots/check-resources-refresh.PNG)
+        <figcaption></figcaption>
+    </figure>
+
 6. Repeat these steps until you have annotated all resources in the resource list.
 
 

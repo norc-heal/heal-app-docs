@@ -33,7 +33,6 @@ nav:
   - The Resource Tracker:
       - resotrack/index.md
       - Add a New Resource: resotrack/addresource.md
-      - Check Resources to Add: resotrack/checkresource.md
       - Edit an Existing Resource: resotrack/editresource.md
       - Check Resources to Add: resotrack/checkresource.md
       - View the Resource Tracker: resotrack/viewresource.md

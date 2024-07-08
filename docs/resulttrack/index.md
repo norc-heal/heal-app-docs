@@ -12,7 +12,6 @@ You will have one Results Tracker for **each** publication (e.g., manuscript, po
 
 In addition to the publication-specific Results Trackers, you will have one overall Results Tracker, which is a compilation of all individual results you have annotated within the tool, including results that are not yet associated with a publication. This tracker is called heal-csv-results-tracker-collect-all.
 
-<br><br><br>
 
 !!! note "A Note on the Results Tracker"
 
@@ -21,12 +20,6 @@ In addition to the publication-specific Results Trackers, you will have one over
 *Example of a Results Tracker with multiple individual results annotated:*
 ![](../app-screenshots/results-track-ex.PNG)
 
-<br><br>
-
-
-
-*Example of a Results Tracker with multiple individual results annotated:*
-![](../app-screenshots/results-track-ex.PNG)
 
 
 

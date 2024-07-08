@@ -21,7 +21,7 @@ If you are using a minimal annotation standard, you will also be able to designa
 1. Once you have documented one or more resources and their dependencies in the "Add Resource" tab, you will be able to view those dependencies in the Resource List. Navigate to the "Check Resources to Add" tab. Select "Load Resource List."
 
      <figure markdown>
-        ![](../app-screenshots/load-resource.png)
+        ![](../app-screenshots/load-resource.PNG)
         <figcaption></figcaption>
     </figure>
 
@@ -30,7 +30,7 @@ If you are using a minimal annotation standard, you will also be able to designa
 2. When you open the "Load Resource List" window, you will find a list of all resources that have been added as dependencies, including the relative path, the type of dependency, the parent resource, and an option to "add resource to tracker."
 
      <figure markdown>
-        ![](../app-screenshots/load-resource-list.png)
+        ![](../app-screenshots/load-resource-list.PNG)
         <figcaption></figcaption>
     </figure>
 
@@ -40,18 +40,18 @@ If you are using a minimal annotation standard, you will also be able to designa
     1. Note that after you have selected your preferences for these two questions, the tool will save them, so you will not have to re-select them each time you load your resource list.
 
      <figure markdown>
-        ![](../app-screenshots/load-resource-options.png)
+        ![](../app-screenshots/load-resource-options.PNG)
         <figcaption></figcaption>
     </figure>
 
 
     1. **Question 1** is fairly simple and just a matter of preference as to how you would like to view the file paths as you are using this tab in the tool. You can choose to display file paths as full paths or as relative paths, relative to your working data package directory.
     2. **Question 2** asks you whether you have chosen a minimal annotation standard due to a low level of resources available to devote to data sharing. 
-        1. If you need a refresher on how to answer this question, please refer to the [conceptual best practices guidance documentation](https://norc-heal.github.io/heal-data-pkg-guide/){target=_blank}.
+        1. If you need a refresher on how to answer this question, please refer to the [HEAL data packaging guidance documentation](https://norc-heal.github.io/heal-data-pkg-guide/){target=_blank}.
         2. If you select this option, an additional column will appear within the resource list: "Share resource?"
 
             <figure markdown>
-                ![](../app-screenshots/minimal-annot.png)
+                ![](../app-screenshots/minimal-annot.PNG)
                 <figcaption></figcaption>
             </figure>
 
@@ -61,7 +61,7 @@ If you are using a minimal annotation standard, you will also be able to designa
                 3. Once a resource is deselected, the option to "rapidly audit" the resource will appear. This "rapid audit" form will be a modified version of the full resource annotation form, requiring only minimal information be provided.
 
         <figure markdown>
-            ![](../app-screenshots/deselect-share.png)
+            ![](../app-screenshots/deselect-share.PNG)
             <figcaption></figcaption>
         </figure>
 
@@ -84,19 +84,13 @@ You can annotate resources directly from the resource list, rather than returnin
 2. This will open the same "Annotate Resource" window that you would find if you annotated a new resource via the "Add Resource" tab. For a refresher on how to fill out this form, refer to the [instructions on adding a new resource](addresource.md).
     1. For most associated files/dependencies, the tool will pre-fill the resource file path. 
     <figure markdown>
-        ![](../app-screenshots/check-resources-add-window2.png)
+        ![](../app-screenshots/check-resources-add-window2.PNG)
         <figcaption></figcaption>
     </figure>
     
     2. For certain types of resources, the tool will pre-fill additional information. For example, in the below example the resource being annotated had been added as an associated data dictionary for resource-27. The tool extracted this information and pre-filled some fields in the resource form automatically. 
     <figure markdown>
         ![](../app-screenshots/check-resources-add-window.PNG)
-        <figcaption></figcaption>
-    </figure>
-
-    2. For other associated files/dependencies, the tool will only pre-fill the resource file path.
-    <figure markdown>
-        ![](../app-screenshots/check-resources-add-window2.PNG)
         <figcaption></figcaption>
     </figure>
 
@@ -126,14 +120,14 @@ You can annotate resources directly from the resource list, rather than returnin
     1. Review the resource list and deselect any resources that you will not be sharing under "Share resource?" You will then be given the option to rapid audit these resources.
 
     <figure markdown>
-        ![](../app-screenshots/resources-shared-check.png)
+        ![](../app-screenshots/resources-shared-check.PNG)
         <figcaption></figcaption>
     </figure>
 
 2. For resources that you will not share, select the "Rapid audit resource" option. You will be presented with a pared down version of the "Annotate Resource" form. As in the normal resource annotation form, additional fields may appear based on the "Resource Category."
 
     <figure markdown>
-        ![](../app-screenshots/rapid-audit-resource.png)
+        ![](../app-screenshots/rapid-audit-resource.PNG)
         <figcaption></figcaption>
     </figure>
 
@@ -145,7 +139,7 @@ You can annotate resources directly from the resource list, rather than returnin
     2. Each new resource added to the list will automatically be assumed to be shared, so it is important to also review the updated resource list and ensure that all resources that will not be shared are deselected under "Share resource?"
 
     <figure markdown>
-        ![](../app-screenshots/check-resources-after-audit.png)
+        ![](../app-screenshots/check-resources-after-audit.PNG)
         <figcaption></figcaption>
     </figure>
 

@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+full-width: true
+---
+
 # Viewing the Resource Tracker
 
 If you need to view anything that you have already input into the Resource Tracker, you can use the "View Tracker" feature. It may be useful to view your Resource Tracker within the application to:

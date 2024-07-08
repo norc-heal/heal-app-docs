@@ -21,7 +21,7 @@ If you want to edit a resource after you have created it, you can do so in the t
         <figcaption></figcaption>
     </figure>  
 
-3. The information on your annotated resource will population in the "Annotate Resource" window.
+3. The information on your annotated resource will populate in the "Annotate Resource" window.
 
     <figure markdown>
         ![](../app-screenshots/edit-resource-fill.PNG)

@@ -41,7 +41,7 @@ The User Status Message Box will print out messages when you make certain select
 
 | Color   | Form Fields                         | User Status Message Box                   |
 | ------- | ----------------------------------- | ----------------------------------------- |
-| Blue | Required, but can be filled in <br>by an automatic process | Information on next steps |
+| Blue | Required, but will be filled in <br>by an automatic process | Information on next steps |
 | Green| Required | Successful process message |
 | Black | Not required, but useful to include | Process message |
 | Red | N/A | Error message |

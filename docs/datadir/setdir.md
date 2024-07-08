@@ -22,9 +22,9 @@ Although you will only need to create your data package once, you will need to s
     
     2. ***If your dsc-pkg folder is not up to date with the most recent version of the tool:***
         1. The User Status Message Box will print out a warning that some files in your data package directory are not up to date. 
-        2. You will need to update the dsc-pkg directory using the [Audit and Update] feature.
+        2. You will need to update the dsc-pkg directory using the [Update Data Package](update.md) feature.
 
         <figure markdown>
-            ![](../app-screenshots/update-data-pkg.PNG)
+            ![](../app-screenshots/work-dir-update-needed.PNG)
             <figcaption></figcaption>
         </figure>

@@ -8,11 +8,11 @@ full-width: true
 
 ## Purpose
 
-![](../app-screenshots/check-resources.PNG){: loading=lazy width="550" align=right }As you document each resource, you will enter dependencies. After a file is listed as a dependency, it will need to be documented as a resource. This allows for future investigators to understand what files underlie the results. The "Check Resources to Add" tab is designed make this process easier. 
+![](../app-screenshots/check-resource.png){: loading=lazy width="550" align=right }As you document each resource, you will enter dependencies. After a file is listed as a dependency, it will need to be documented as a resource. This allows for future investigators to understand what files underlie the results. The "Check Resources to Add" tab is designed make this process easier. 
 
 Whenever you document a resource and add dependencies, the tool will pull any of those dependencies that have not yet been documented into a resource list. When you load the resource list, you will be able to view all resources (that have been added as dependencies) left to annotate. You will also be able to select and annotate remaining resources from this window.
 
-If you are using a minimal annotation standard, you will also be able to designate whether you are planning to share each resource within the list. If you are not planning to share a resource, you will be able to complete a "rapid audit" for that resource instead of providing full documentation. This will mean even those resources that will not be shared to have at least minimal descriptive information.
+If you are using a minimal annotation standard, you will also be able to designate whether you are planning to share each resource within the list. If you are not planning to share a resource, you will be able to complete a "rapid audit" for that resource instead of providing full documentation. This means that even those resources that will not be shared will have at least minimal descriptive information.
 
 ***
 
@@ -47,7 +47,7 @@ If you are using a minimal annotation standard, you will also be able to designa
 
     1. **Question 1** is fairly simple and just a matter of preference as to how you would like to view the file paths as you are using this tab in the tool. You can choose to display file paths as full paths or as relative paths, relative to your working data package directory.
     2. **Question 2** asks you whether you have chosen a minimal annotation standard due to a low level of resources available to devote to data sharing. 
-        1. If you need a refresher on how to answer this question, please refer to the [conceptual best practices guidance documentation](https://norc-heal.github.io/heal-data-pkg-guide/){target=_blank}.
+        1. If you need a refresher on how to answer this question, please refer to the [HEAL data packaging guidance documentation](https://norc-heal.github.io/heal-data-pkg-guide/){target=_blank}.
         2. If you select this option, an additional column will appear within the resource list: "Share resource?"
 
             <figure markdown>
@@ -60,10 +60,10 @@ If you are using a minimal annotation standard, you will also be able to designa
                 1. By default, all resources will be selected for sharing. You must deselect the resources that you are not planning to share.
                 3. Once a resource is deselected, the option to "rapidly audit" the resource will appear. This "rapid audit" form will be a modified version of the full resource annotation form, requiring only minimal information be provided.
 
-                <figure markdown>
-                    ![](../app-screenshots/deselect-share.PNG)
-                    <figcaption></figcaption>
-                </figure>
+        <figure markdown>
+            ![](../app-screenshots/deselect-share.PNG)
+            <figcaption></figcaption>
+        </figure>
 
 ## Adding a Resource from the Resource List
 
@@ -77,7 +77,7 @@ You can annotate resources directly from the resource list, rather than returnin
 1. You can annotate a resource directly from the resource list, rather than returning to the "Add Resource" tab. To annotate a resource within the resource list, select "Add resource to tracker."
 
     <figure markdown>
-        ![](../app-screenshots/check-resources-add.PNG)
+        ![](../app-screenshots/add-resource-check-1.png)
         <figcaption></figcaption>
     </figure>
 
@@ -132,13 +132,7 @@ You can annotate resources directly from the resource list, rather than returnin
     </figure>
 
 3. Fill in the form, including any associated files/dependencies.
-    1. Note that because the resource being annotated here is a tabular file, the associated data dictionary and associated protocol fields have also popped up.
-
-    <figure markdown>
-        ![](../app-screenshots/rapid-audit-resource-2.PNG)
-        <figcaption></figcaption>
-    </figure>
-
+    1. Depending on the resource category of the resource you are annotating, additional fields may appear. For example, if the resource is a tabular file, the associated data dictionary and associated protocol fields will also pop up.
 4. Save the resource, and close the form.
 5. Return to the "Check Resources to Add" tab and select "Load Resource List" to refresh the list. 
     1. The resource you have just annotated will be removed from the refreshed list, and any newly added dependencies will appear. 

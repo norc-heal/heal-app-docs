@@ -407,6 +407,8 @@
         
           
         
+          
+        
       
       
         
@@ -464,7 +466,21 @@
   
     <li class="md-nav__item">
       <a href="../../datadir/update/" class="md-nav__link">
-        Audit and Update Your Data Package Directory
+        Update Your Data Package Directory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datadir/prepare/" class="md-nav__link">
+        Prepare Data Package for Submission
       </a>
     </li>
   
@@ -773,6 +789,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../editresource/" class="md-nav__link">
+        Edit an Existing Resource
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -853,20 +883,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../editresource/" class="md-nav__link">
-        Edit an Existing Resource
-      </a>
     </li>
   
 
@@ -1205,9 +1221,9 @@
 
 <h1 id="check-resources-to-add">Check Resources to Add<a class="headerlink" href="#check-resources-to-add" title="Permanent link">&para;</a></h1>
 <h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
-<p><img align="right" alt="" loading="lazy" src="../../app-screenshots/check-resources.PNG" width="550" />As you document each resource, you will enter dependencies. After a file is listed as a dependency, it will need to be documented as a resource. This allows for future investigators to understand what files underlie the results. The "Check Resources to Add" tab is designed make this process easier. </p>
+<p><img align="right" alt="" loading="lazy" src="../../app-screenshots/check-resource.png" width="550" />As you document each resource, you will enter dependencies. After a file is listed as a dependency, it will need to be documented as a resource. This allows for future investigators to understand what files underlie the results. The "Check Resources to Add" tab is designed make this process easier. </p>
 <p>Whenever you document a resource and add dependencies, the tool will pull any of those dependencies that have not yet been documented into a resource list. When you load the resource list, you will be able to view all resources (that have been added as dependencies) left to annotate. You will also be able to select and annotate remaining resources from this window.</p>
-<p>If you are using a minimal annotation standard, you will also be able to designate whether you are planning to share each resource within the list. If you are not planning to share a resource, you will be able to complete a "rapid audit" for that resource instead of providing full documentation. This will mean even those resources that will not be shared to have at least minimal descriptive information.</p>
+<p>If you are using a minimal annotation standard, you will also be able to designate whether you are planning to share each resource within the list. If you are not planning to share a resource, you will be able to complete a "rapid audit" for that resource instead of providing full documentation. This means that even those resources that will not be shared will have at least minimal descriptive information.</p>
 <hr />
 <h2 id="loading-the-resource-list">Loading the Resource List<a class="headerlink" href="#loading-the-resource-list" title="Permanent link">&para;</a></h2>
 <ol>
@@ -1242,8 +1258,10 @@
 </figure></p>
 <ol>
 <li><strong>Question 1</strong> is fairly simple and just a matter of preference as to how you would like to view the file paths as you are using this tab in the tool. You can choose to display file paths as full paths or as relative paths, relative to your working data package directory.</li>
-<li><strong>Question 2</strong> asks you whether you have chosen a minimal annotation standard due to a low level of resources available to devote to data sharing. <ol>
-<li>If you need a refresher on how to answer this question, please refer to the <a href="https://norc-heal.github.io/heal-data-pkg-guide/" target="_blank">conceptual best practices guidance documentation</a>.</li>
+<li>
+<p><strong>Question 2</strong> asks you whether you have chosen a minimal annotation standard due to a low level of resources available to devote to data sharing. </p>
+<ol>
+<li>If you need a refresher on how to answer this question, please refer to the <a href="https://norc-heal.github.io/heal-data-pkg-guide/" target="_blank">HEAL data packaging guidance documentation</a>.</li>
 <li>
 <p>If you select this option, an additional column will appear within the resource list: "Share resource?"</p>
 <p><figure markdown>
@@ -1252,20 +1270,18 @@
 </figure></p>
 <ol>
 <li>Since you are following a minimal annotation standard, you will only fully document the files that you are sharing in your shareable data package.</li>
-<li>
-<p>Deselect the checkboxes corresponding to resources you will not share publicly in a repository.</p>
-<ol>
+<li>Deselect the checkboxes corresponding to resources you will not share publicly in a repository.<ol>
 <li>By default, all resources will be selected for sharing. You must deselect the resources that you are not planning to share.</li>
 <li>Once a resource is deselected, the option to "rapidly audit" the resource will appear. This "rapid audit" form will be a modified version of the full resource annotation form, requiring only minimal information be provided.</li>
+</ol>
+</li>
+</ol>
+</li>
 </ol>
 <p><figure markdown>
     <img alt="" src="../../app-screenshots/deselect-share.PNG" />
     <figcaption></figcaption>
 </figure></p>
-</li>
-</ol>
-</li>
-</ol>
 </li>
 </ol>
 </li>
@@ -1281,7 +1297,7 @@
 <li>
 <p>You can annotate a resource directly from the resource list, rather than returning to the "Add Resource" tab. To annotate a resource within the resource list, select "Add resource to tracker."</p>
 <p><figure markdown>
-    <img alt="" src="../../app-screenshots/check-resources-add.PNG" />
+    <img alt="" src="../../app-screenshots/add-resource-check-1.png" />
     <figcaption></figcaption>
 </figure></p>
 </li>
@@ -1351,16 +1367,10 @@
 <li>
 <p>Fill in the form, including any associated files/dependencies.</p>
 <ol>
-<li>Note that because the resource being annotated here is a tabular file, the associated data dictionary and associated protocol fields have also popped up.</li>
+<li>Depending on the resource category of the resource you are annotating, additional fields may appear. For example, if the resource is a tabular file, the associated data dictionary and associated protocol fields will also pop up.</li>
 </ol>
-<p><figure markdown>
-    <img alt="" src="../../app-screenshots/rapid-audit-resource-2.PNG" />
-    <figcaption></figcaption>
-</figure></p>
 </li>
-<li>
-<p>Save the resource, and close the form.</p>
-</li>
+<li>Save the resource, and close the form.</li>
 <li>
 <p>Return to the "Check Resources to Add" tab and select "Load Resource List" to refresh the list. </p>
 <ol>
@@ -1400,7 +1410,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../addresource/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Add a New Resource" rel="prev">
+        <a href="../editresource/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Edit an Existing Resource" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1409,20 +1419,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Add a New Resource
+              Edit an Existing Resource
             </div>
           </div>
         </a>
       
       
         
-        <a href="../editresource/" class="md-footer__link md-footer__link--next" aria-label="Next: Edit an Existing Resource" rel="next">
+        <a href="../viewresource/" class="md-footer__link md-footer__link--next" aria-label="Next: View the Resource Tracker" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Edit an Existing Resource
+              View the Resource Tracker
             </div>
           </div>
           <div class="md-footer__button md-icon">

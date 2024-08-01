@@ -17,7 +17,7 @@ When the tool loads, it will look like this (Windows):
 
 ## Tabs
 
-The tabs within the tool are organized sequentially to walk through the steps of data packaging: Data Package, Experiment Tracker, Resource Tracker, Results Tracker, and Data Dictionary.
+The tabs within the tool are organized sequentially vertically to walk through the steps of data packaging (shown in reverse order here due to horizontal orientation): Data Package, Experiment Tracker, Resource Tracker, Results Tracker, and Data Dictionary.
 
 ![](../app-screenshots/main-tabs.PNG)
 
@@ -26,6 +26,8 @@ Within each of these tabs, there are 2-3 sub-tabs. Each has an "Info" tab, which
 ## Tool Messages and Guidance
 ### Working Data Package Directory
 The Working Data Package Directory will always be displayed at the top of the tool's main window. Each time you open the data packaging tool, you will first need to set your working data package directory (e.g., provide the path to your existing data package directory). This will enable the tool to interface with the data package folder during your session.
+
+For information on how to set your working data package directory, continue to the [Data Package](../datadir/index.md) tab.
 
 ![](../app-screenshots/work-dir-view.PNG)
 

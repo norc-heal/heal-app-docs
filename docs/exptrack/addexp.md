@@ -103,7 +103,7 @@ Once you have finished entering the experiment information, select "Save experim
         1. You need to [edit an existing annotated experiment](editexp.md)
         2. There is an error in automatically adding the experiment to the Experiment Tracker, which would necessitate manually [batch adding experiments to the tracker](batchexp.md#batch-add-experiments-to-tracker)
 
-5. After you have added a new experiment, you can annotate a new experiment.
+5. After you have saved your experiment annotation, you can annotate a new experiment.
 
     1. If you would like to annotate a new experiment, you can select "Clear form" at the top of the Annotate Experiment window. This will reset your form and generate the next sequential experiment ID, so you can start annotating.
         2. The User Status Message Box will print a message confirming your form was successfully cleared and that the new sequential ID has been generated.

@@ -43,6 +43,12 @@ Once you have finished preparing your data package locally, you can use this tab
             <figcaption></figcaption>
         </figure>
 
+    !!! note "Note on Shareable Package Creation with Long File Paths"
+
+        If the tool crashes while you are trying to create your shareable data package AND the file paths in your data package are very long (e.g., many folders deep with long naming conventions), you may be running into an issue with Windows path length limitations. 
+        
+        If you are on Windows 10 or later, you may be able to adjust the path length. See [here](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell#enable-long-paths-in-windows-10-version-1607-and-later){ target="blank"}.
+
 3. Next, you should review your newly created shareable data package to confirm that all files you intend to share are included (and any files you do not intend to share are not included).
     1. Navigate to the directory in which your study folder is located. You will see a new folder has been created. The name of this folder will be your study folder name with "-shareable-data-pkgs-yyyy-mm-dd" appended. In the below example, the folder title became "vivli-test-study-shareable-datapkgs-2024-06-14." The date on this folder will be today's date.
     2. This folder will contain any shareable data packages you have created on today's date.

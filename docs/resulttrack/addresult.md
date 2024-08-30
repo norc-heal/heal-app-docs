@@ -50,7 +50,8 @@
     </figure>
 
 #### Experiment Result 'Belongs' To
-1. This option allows you to associate your results directly with experimental research questions and hypotheses, which can be useful for future researchers trying to understand your experiments and findings. 
+1. This option allows you to associate your results directly with experimental research questions and hypotheses, which can be useful for future researchers trying to understand your experiments and findings.
+    1. This feature may be especially useful if you have multiple experiments. If you do not have multiple experiments or do not want to associate your results with an experiment, you can just leave the experiment name field set to default-experiment-name.
 2. This field pipes in all existing experiment names from the Experiment Tracker into a drop-down menu.
 
      <figure markdown>

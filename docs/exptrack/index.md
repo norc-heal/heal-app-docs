@@ -14,5 +14,5 @@ You will only have *one* Experiment Tracker for your study, with one entry per e
 
 <br>
 
-*Example of an Experiment Tracker with one experiment entered:*
+*Example of an Experiment Tracker with multiple experiments entered:*
 ![](../app-screenshots/exp-track-preview.PNG)
